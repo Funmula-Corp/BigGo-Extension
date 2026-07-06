@@ -6,7 +6,7 @@ import * as util from "./libs/util"
 import * as Cashback from "./libs/cashback"
 import * as User from "./libs/user"
 import * as CashbackSession from "./libs/cashbackSession"
-import { isFirefox, isSafari } from "./util.shared"
+import { isFirefox } from "./util.shared"
 import { send as PopupSender } from "./prototype/Sender/popup"
 import { updateAllPopMenu } from "./libs/popup"
 import Eclist from "@shared/eclist"
@@ -55,35 +55,13 @@ function bindSyncECThread() {
 async function bindSessionHandle() {
   chrome.tabs.onRemoved.addListener(CashbackSession.onTabClosed)
 
-  if(isSafari()) {
-    chrome.webRequest.onBeforeRequest.addListener((e) => {
-      if(!e.url.includes(".com/r/") && !e.url.includes(".tw/r/")) {
-        return
-      }
-
-      CashbackSession.listenBigGoR(e)
-    }, {
-      urls: [
-        "https://*.biggo.com.tw/*",
-        "https://*.biggo.com/*",
-      ],
-      types: ["main_frame"]
-    })
-
-    chrome.webRequest.onBeforeRequest.addListener(CashbackSession.listenOtherSite, {urls: ["<all_urls>"], types: ["main_frame"]})
-    chrome.webRequest.onCompleted.addListener(CashbackSession.landingSite, {urls: ["<all_urls>"], types: ["main_frame"]})
-    return
-  }
-
+  // Safari 18.4 起 webNavigation 行為與 Chrome 對齊，三個瀏覽器統一走 webNavigation。
+  // 舊版 Safari 用 webRequest 會看到每個 302 中繼 hop，導致離站取消返現過度觸發。
   chrome.webNavigation.onCommitted.addListener(CashbackSession.listenOtherSite)
   chrome.webNavigation.onCompleted.addListener(CashbackSession.landingSite)
-  chrome.webNavigation.onBeforeNavigate.addListener(CashbackSession.listenBigGoR, {
-    url: [
-      {hostContains: "biggo.com.tw", pathPrefix: "/r/"},
-      {hostContains: `${process.env.API_DOMAIN}`, pathPrefix: "/r/"},
-      {hostContains: ".biggo.com", pathPrefix: "/r/"},
-    ]
-  })
+  // Safari 18.4 的 onBeforeNavigate 帶宣告式 URL filter 時 listener 不會觸發，
+  // 故不使用宣告式 filter，改為無 filter + 在 listenBigGoR 內手動判斷 /r/
+  chrome.webNavigation.onBeforeNavigate.addListener(CashbackSession.listenBigGoR)
 }
 
 /**
@@ -142,7 +120,7 @@ function bindDefPopup() {
 
 function bindIconSwitch() {
   chrome.webNavigation.onCommitted.addListener(async (detail) => {
-    if(detail.parentFrameId !== -1 || (isSafari() && detail.parentFrameId)) {
+    if(detail.parentFrameId !== -1) {
       return
     }
 

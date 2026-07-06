@@ -1,4 +1,3 @@
-import share, { isSafari } from "../util.shared"
 import { getIdWithRegexp } from "../core/shared/eclist"
 import localStorage from "../core/shared/storage"
 import wrapQueue from "./queue"
@@ -196,19 +195,13 @@ export function sendMsgToCurrentPage(type, data) {
 }
 
 /**
+ * Safari 18.4 起 webNavigation 的 parentFrameId 語意與 Chrome/Firefox 一致（main frame 為 -1），
+ * 不需要再對 Safari 特殊處理
  * @param {chrome.webNavigation.WebNavigationParentedCallbackDetails} webDetails
  * @returns {boolean}
  */
 export function isNotMainFrame(webDetails) {
-  if(!isSafari()) {
-    return webDetails.parentFrameId !== -1
-  }
-
-  if("type" in webDetails) {
-    return webDetails.type !== "main_frame"
-  }
-
-  return webDetails.parentFrameId !== 0 && webDetails.parentFrameId !== -1
+  return webDetails.parentFrameId !== -1
 }
 
 export async function getCurrentTabId(tabid) {

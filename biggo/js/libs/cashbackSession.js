@@ -112,11 +112,17 @@ function getHost(url) {
 }
 
 export async function listenBigGoR(info) {
-  if(isNotMainFrame(info)) {
+  const {url, tabId} = info
+
+  // onBeforeNavigate 不帶宣告式 URL filter（Safari 18.4 帶 filter 時 listener 不會觸發），
+  // 改在此手動只挑 BigGo /r/ 導購連結
+  if(!`${url}`.includes("/r/?")) {
     return
   }
 
-  const {url, tabId} = info
+  if(isNotMainFrame(info)) {
+    return
+  }
 
   const sourceUrl = getQueryVariable(url, "purl")
   if(!sourceUrl) {
