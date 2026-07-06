@@ -1,0 +1,372 @@
+{
+	"exname": {
+		"message": "BigGo ผู้ช่วยช้อปปิ้ง",
+		"description": "manifest name"
+	},
+	"exdescription": {
+		"message": "ค้นหาสินค้า เปรียบเทียบราคา เช็คประวัติราคา โปรโมชั่นร้านค้า | ช้อปสุดคุ้มด้วย BigGo ผู้ช่วยช้อปปิ้ง",
+		"description": "manifest description"
+	},
+	"Copy": {
+		"message": "คัดลอก",
+		"description": "Copy"
+	},
+	"discount_code_full": {
+		"message": "รหัสส่วนลด",
+		"description": "Discount code"
+	},
+	"Copied": {
+		"message": "คัดลอก",
+		"description": "Copied"
+	},
+	"coupon": {
+		"message": "โปรโมชั่น",
+		"description": "Promotions"
+	},
+	"PRICE_HISTORY": {
+		"message": "ประวัติราคา",
+		"description": "price history"
+	},
+	"COPIED_CHECKOUT": {
+		"message": "คัดลอกแล้ว โปรดใช้รหัสนี้ในหน้าสั่งซื้อ",
+		"description": "Copied. Please use it at checkout page"
+	},
+	"SEARCH_WITH_BIGGO": {
+		"message": "ค้นหา เปรียบเทียบราคา [$word$] ด้วย BigGo",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"@SEARCH_WITH_BIGGO": {
+		"message": "ค้นหา เปรียบเทียบราคา ด้วย BigGo",
+		"description": ""
+	},
+	"@IMAGE_SEARCH_WITH_BIGGO": {
+		"message": "ใช้ BigGo ค้นหารูปภาพ",
+		"description": ""
+	},
+	"price_up": {
+		"message": "ราคาขึ้น",
+		"description": ""
+	},
+	"price_down": {
+		"message": "ราคาลง",
+		"description": ""
+	},
+	"price_hold": {
+		"message": "คงที่",
+		"description": ""
+	},
+	"already_active_cashback": {
+		"message": "คุณเปิดใช้งาน $word$ cashback",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"sign_active_cashback": {
+		"message": "ลงชื่อเข้าใช้และเปิดใช้งาน $word$ cashback",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"active_cashback": {
+		"message": "เปิดใช้งาน $word$ cashback",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"cashback_detail": {
+		"message": "รายละเอียด",
+		"description": ""
+	},
+	"close": {
+		"message": "ปิด",
+		"description": ""
+	},
+	"cashback_infomation": {
+		"message": "ข้อมูล Cashback",
+		"description": ""
+	},
+	"idle_restart": {
+		"message": "คุณได้ชำระเงินแล้ว! กรุณาเปิด Biggo ผู้ช้วยช้อปปิ้ง ทุกครั้งหลังการซื้อสินค้า",
+		"description": ""
+	},
+	"idle_may_not_track": {
+		"message": "Biggo อาจไม่ติดตาม cashback!",
+		"description": ""
+	},
+	"idle_cashback_reason": {
+		"message": "หาก cashback ของคุณจะไม่ถูกติดตาม อาจเพราะด้วยเหตุผลดังต่อไปนี้: ปิดเบราว์เซอร์แล้วเปิดแท็บที่ไม่ได้เชื่อมโยงกับ Biggo, คลิกที่ป้ายโฆษณาหรือลิงค์อื่นๆ, คลิกไปยังร้านค้าหรือเว็บไซต์เปรียบเทียบอื่น ๆ, ติดตั้ง extension ช้อปปิ้งอื่น ๆ หรือ หมดเวลาที่โค้ดสามารถติดตามได้คือมากกว่า 30 นาที",
+		"description": ""
+	},
+	"close_price_history_desc": {
+		"message": "คุณยังไม่ได้เข้าสู่ระบบ BigGo ผู้ช่วยช้อปปิ้ง",
+		"description": ""
+	},
+	"close_price_history_tip": {
+		"message": "คุณต้องการปิดหน้าต่างประวัติราคา?",
+		"description": ""
+	},
+	"confirm": {
+		"message": "ยืนยัน",
+		"description": ""
+	},
+	"cancel": {
+		"message": "ยกเลิก",
+		"description": ""
+	},
+	"coupon_popup_promotion": {
+		"message": "โปรโมชั่น!",
+		"description": ""
+	},
+	"coupon_popup_turnoff": {
+		"message": "ปิดการแจ้งเตือนคูปองส่วนลด (สามารถตั้งค่า เปิด/ปิด ได้ที่ ⚙️การตั้งค่า)",
+		"description": ""
+	},
+	"coupon_popup_autoclose": {
+		"message": "ปิดเองอัตโนมัติ ภายใน $word$ วินาที",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"coupon_popup_alert_desc": {
+		"message": "คุณยืนยันที่จะปิดหน้าต่างการแจ้งเตือนคูปองส่วนลด?",
+		"description": ""
+	},
+	"no_mlt_result": {
+		"message": "ไม่มีผลลัพธ์",
+		"description": ""
+	},
+	"mlt_x_product_total": {
+		"message": "มีอีก $word$ สินค้าใกล้เคียง",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"x_items": {
+		"message": "$word$ รายการ",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"x_products": {
+		"message": "ทั้งหมดมี $word$ รายการ",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"searhc_product": {
+		"message": "ค้นหาสินค้า",
+		"description": ""
+	},
+	"privacy_policy": {
+		"message": "Privacy Policy",
+		"description": ""
+	},
+	"privacy_title": {
+		"message": "รับประโยชน์สูงสุดจาก BigGo ตัวช่วยเปรียบเทียบราคา",
+		"description": ""
+	},
+	"privacy_sub_title": {
+		"message": "ในการเริ่มใช้ BigGo ตัวช่วยเปรียบเทียบราคา เราต้องได้รับอนุญาตจากคุณในการเข้าถึงข้อมูลต่อไปนี้",
+		"description": ""
+	},
+	"required": {
+		"message": "จำเป็น",
+		"description": ""
+	},
+	"cookies": {
+		"message": "คุกกี้ Cookies",
+		"description": ""
+	},
+	"privacy_cookie_desc": {
+		"message": "BigGo ใช้คุกกี้ ในการวิเคราะห์ข้อมูลเพื่อมอบประสบการณ์การช็อปปิ้งที่ดีที่สุด และเหมาะสมกับการใช้งานของคุณมากที่สุด",
+		"description": ""
+	},
+	"privacy_user_interactions": {
+		"message": "BigGo ใช้คุกกี้ ในการวิเคราะห์ข้อมูลเพื่อมอบประสบการณ์การช็อปปิ้งที่ดีที่สุด และเหมาะสมกับการใช้งานของคุณมากที่สุด",
+		"description": ""
+	},
+	"privacy_user_interactions_desc": {
+		"message": "ข้อมูลที่ไม่ระบุชื่อ เช่นที่อยู่ IP, วันที่/เวลาในการใช้งานและข้อมูลเบราว์เซอร์เหล่านี้ ช่วยให้ BigGo ตัวช่วยเปรียบเทียบราคา มั่นใจว่ามีฟังก์ชั่นใช้งานได้อย่างถูกต้อง",
+		"description": ""
+	},
+	"privacy_user_personal_data": {
+		"message": "ข้อมูลส่วนบุคคล",
+		"description": ""
+	},
+	"privacy_user_personal_data_desc": {
+		"message": "ข้อมูลส่วนบุคคลที่ผู้ใช้งานให้ตอนลงทะเบียนกับ BigGo เช่น อีเมล ชื่อผู้ใช้งาน หมายเลขโทรศัพท์ รหัสผ่าน ข้อมูลบัญชี  หรือข้อมูลอื่น ๆ ที่ใช้ระบุตัวตนหรือผู้ใช้งานนี้",
+		"description": ""
+	},
+	"agree": {
+		"message": "ตกลง",
+		"description": ""
+	},
+	"privacy_learn_about_more": {
+		"message": "หากต้องการเรียนรู้เพิ่มเติมเกี่ยวกับข้อมูลและโปรดอ่านนโยบายความเป็นส่วนตัวของ $word$.",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": ""
+			}
+		}
+	},
+	"share_coupon_submit": {
+		"message": "ใส่คูปองส่วนลด",
+		"description": ""
+	},
+	"share_coupon_title": {
+		"message": "ใช้คูปองส่วนลด ช่วยประหยัดเงินได้มากขึ้น",
+		"description": ""
+	},
+	"share_coupon_desc": {
+		"message": "รายละเอียดคูปองส่วนลด",
+		"description": ""
+	},
+	"share_coupon_cancel": {
+		"message": "ยกเลิก",
+		"description": ""
+	},
+	"share_coupon_send": {
+		"message": "ส่ง",
+		"description": ""
+	},
+	"share_coupon_tks": {
+		"message": "ขอบคุณ",
+		"description": ""
+	},
+	"share_coupon_code": {
+		"message": "เราจะส่งโค้ดส่วนลดให้ หลังจากตรวจสอบแล้ว",
+		"description": ""
+	},
+	"share_coupon_done": {
+		"message": "สำเร็จ",
+		"description": ""
+	},
+	"share_coupon_submit_other": {
+		"message": "ใส่คูปองส่วนลดอื่นๆ",
+		"description": ""
+	},
+	"privacy_learn_about_link": {
+		"message": "BigGo Privacy Policy",
+		"description": ""
+	},
+	"privacy_access_permission": {
+		"message": "การอนุญาตการเข้าถึง เพื่อให้เรามอบประสบการณ์ที่เหมาะสมกับคุณได้",
+		"description": ""
+	},
+	"privacy_access_permission_desc": {
+		"message": "เราต้องการมอบข้อเสนอด้านราคาที่ดีที่สุดให้กับคุณ การรวบรวมข้อมูลเมื่อคุณค้นหาสินค้า หรือสินค้าที่มีในตะกร้าสินค้า จะช่วยให้การค้นหาคูปองและส่วนลดที่เกี่ยวข้องมีประสิทธิภาพยิ่งขึ้น หากไม่มีการเข้าถึงข้อมูลส่วนนี้ BigGo อาจทำงานได้ไม่แม่นย้ำ และคุณจะต้องเข้าไปที่เว็บไซต์ BigGo ด้วยตนเองก่อนเริ่มการเดินทางช็อปปิ้งแต่ละครั้ง",
+		"description": ""
+	},
+	"enable": {
+		"message": "ใช้งาน",
+		"description": ""
+	},
+	"uninstall": {
+		"message": "ยกเลิกการติดตั้ง",
+		"description": ""
+	},
+	"shopping_assistant": {
+		"message": "ผู้ช่วยช้อปปิ้ง",
+		"description": ""
+	},
+	"discount_code": {
+		"message": "รหัสส่วนลด",
+		"description": ""
+	},
+	"permission_desc": {
+		"message": "เพื่อการใช้งานฟังก์ชั่น BigGo Shopping Assistant ได้อย่างเต็มที่ โปรดอนุญาตให้เราเข้าถึงการใช้งานของคุณ โดยคุณสามารถแก้ไขข้อมูลของคุณได้บนเว็บไซต์ extension.biggo.com",
+		"description": ""
+	},
+	"permission_btn": {
+		"message": "ฉันเข้าใจแล้ว",
+		"description": ""
+	},
+	"header_name": {
+		"message": "ผู้ช่วยช้อปปิ้ง",
+		"description": ""
+	},
+	"review_do_you_like": {
+		"message": "คุณชอบบริการเรามั้ย?",
+		"description": ""
+	},
+	"review_feedback": {
+		"message": "โปรดให้ความคิดเห็น",
+		"description": ""
+	},
+	"review_skip": {
+		"message": "ข้าม",
+		"description": ""
+	},
+	"review_rate": {
+		"message": "ให้คะแนน",
+		"description": ""
+	},
+	"close_block_setting": {
+		"message": "Close",
+		"description": ""
+	},
+	"login_hint": {
+		"message": "Successfully log in to BigGo Shopping Assistant",
+		"description": ""
+	},
+	"price_history_add_to_fav": {
+		"message": "เพื่มรายการโปรด (Fav)",
+		"description": ""
+	},
+	"price_history_favorited": {
+		"message": "ชอบ",
+		"description": ""
+	},
+	"price_history_fav": {
+		"message": "Fav",
+		"description": ""
+	},
+	"price_history_sub_tip": {
+		"message": "เพิ่มเป็น Fav แล้ว",
+		"description": ""
+	},
+	"image_search_btn_title": {
+		"message": "ค้นหาด้วยรูปภาพกับ BigGo",
+		"description": ""
+	},
+	"image_search_btn_label": {
+		"message": "เทียบ",
+		"description": ""
+	}
+}

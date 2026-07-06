@@ -1,0 +1,372 @@
+{
+	"exname": {
+		"message": "Asisten Belanja BigGo",
+		"description": "manifest name"
+	},
+	"exdescription": {
+		"message": "Perbandingan harga, riwayat harga produk dan promosi toko. Belanja cerdas dengan Asisten Belanja BigGo.",
+		"description": "manifest description"
+	},
+	"Copy": {
+		"message": "Menyalin",
+		"description": "Copy"
+	},
+	"discount_code_full": {
+		"message": "Kode diskon",
+		"description": "Discount code"
+	},
+	"Copied": {
+		"message": "Disalin",
+		"description": "Copied"
+	},
+	"coupon": {
+		"message": "Promosi",
+		"description": "Promotions"
+	},
+	"PRICE_HISTORY": {
+		"message": "Sejarah harga",
+		"description": "price history"
+	},
+	"COPIED_CHECKOUT": {
+		"message": "Copied. Disalin Sila gunakan di halaman pembayaran",
+		"description": "Copied. Please use it at checkout page"
+	},
+	"SEARCH_WITH_BIGGO": {
+		"message": "Cari 「$word$」 dengan Biggo",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"@SEARCH_WITH_BIGGO": {
+		"message": "Pencarian dengan Biggo",
+		"description": ""
+	},
+	"@IMAGE_SEARCH_WITH_BIGGO": {
+		"message": "Gunakan pencarian gambar BigGo",
+		"description": ""
+	},
+	"price_up": {
+		"message": "Harga Naik",
+		"description": ""
+	},
+	"price_down": {
+		"message": "Harga Turun",
+		"description": ""
+	},
+	"price_hold": {
+		"message": "Harga Stabil",
+		"description": ""
+	},
+	"already_active_cashback": {
+		"message": "Anda sudah mengaktifkan $word$ cashback",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"sign_active_cashback": {
+		"message": "Masuk dan aktifkan $word$ cashback",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"active_cashback": {
+		"message": "Aktifkan $word$ cashback",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"cashback_detail": {
+		"message": "Rincian",
+		"description": ""
+	},
+	"close": {
+		"message": "Tutup",
+		"description": ""
+	},
+	"cashback_infomation": {
+		"message": "Informasi-ekstensi Cashback",
+		"description": ""
+	},
+	"idle_restart": {
+		"message": "Anda telah menyelesaikan pembayaran! Harap aktifkan kembali Pembantu Belanja BigGo setelah setiap pembelian dilakukan.",
+		"description": ""
+	},
+	"idle_may_not_track": {
+		"message": "Cashback BigGo mungkin tidak terlacak!",
+		"description": ""
+	},
+	"idle_cashback_reason": {
+		"message": "Jika Cashback Anda tidak dilacak, itu mungkin hilang karena alasan berikut tetapi tidak terbatas pada: tutup browser, buka tab yang tidak ditautkan dari BigGo, klik pada spanduk atau tautan iklan, tautan ke situs belanja atau perbandingan lainnya , pasang ekstensi belanja lainnya, atau waktu tunggu ketidakaktifan sesi lebih dari 30 menit.",
+		"description": ""
+	},
+	"close_price_history_desc": {
+		"message": "Anda belum masuk ke Asisten Belanja BigGo",
+		"description": ""
+	},
+	"close_price_history_tip": {
+		"message": "Apakah Anda yakin untuk mematikan pop-up riwayat harga?",
+		"description": ""
+	},
+	"confirm": {
+		"message": "Konfirmasi",
+		"description": ""
+	},
+	"cancel": {
+		"message": "Batal",
+		"description": ""
+	},
+	"coupon_popup_promotion": {
+		"message": "Promosi!",
+		"description": ""
+	},
+	"coupon_popup_turnoff": {
+		"message": "Matikan fungsi pengingat kupon (Pengaturan dapat dinyalakan / dimatikan)",
+		"description": ""
+	},
+	"coupon_popup_autoclose": {
+		"message": "Tutup notifikasi popup secara otomatis setelah $word$ detik.",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"coupon_popup_alert_desc": {
+		"message": "Apakah Anda yakin untuk mematikan notifikasi pop-up pengingat kupon?",
+		"description": ""
+	},
+	"no_mlt_result": {
+		"message": "Tidak ada hasil",
+		"description": ""
+	},
+	"mlt_x_product_total": {
+		"message": "$word$ total produk serupa",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"x_items": {
+		"message": "$word$ barang",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"x_products": {
+		"message": "Jumlah $word$ produk",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"searhc_product": {
+		"message": "Pergi ke Pencarian produk",
+		"description": ""
+	},
+	"privacy_policy": {
+		"message": "Privacy Policy",
+		"description": ""
+	},
+	"privacy_title": {
+		"message": "Dapatkan hasil maksimal dari Asisten Belanja BigGo",
+		"description": ""
+	},
+	"privacy_sub_title": {
+		"message": "Untuk mulai menggunakan BigGo Shopping Assistant, kami memerlukan izin Anda untuk mengakses informasi berikut.",
+		"description": ""
+	},
+	"required": {
+		"message": "wajib",
+		"description": ""
+	},
+	"cookies": {
+		"message": "Cookie",
+		"description": ""
+	},
+	"privacy_cookie_desc": {
+		"message": "BigGo menggunakan cookie yang membantu kami mengoperasikan layanan kami, menganalisis keterlibatan dan penggunaan, dan memberikan pengalaman belanja yang relevan dan dipersonalisasi.",
+		"description": ""
+	},
+	"privacy_user_interactions": {
+		"message": "Interaksi Pengguna dan Teknis",
+		"description": ""
+	},
+	"privacy_user_interactions_desc": {
+		"message": "Data anonim seperti alamat IP, tanggal/waktu penggunaan, dan informasi browser membantu memastikan Asisten Belanja BigGo berfungsi secara akurat.",
+		"description": ""
+	},
+	"privacy_user_personal_data": {
+		"message": "Data pribadi",
+		"description": ""
+	},
+	"privacy_user_personal_data_desc": {
+		"message": "Informasi pengenal pribadi yang Anda berikan secara opsional kepada kami saat Anda mendaftar atau menggunakan layanan BigGo apa pun. Informasi ini dapat mencakup alamat email, nama pengguna dan sandi, informasi bank, nomor telepon, apakah Anda memiliki akun BigGo, atau informasi lain yang mengidentifikasi Anda.",
+		"description": ""
+	},
+	"agree": {
+		"message": "Setuju",
+		"description": ""
+	},
+	"privacy_learn_about_more": {
+		"message": "Untuk mempelajari lebih lanjut tentang data yang dikumpulkan ekstensi dan alasannya, silakan baca $word$.",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"exmaple": ""
+			}
+		}
+	},
+	"share_coupon_submit": {
+		"message": "Kirim kupon",
+		"description": ""
+	},
+	"share_coupon_title": {
+		"message": "Bantu membuat BigGo lebih baik dengan menambahkan kupon, dan juga membuat pengguna lain lebih hemat.",
+		"description": ""
+	},
+	"share_coupon_desc": {
+		"message": "Deskripsi",
+		"description": ""
+	},
+	"share_coupon_cancel": {
+		"message": "Batalkan",
+		"description": ""
+	},
+	"share_coupon_send": {
+		"message": "Kirim",
+		"description": ""
+	},
+	"share_coupon_tks": {
+		"message": "Terimakasih",
+		"description": ""
+	},
+	"share_coupon_code": {
+		"message": "Kami akan membagikan kode Anda dengan BigGo setelah sistem kami meninjaunya.",
+		"description": ""
+	},
+	"share_coupon_done": {
+		"message": "Selesai",
+		"description": ""
+	},
+	"share_coupon_submit_other": {
+		"message": "Kirim kupon lain",
+		"description": ""
+	},
+	"privacy_learn_about_link": {
+		"message": "Kebijakan Privasi BigGo",
+		"description": ""
+	},
+	"privacy_access_permission": {
+		"message": "Izin akses memungkinkan kami mempersonalisasi pengalaman Anda",
+		"description": ""
+	},
+	"privacy_access_permission_desc": {
+		"message": "Telah menjadi misi kami untuk menemukan Anda penawaran terbaik. Kami hanya mengumpulkan data ketika Anda mencari atau Anda berada di situs dengan keranjang belanja. Dengan begitu, kami dapat menemukan kupon yang relevan, hadiah, dan terus menjadikan belanja lebih baik bagi pengguna kami. Ekstensi tidak akan berfungsi dengan benar tanpa akses ke Cookie, dan Anda harus mengunjungi situs web BigGo secara manual sebelum memulai setiap perjalanan belanja.",
+		"description": ""
+	},
+	"enable": {
+		"message": "Aktifkan",
+		"description": ""
+	},
+	"uninstall": {
+		"message": "Uninstall",
+		"description": ""
+	},
+	"shopping_assistant": {
+		"message": "Asisten Belanja",
+		"description": ""
+	},
+	"discount_code": {
+		"message": "Kode Diskon",
+		"description": ""
+	},
+	"permission_desc": {
+		"message": "Agar berfungsi dengan baik, Asisten Belanja BigGo harus memiliki izin Anda untuk mengakses dan mengubah data Anda di situs extension.biggo.com. Izinkan dan aktifkan Asisten Belanja BigGo sekarang!",
+		"description": ""
+	},
+	"permission_btn": {
+		"message": "Saya mengerti",
+		"description": ""
+	},
+	"header_name": {
+		"message": "Asisten Belanja",
+		"description": ""
+	},
+	"review_do_you_like": {
+		"message": "Apakah Anda menikmati layanan BigGo?",
+		"description": ""
+	},
+	"review_feedback": {
+		"message": "Mohon beri kami masukan Anda.",
+		"description": ""
+	},
+	"review_skip": {
+		"message": "Lewati",
+		"description": ""
+	},
+	"review_rate": {
+		"message": "Nilai kami",
+		"description": ""
+	},
+	"close_block_setting": {
+		"message": "Tutup",
+		"description": ""
+	},
+	"login_hint": {
+		"message": "Berhasil log masuk ke Asisten Belanja BigGo",
+		"description": ""
+	},
+	"price_history_add_to_fav": {
+		"message": "Tambah ke Favorit",
+		"description": ""
+	},
+	"price_history_favorited": {
+		"message": "Difavoritkan",
+		"description": ""
+	},
+	"price_history_fav": {
+		"message": "Fav",
+		"description": ""
+	},
+	"price_history_sub_tip": {
+		"message": "Telah ditambah ke Favorit",
+		"description": ""
+	},
+	"image_search_btn_title": {
+		"message": "Cari dengan gambar menggunakan BigGo",
+		"description": ""
+	},
+	"image_search_btn_label": {
+		"message": "Comp",
+		"description": ""
+	}
+}

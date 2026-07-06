@@ -1,0 +1,372 @@
+{
+	"exname": {
+		"message": "Asistente de Compras de BigGo",
+		"description": "manifest name"
+	},
+	"exdescription": {
+		"message": "Compras inteligentes con BigGo",
+		"description": "manifest description"
+	},
+	"Copy": {
+		"message": "Copiar",
+		"description": "Copy"
+	},
+	"discount_code_full": {
+		"message": "Código de descuento",
+		"description": "Discount code"
+	},
+	"Copied": {
+		"message": "Copiado",
+		"description": "Copied"
+	},
+	"coupon": {
+		"message": "Promociones",
+		"description": "Promotions"
+	},
+	"PRICE_HISTORY": {
+		"message": "Historial de precios",
+		"description": "price history"
+	},
+	"COPIED_CHECKOUT": {
+		"message": "Copiado. Por favor, utilícelo en la página de proceso de pago.",
+		"description": "Copied. Please use it at checkout page"
+	},
+	"SEARCH_WITH_BIGGO": {
+		"message": "Buscar「$word$」con Biggo",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"@SEARCH_WITH_BIGGO": {
+		"message": "Buscar con Biggo",
+		"description": ""
+	},
+	"@IMAGE_SEARCH_WITH_BIGGO": {
+		"message": "Utilice la búsqueda de imágenes de BigGo",
+		"description": ""
+	},
+	"price_up": {
+		"message": "Aumento",
+		"description": ""
+	},
+	"price_down": {
+		"message": "Bajada",
+		"description": ""
+	},
+	"price_hold": {
+		"message": "Estable",
+		"description": ""
+	},
+	"already_active_cashback": {
+		"message": "Ya has activado $word$ cashback",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"sign_active_cashback": {
+		"message": "Iniciar sesión y activar $word$ cashback",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"active_cashback": {
+		"message": "Activar $word$ cashback",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"cashback_detail": {
+		"message": "Detalle",
+		"description": ""
+	},
+	"close": {
+		"message": "Cerrar",
+		"description": ""
+	},
+	"cashback_infomation": {
+		"message": "Información de reembolso",
+		"description": ""
+	},
+	"idle_restart": {
+		"message": "¡Has completado la compra! Por favor, reactiva el Asistente de Compras BigGo después de cada compra realizada.",
+		"description": ""
+	},
+	"idle_may_not_track": {
+		"message": "¡El cashback de BigGo puede no estar siendo rastreado!",
+		"description": ""
+	},
+	"idle_cashback_reason": {
+		"message": "Si su Cashback no es rastreado, puede ser por las siguientes razones entre otras: cierre del navegador, abrir una pestaña que no esté enlazada desde BigGo, hacer clic en un banner o enlace publicitario, enlazar con otros sitios web de compras o de comparación, instalar otra extensión de compras, o que el tiempo de inactividad de la sesión sea superior a 30 minutos.",
+		"description": ""
+	},
+	"close_price_history_desc": {
+		"message": "Todavía no has iniciado sesión en el Asistente de Compras de BigGo.",
+		"description": ""
+	},
+	"close_price_history_tip": {
+		"message": "¿Estás seguro de desactivar la ventana emergente del historial de precios?",
+		"description": ""
+	},
+	"confirm": {
+		"message": "Confirmar",
+		"description": ""
+	},
+	"cancel": {
+		"message": "Cancelar",
+		"description": ""
+	},
+	"coupon_popup_promotion": {
+		"message": "¡Promociones!",
+		"description": ""
+	},
+	"coupon_popup_turnoff": {
+		"message": "Desactivar la función de recordatorio de cupones (La configuración se puede activar/desactivar)",
+		"description": ""
+	},
+	"coupon_popup_autoclose": {
+		"message": "Cerrar automáticamente la ventana emergente después de $word$ segundos.",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"coupon_popup_alert_desc": {
+		"message": "¿Estás seguro de que quieres desactivar el recordatorio de cupón?",
+		"description": ""
+	},
+	"no_mlt_result": {
+		"message": "Ningún resultado",
+		"description": ""
+	},
+	"mlt_x_product_total": {
+		"message": "$word$ productos similares en total",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"x_items": {
+		"message": "$word$ Resultados",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"x_products": {
+		"message": "$word$ productos",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"searhc_product": {
+		"message": "Buscar producto",
+		"description": ""
+	},
+	"privacy_policy": {
+		"message": "Privacy Policy",
+		"description": ""
+	},
+	"privacy_title": {
+		"message": "Aproveche al máximo el Asistente de compras de BigGo",
+		"description": ""
+	},
+	"privacy_sub_title": {
+		"message": "Para empezar a utilizar el Asistente de compras de BigGo, necesitamos su permiso para acceder a la siguiente información.",
+		"description": ""
+	},
+	"required": {
+		"message": "obligatorio",
+		"description": ""
+	},
+	"cookies": {
+		"message": "Cookies",
+		"description": ""
+	},
+	"privacy_cookie_desc": {
+		"message": "BigGo utiliza cookies que nos ayudan a gestionar nuestros servicios, analizar la interacción y el uso, y proporcionar una buena y personalizada experiencia de compra.",
+		"description": ""
+	},
+	"privacy_user_interactions": {
+		"message": "Interacciones del usuario y técnicas",
+		"description": ""
+	},
+	"privacy_user_interactions_desc": {
+		"message": "Los datos anónimos como las direcciones IP, la fecha/hora de uso y la información del navegador ayudan a garantizar que el Asistente de Compras de BigGo funcione con precisión.",
+		"description": ""
+	},
+	"privacy_user_personal_data": {
+		"message": "Datos personales",
+		"description": ""
+	},
+	"privacy_user_personal_data_desc": {
+		"message": "La información de identificación personal opcionalmente nos la proporciona cuando se registra o utiliza cualquier servicio de BigGo. Esta información puede incluir su dirección de correo electrónico, nombre de usuario y contraseña, información bancaria, número de teléfono, si tiene una cuenta de BigGo u otra información que le identifique.",
+		"description": ""
+	},
+	"agree": {
+		"message": "Aceptar",
+		"description": ""
+	},
+	"privacy_learn_about_more": {
+		"message": "Para saber más sobre los datos que recoge la extensión y por qué, lea la $word$.",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": ""
+			}
+		}
+	},
+	"share_coupon_submit": {
+		"message": "Enviar un cupón",
+		"description": ""
+	},
+	"share_coupon_title": {
+		"message": "Ayuda a mejorar BigGo añadiendo un cupón, y haz que otros usuarios ahorren más.",
+		"description": ""
+	},
+	"share_coupon_desc": {
+		"message": "Descripción",
+		"description": ""
+	},
+	"share_coupon_cancel": {
+		"message": "Cancelar",
+		"description": ""
+	},
+	"share_coupon_send": {
+		"message": "Enviar",
+		"description": ""
+	},
+	"share_coupon_tks": {
+		"message": "¡Gracias!",
+		"description": ""
+	},
+	"share_coupon_code": {
+		"message": "Compartiremos tu código con BigGo una vez que nuestro sistema lo revise.",
+		"description": ""
+	},
+	"share_coupon_done": {
+		"message": "Finalizado",
+		"description": ""
+	},
+	"share_coupon_submit_other": {
+		"message": "Enviar otro cupón",
+		"description": ""
+	},
+	"privacy_learn_about_link": {
+		"message": "Política de privacidad de BigGo",
+		"description": ""
+	},
+	"privacy_access_permission": {
+		"message": "El permiso de acceso nos permite personalizar tu experiencia",
+		"description": ""
+	},
+	"privacy_access_permission_desc": {
+		"message": "Nuestra misión siempre ha sido ofrecerte las mejores ofertas. Sólo recogemos datos cuando buscas o estás en los webs con carrito de compra. De este manera, podemos ayudarte a encontrar cupones y premios de interés y seguir mejorando las compras de nuestros usuarios. La extensión no funcionará correctamente sin acceso a las cookies, y tendrás que visitar manualmente el sitio web de BigGo antes de iniciar cada compra.",
+		"description": ""
+	},
+	"enable": {
+		"message": "Habilitar",
+		"description": ""
+	},
+	"uninstall": {
+		"message": "Desinstalar",
+		"description": ""
+	},
+	"shopping_assistant": {
+		"message": "Asistente de Compras de",
+		"description": ""
+	},
+	"discount_code": {
+		"message": "Código",
+		"description": ""
+	},
+	"permission_desc": {
+		"message": "Nuestra misión siempre ha sido ofrecerte las mejores ofertas. Sólo recogemos datos cuando buscas o estás en los webs con carrito de compra. De este manera, podemos ayudarte a encontrar cupones y premios de interés y seguir mejorando las compras de nuestros usuarios. La extensión no funcionará correctamente sin acceso a las cookies, y tendrás que visitar manualmente el sitio web de BigGo antes de iniciar cada compra.",
+		"description": ""
+	},
+	"permission_btn": {
+		"message": "Habilitar",
+		"description": ""
+	},
+	"header_name": {
+		"message": "Asistente de Compras de",
+		"description": ""
+	},
+	"review_do_you_like": {
+		"message": "¿Te gusta el servicio de BigGo?",
+		"description": ""
+	},
+	"review_feedback": {
+		"message": "Por favor, danos tu opinión.",
+		"description": ""
+	},
+	"review_skip": {
+		"message": "Omitir",
+		"description": ""
+	},
+	"review_rate": {
+		"message": "Califícanos",
+		"description": ""
+	},
+	"close_block_setting": {
+		"message": "Close the reminder",
+		"description": ""
+	},
+	"login_hint": {
+		"message": "Successfully log in to BigGo Shopping Assistant",
+		"description": ""
+	},
+	"price_history_add_to_fav": {
+		"message": "Agregar a favoritos",
+		"description": ""
+	},
+	"price_history_favorited": {
+		"message": "Favoritos",
+		"description": ""
+	},
+	"price_history_fav": {
+		"message": "Favorito",
+		"description": ""
+	},
+	"price_history_sub_tip": {
+		"message": "Añadido a tus favoritos",
+		"description": ""
+	},
+	"image_search_btn_title": {
+		"message": "Buscar por imagen con BigGo",
+		"description": ""
+	},
+	"image_search_btn_label": {
+		"message": "Comp",
+		"description": ""
+	}
+}

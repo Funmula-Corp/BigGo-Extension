@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="noindex , nofollow">
+  <link rel="stylesheet" href="./style/layout.css">
+  <link rel="stylesheet" href="./style/shared.css">
+  <link rel="stylesheet" href="./style/storeIframe.css">
+  <script type="module" src="./script/storeIframe.rollup.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="head">
+      <img alt='close' id="close" class="close-icon cursor-pointer" src='./images/btn_close_gray@2x.png' height='28'>
+      <div id="buied-hint" class="w100 d-none" style="margin-bottom: 10px">
+        <span class="font14 text-black">您已完成結帳！要再次購買請重新啟動小幫手，才能獲得回饋。</span>
+      </div>
+      <div class="w-100 d-flex justify-content-center">
+        <div id="act-btn" class="btn btn-main d-none" style="margin-bottom: 6.5px">__MSG_NOT_LOGIN__</div>
+      </div>
+      <div class="d-flex justify-content-between align-items-end">
+        <img src="./images/img_biggo_logo_w@2x.png" height="19" alt="logo" id="biggo_logo">
+        <div class="font12 text-black cursor-pointer" id="fold-toggle">
+          <span>查看回饋詳情</span>
+          <img class="expend-up" style='transition-duration: 0.5s; margin-left: 4px;' src='./images/ic_arrow_darkblue_go@2x.png' alt='more' height='9.2px' width='4.8px' id='expend'>
+        </div>
+      </div>
+    </div>
+
+    <div class="body" id='content'></div>
+  </div>
+</body>
+</html>

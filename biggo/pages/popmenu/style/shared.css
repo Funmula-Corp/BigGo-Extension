@@ -1,0 +1,83 @@
+.text-green {
+  color: #1aa1a9;
+}
+
+.text-black {
+  color: #24343f;
+}
+
+.text-cashback {
+  color: #d78e01;
+}
+
+.font12 {
+  font-size: 12px;
+}
+
+.font14 {
+  font-size: 14px;
+}
+
+.font15 {
+  font-size: 15px;
+}
+
+.font16 {
+  font-size: 16px;
+}
+
+.font18 {
+  font-size: 18px;
+}
+
+.my8 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.btn {
+  max-width: 230px;
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 4px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-main {
+  background-color: rgba(0, 181, 183, 0.8);
+  color: #fff;
+}
+
+.btn-cashback {
+  background-color: rgba(231, 176, 33, 0.8);
+  color: #fff;
+}
+
+.btn-normal {
+  background-color: rgba(140, 154, 163, 0.8);
+  color: #fff;
+  box-shadow: 0 4px 10px 0 rgba(140, 154, 163, 0.36);
+}
+
+#store-image {
+  max-width: 120px;
+  max-height: 26px;
+  margin: 0 6px;
+  width: auto;
+}

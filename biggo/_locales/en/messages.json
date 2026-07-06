@@ -1,0 +1,376 @@
+{
+	"exname": {
+		"message": "BigGo Shopping Assistant",
+		"description": "manifest name"
+	},
+	"exdescription": {
+		"message": "Price comparison and product price history. Smart shopping with BigGo Shopping Assistant.",
+		"description": "manifest description"
+	},
+	"Copy": {
+		"message": "Copy",
+		"description": "Copy"
+	},
+	"discount_code_full": {
+		"message": "Discount code",
+		"description": "Discount code"
+	},
+	"Copied": {
+		"message": "Copied",
+		"description": "Copied"
+	},
+	"coupon": {
+		"message": "Promotions",
+		"description": "Promotions"
+	},
+	"PRICE_HISTORY": {
+		"message": "price history",
+		"description": "price history"
+	},
+	"COPIED_CHECKOUT": {
+		"message": "Copied. Please use it at checkout page",
+		"description": "Copied. Please use it at checkout page"
+	},
+	"SEARCH_WITH_BIGGO": {
+		"message": "Search $word$ with Biggo",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"@SEARCH_WITH_BIGGO": {
+		"message": "Search with Biggo",
+		"description": ""
+	},
+	"@IMAGE_SEARCH_WITH_BIGGO": {
+		"message": "Use BigGo image search",
+		"description": ""
+	},
+	"price_up": {
+		"message": "Up",
+		"description": ""
+	},
+	"price_down": {
+		"message": "Down",
+		"description": ""
+	},
+	"price_hold": {
+		"message": "Stable",
+		"description": ""
+	},
+	"already_active_cashback": {
+		"message": "You already activated $word$ cashback",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"sign_active_cashback": {
+		"message": "Sign in and activate $word$ cashback",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"active_cashback": {
+		"message": "Activate $word$ cashback",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"cashback_detail": {
+		"message": "Detail",
+		"description": ""
+	},
+	"close": {
+		"message": "Close",
+		"description": ""
+	},
+	"cashback_infomation": {
+		"message": "Cashback Information",
+		"description": ""
+	},
+	"idle_restart": {
+		"message": "You've completed the checkout! Please reactivate BigGo Shopping Assistant after every purchase made.",
+		"description": ""
+	},
+	"idle_may_not_track": {
+		"message": "BigGo cashback may not be tracked!",
+		"description": ""
+	},
+	"idle_cashback_reason": {
+		"message": "If your Cashback isn't tracked, it may be missing for the following reasons but not limited to: close the browser, open a tab that is not linked from BigGo, click on an advertisement banners or link, link to other shopping or comparison websites, install other shopping extension, or the session inactivity timeout is more than 30 minutes.",
+		"description": ""
+	},
+	"close_price_history_desc": {
+		"message": "You are not sign in BigGo Shopping Assistant yet! ",
+		"description": ""
+	},
+	"close_price_history_tip": {
+		"message": "Are you sure to turn off price history popup?",
+		"description": ""
+	},
+	"confirm": {
+		"message": "Confirm",
+		"description": ""
+	},
+	"cancel": {
+		"message": "Cancel",
+		"description": ""
+	},
+	"coupon_popup_promotion": {
+		"message": "Promotions!",
+		"description": ""
+	},
+	"coupon_popup_turnoff": {
+		"message": "Turn off coupon reminder function (Setting can be switched on/off)",
+		"description": ""
+	},
+	"coupon_popup_autoclose": {
+		"message": "Auto close popup after $word$ seconds.",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"coupon_popup_alert_desc": {
+		"message": "Are you sure to turn off coupon reminder popup?",
+		"description": ""
+	},
+	"no_mlt_result": {
+		"message": "No result",
+		"description": ""
+	},
+	"mlt_x_product_total": {
+		"message": "$word$ similar products",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"x_items": {
+		"message": "$word$ items",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"x_products": {
+		"message": "Total $word$ products",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"searhc_product": {
+		"message": "Search product",
+		"description": ""
+	},
+	"privacy_policy": {
+		"message": "Privacy Policy",
+		"description": ""
+	},
+	"privacy_title": {
+		"message": "Get the most out of BigGo Shopping Assistant",
+		"description": ""
+	},
+	"privacy_sub_title": {
+		"message": "To begin using BigGo Shopping Assistant, we need your permission to access the following information.",
+		"description": ""
+	},
+	"required": {
+		"message": "required",
+		"description": ""
+	},
+	"cookies": {
+		"message": "Cookies",
+		"description": ""
+	},
+	"privacy_cookie_desc": {
+		"message": "BigGo uses cookies that helps us operate our services, analyze engagement and usage, and provide a relevant and personalized shopping experience.",
+		"description": ""
+	},
+	"privacy_user_interactions": {
+		"message": "User and Technical interactions",
+		"description": ""
+	},
+	"privacy_user_interactions_desc": {
+		"message": "Anonymized data like IP addresses, date/time of use, and browser information helps ensure the BigGo Shopping Assistant functions accurately.",
+		"description": ""
+	},
+	"privacy_user_personal_data": {
+		"message": "Personal data",
+		"description": ""
+	},
+	"privacy_user_personal_data_desc": {
+		"message": "Personally identifiable information you optionally provide to us when you register for or use any BigGo services. This information may include your email address, username and password, bank information, phone number, whether you have a BigGo account, or other information that identifies you.",
+		"description": ""
+	},
+	"agree": {
+		"message": "Agree",
+		"description": ""
+	},
+	"privacy_learn_about_more": {
+		"message": "To learn more about the data the extension collects and why, please read $word$",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": ""
+			}
+		}
+	},
+	"share_coupon_submit": {
+		"message": "Submit a coupon",
+		"description": ""
+	},
+	"share_coupon_title": {
+		"message": "Help make BigGo better by adding a coupon, and also make other users save more.",
+		"description": ""
+	},
+	"share_coupon_desc": {
+		"message": "Description",
+		"description": ""
+	},
+	"share_coupon_cancel": {
+		"message": "Cancel",
+		"description": ""
+	},
+	"share_coupon_send": {
+		"message": "Send",
+		"description": ""
+	},
+	"share_coupon_tks": {
+		"message": "Thank you!",
+		"description": ""
+	},
+	"share_coupon_code": {
+		"message": "We'll share your code with BigGo once our system reviews it.",
+		"description": ""
+	},
+	"share_coupon_done": {
+		"message": "Done",
+		"description": ""
+	},
+	"share_coupon_submit_other": {
+		"message": "Submit another coupon",
+		"description": ""
+	},
+	"privacy_learn_about_link": {
+		"message": "BigGo Privacy Policy",
+		"description": ""
+	},
+	"privacy_access_permission": {
+		"message": "Access permission lets us personalize your experience",
+		"description": ""
+	},
+	"privacy_access_permission_desc": {
+		"message": "It is always been our mission to find you the best deals. We only collect data when you search or you are on the sites with shopping cart. That way, we can find you relevant coupons, rewards and continue to make shopping better for our users. The extension won’t work correctly without access to Cookies, and you will need to manually visit the BigGo website before starting each shopping trip.",
+		"description": ""
+	},
+	"enable": {
+		"message": "Enable",
+		"description": ""
+	},
+	"uninstall": {
+		"message": "Uninstall",
+		"description": ""
+	},
+	"shopping_assistant": {
+		"message": "Shopping Assistant",
+		"description": ""
+	},
+	"discount_code": {
+		"message": "Code",
+		"description": ""
+	},
+	"permission_desc": {
+		"message": "To function properly, BigGo Shopping Assistant must have your permission to access and modify your data on extension.biggo.com sites. Allow and activate BigGo Shopping Assistant now! ",
+		"description": ""
+	},
+	"permission_btn": {
+		"message": "I got it",
+		"description": ""
+	},
+	"header_name": {
+		"message": "Shopping Assistant",
+		"description": ""
+	},
+	"review_do_you_like": {
+		"message": "Do you like BigGo's service?",
+		"description": ""
+	},
+	"review_feedback": {
+		"message": "Please give us your feeback.",
+		"description": ""
+	},
+	"review_skip": {
+		"message": "Skip",
+		"description": ""
+	},
+	"review_rate": {
+		"message": "Rate us",
+		"description": ""
+	},
+	"adblock_tip": {
+		"message": "Please remember to disable adblock plugins (e.g. ublock)",
+		"description": ""
+	},
+	"close_block_setting": {
+		"message": "Close the reminder",
+		"description": ""
+	},
+	"login_hint": {
+		"message": "Successfully log in to BigGo Shopping Assistant",
+		"description": ""
+	},
+	"price_history_add_to_fav": {
+		"message": "Add to Fav",
+		"description": ""
+	},
+	"price_history_favorited": {
+		"message": "Favorited",
+		"description": ""
+	},
+	"price_history_fav": {
+		"message": "Fav",
+		"description": ""
+	},
+	"price_history_sub_tip": {
+		"message": "Added to Fav",
+		"description": ""
+	},
+	"image_search_btn_title": {
+		"message": "Search by image with BigGo",
+		"description": ""
+	},
+	"image_search_btn_label": {
+		"message": "Comp",
+		"description": ""
+	}
+}

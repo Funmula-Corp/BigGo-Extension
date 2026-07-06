@@ -1,0 +1,380 @@
+{
+	"exname": {
+		"message": "Pembantu Beli Belah BigGo",
+		"description": "manifest name"
+	},
+	"exdescription": {
+		"message": "Perbandingan harga, sejarah harga dan promosi kedai. Membeli-belah pintar dengan Pembantu Beli Belah BigGo.",
+		"description": "manifest description"
+	},
+	"Copy": {
+		"message": "Copy",
+		"description": "Copy"
+	},
+	"discount_code_full": {
+		"message": "Discount code",
+		"description": "Discount code"
+	},
+	"Copied": {
+		"message": "Copied",
+		"description": "Copied"
+	},
+	"coupon": {
+		"message": "Promotions",
+		"description": "Promotions"
+	},
+	"PRICE_HISTORY": {
+		"message": "price history",
+		"description": "price history"
+	},
+	"COPIED_CHECKOUT": {
+		"message": "Copied. Please use it at checkout page",
+		"description": "Copied. Please use it at checkout page"
+	},
+	"SEARCH_WITH_BIGGO": {
+		"message": "Search $word$ with Biggo",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"@SEARCH_WITH_BIGGO": {
+		"message": "Search with Biggo",
+		"description": ""
+	},
+	"@IMAGE_SEARCH_WITH_BIGGO": {
+		"message": "Gunakan carian imej BigGo",
+		"description": ""
+	},
+	"max_price": {
+		"message": "Max",
+		"description": ""
+	},
+	"min_price": {
+		"message": "Min",
+		"description": ""
+	},
+	"price_up": {
+		"message": "Harga Naik",
+		"description": ""
+	},
+	"price_down": {
+		"message": "Harga Turun",
+		"description": ""
+	},
+	"price_hold": {
+		"message": "stabil",
+		"description": ""
+	},
+	"already_active_cashback": {
+		"message": "Anda sudah mengaktifkan pulangan tunai $word$",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"sign_active_cashback": {
+		"message": "Log masuk dan aktifkan pulangan tunai $word$",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"active_cashback": {
+		"message": "Aktifkan pulangan tunai $word$",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"cashback_detail": {
+		"message": "Perincian",
+		"description": ""
+	},
+	"close": {
+		"message": "Tutup",
+		"description": ""
+	},
+	"cashback_infomation": {
+		"message": "Penyambungan Maklumat Pulangan Tunai",
+		"description": ""
+	},
+	"idle_restart": {
+		"message": "Anda telah menyelesaikan pembayaran! Aktifkan semula Pembantu Beli-belah BigGo setelah setiap pembelian dibuat.",
+		"description": ""
+	},
+	"idle_may_not_track": {
+		"message": "Pulangan tunai BigGo mungkin tidak dijejaki!",
+		"description": ""
+	},
+	"idle_cashback_reason": {
+		"message": "Sekiranya Pulangan Tunai anda tidak dijejaki, mungkin hilang kerana alasan berikut tetapi tidak terhad kepada: tutup penyemak imbas, buka tab yang tidak dihubungkan dari BigGo, klik pada sepanduk iklan atau pautan, pautan ke laman web membeli-belah atau perbandingan lain , pasang peluasan membeli-belah yang lain, atau masa tamat aktiviti tidak melebihi 30 minit.",
+		"description": ""
+	},
+	"close_price_history_desc": {
+		"message": "Anda belum masuk Pembantu Beli-belah BigGo!",
+		"description": ""
+	},
+	"close_price_history_tip": {
+		"message": "Adakah anda pasti mematikan tetingkap petuah sejarah harga?",
+		"description": ""
+	},
+	"confirm": {
+		"message": "Mengesahkan",
+		"description": ""
+	},
+	"cancel": {
+		"message": "Batal",
+		"description": ""
+	},
+	"coupon_popup_promotion": {
+		"message": "Promosi!",
+		"description": ""
+	},
+	"coupon_popup_turnoff": {
+		"message": "Matikan fungsi peringatan kupon (Pengaturan dapat dihidupkan / dimatikan)",
+		"description": ""
+	},
+	"coupon_popup_autoclose": {
+		"message": "Tutup pop timbul secara automatik selepas $word$ saat.",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"coupon_popup_alert_desc": {
+		"message": "Adakah anda pasti mematikan pop timbul peringatan kupon?",
+		"description": ""
+	},
+	"no_mlt_result": {
+		"message": "Tiada keputusan",
+		"description": ""
+	},
+	"mlt_x_product_total": {
+		"message": "$word$ produk serupa secara keseluruhan",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"x_items": {
+		"message": "$word$ barang",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"x_products": {
+		"message": "Jumlah produk $word$",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"searhc_product": {
+		"message": "Pergi ke carian Produk",
+		"description": ""
+	},
+	"privacy_policy": {
+		"message": "Privacy Policy",
+		"description": ""
+	},
+	"privacy_title": {
+		"message": "Manfaatkan Pembantu Beli-belah BigGo sepenuhnya",
+		"description": ""
+	},
+	"privacy_sub_title": {
+		"message": "Untuk mula menggunakan BigGo Shopping Assistant, kami memerlukan kebenaran anda untuk mengakses maklumat berikut.",
+		"description": ""
+	},
+	"required": {
+		"message": "diperlukan",
+		"description": ""
+	},
+	"cookies": {
+		"message": "Kuki",
+		"description": ""
+	},
+	"privacy_cookie_desc": {
+		"message": "BigGo menggunakan kuki yang membantu kami mengendalikan perkhidmatan kami, menganalisis penglibatan dan penggunaan serta menyediakan pengalaman membeli-belah yang relevan dan diperibadikan.",
+		"description": ""
+	},
+	"privacy_user_interactions": {
+		"message": "Interaksi pengguna dan Teknikal",
+		"description": ""
+	},
+	"privacy_user_interactions_desc": {
+		"message": "Data awanama seperti alamat IP, tarikh/masa penggunaan dan maklumat penyemak imbas membantu memastikan Pembantu Beli-belah BigGo berfungsi dengan tepat.",
+		"description": ""
+	},
+	"privacy_user_personal_data": {
+		"message": "Data peribadi",
+		"description": ""
+	},
+	"privacy_user_personal_data_desc": {
+		"message": "Maklumat pengenalan peribadi yang anda berikan secara pilihan kepada kami apabila anda mendaftar untuk atau menggunakan mana-mana perkhidmatan BigGo. Maklumat ini mungkin termasuk alamat e-mel anda, nama pengguna dan kata laluan, maklumat bank, nombor telefon, sama ada anda mempunyai akaun BigGo atau maklumat lain yang mengenal pasti anda.",
+		"description": ""
+	},
+	"agree": {
+		"message": "Setuju",
+		"description": ""
+	},
+	"privacy_learn_about_more": {
+		"message": "Untuk mengetahui lebih lanjut tentang data yang dikumpul oleh sambungan dan sebabnya, sila baca $word$.",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": ""
+			}
+		}
+	},
+	"share_coupon_submit": {
+		"message": "Hantar kupon",
+		"description": ""
+	},
+	"share_coupon_title": {
+		"message": "Bantu menjadikan BigGo lebih baik dengan menambahkan kupon, dan juga menjadikan pengguna lain lebih berjimat.",
+		"description": ""
+	},
+	"share_coupon_desc": {
+		"message": "Penerangan",
+		"description": ""
+	},
+	"share_coupon_cancel": {
+		"message": "Batal",
+		"description": ""
+	},
+	"share_coupon_send": {
+		"message": "Kirim",
+		"description": ""
+	},
+	"share_coupon_tks": {
+		"message": "Terima kasih",
+		"description": ""
+	},
+	"share_coupon_code": {
+		"message": "Kami akan berkongsi kod anda dengan BigGo sebaik sahaja sistem kami menyemaknya.",
+		"description": ""
+	},
+	"share_coupon_done": {
+		"message": "Selesai",
+		"description": ""
+	},
+	"share_coupon_submit_other": {
+		"message": "Hantar kupon lain",
+		"description": ""
+	},
+	"privacy_learn_about_link": {
+		"message": "Dasar Privasi BigGo",
+		"description": ""
+	},
+	"privacy_access_permission": {
+		"message": "Kebenaran akses membolehkan kami memperibadikan pengalaman anda",
+		"description": ""
+	},
+	"privacy_access_permission_desc": {
+		"message": "Ia sentiasa menjadi misi kami untuk mencari anda tawaran terbaik. Kami hanya mengumpul data apabila anda mencari atau anda berada di tapak dengan troli beli-belah. Dengan cara itu, kami boleh menemui anda kupon yang berkaitan, ganjaran dan terus menjadikan beli-belah lebih baik untuk pengguna kami. Sambungan tidak akan berfungsi dengan betul tanpa akses kepada Kuki, dan anda perlu melawati tapak web BigGo secara manual sebelum memulakan setiap perjalanan membeli-belah.",
+		"description": ""
+	},
+	"enable": {
+		"message": "Aktifkan",
+		"description": ""
+	},
+	"uninstall": {
+		"message": "Nyahpasang",
+		"description": ""
+	},
+	"shopping_assistant": {
+		"message": "Asisten Belanja",
+		"description": ""
+	},
+	"discount_code": {
+		"message": "Kod diskaun",
+		"description": ""
+	},
+	"permission_desc": {
+		"message": "Untuk berfungsi dengan baik, Pembantu Beli Belah BigGo mesti mempunyai kebenaran anda untuk mengakses dan mengubah suai data anda di tapak extension.biggo.com. Benarkan dan aktifkan Pembantu Beli Belah BigGo sekarang!",
+		"description": ""
+	},
+	"permission_btn": {
+		"message": "Saya faham",
+		"description": ""
+	},
+	"header_name": {
+		"message": "sisten Belanja",
+		"description": ""
+	},
+	"review_do_you_like": {
+		"message": "Adakah Anda nikmati perkhidmatan BigGo?",
+		"description": ""
+	},
+	"review_feedback": {
+		"message": "Sila berikan maklum balas Anda kepada kami",
+		"description": ""
+	},
+	"review_skip": {
+		"message": "Melangkau",
+		"description": ""
+	},
+	"review_rate": {
+		"message": "Nilai kami",
+		"description": ""
+	},
+	"close_block_setting": {
+		"message": "Tutup",
+		"description": ""
+	},
+	"login_hint": {
+		"message": "Berjaya log masuk ke Pembantu Beli-belah BigGo",
+		"description": ""
+	},
+	"price_history_add_to_fav": {
+		"message": "Tambah pada Favorit",
+		"description": ""
+	},
+	"price_history_favorited": {
+		"message": "Kegemaran",
+		"description": ""
+	},
+	"price_history_fav": {
+		"message": "Fav",
+		"description": ""
+	},
+	"price_history_sub_tip": {
+		"message": "Telah ditambah pada Fav",
+		"description": ""
+	},
+	"image_search_btn_title": {
+		"message": "Cari menggunakan imej dengan BigGo",
+		"description": ""
+	},
+	"image_search_btn_label": {
+		"message": "Comp",
+		"description": ""
+	}
+}

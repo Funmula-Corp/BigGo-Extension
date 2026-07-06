@@ -1,0 +1,15 @@
+<div id='coupon-pop' style='position: fixed; top: 0; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.4); z-index: 100000000000; align-items: center; justify-content: center; display: flex;'>
+  <div id='coupon-pop-con' style='width: 620px; border-radius: 10px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); background-color: #ffffff; padding: 70px 72px 40px 72px; position: relative;'>
+    <div id='coupon-pop-title' style='color: #24343f; font-weight: bold; font-size: 18px; margin-bottom: 6px; text-align: center;'>%title%</div>
+    <div id='coupon-pop-subtitle' style='color: #616c74; font-size: 14px; margin-bottom: 23px; text-align: center;'>%content%</div>
+    <div id='pop-code-area' style='min-height: 60px; border-radius: 8px; border: dashed 2px #f5396b; background-color: #ffffff; padding: 12px; margin-bottom: 12px; cursor: pointer; display: flex;' onclick='clickCode()'>
+      <div id='pop-copy' style='color: #f5396b; font-size: 14px; margin-right: 12px; white-space: nowrap; align-items: center; justify-content: center; flex-direction: column; display: flex;'>
+        <span>%copy%</span>
+        <span>%discount_code%</span>
+      </div>
+      <div id='coupon-pop-code' style='min-height: 36px; background-color: #edf0f4; width: 100%; font-size: 20px; color: #24343f; font-weight: bold; padding: 6px 12px; word-break: break-all; align-items: center; justify-content: center; display: flex;'>%code%</div>
+    </div>
+    <div style='color: #1aa1a9; font-size: 18px; margin-bottom: 32px; text-align: center;'>%copied%</div>
+    <img src='https://biggo.com.tw/images/btn_close@2x.png' alt='close' style='position: absolute; top: 13px; right: 13px; height: 36px; cursor: pointer; z-index: 1; vertical-align: middle; border-style: none;' onclick="document.getElementById('cp_popup').remove(); document.getElementById('cp_script').remove()">
+  </div>
+</div>

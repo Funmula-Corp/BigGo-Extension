@@ -1,0 +1,372 @@
+{
+	"exname": {
+		"message": "BigGo शॉपिंग असिस्टेंट",
+		"description": "manifest name"
+	},
+	"exdescription": {
+		"message": "स्मार्ट  शॉपिंग BigGo के साथ",
+		"description": "manifest description"
+	},
+	"Copy": {
+		"message": "कापी",
+		"description": "Copy"
+	},
+	"discount_code_full": {
+		"message": "डिस्काउंट कोड",
+		"description": "Discount code"
+	},
+	"Copied": {
+		"message": "कॉपी किया गया",
+		"description": "Copied"
+	},
+	"coupon": {
+		"message": "प्रमोशन",
+		"description": "Promotions"
+	},
+	"PRICE_HISTORY": {
+		"message": "मूल्य इतिहास",
+		"description": "price history"
+	},
+	"COPIED_CHECKOUT": {
+		"message": "कॉपी किया गया। कृपया इसे चेकआउट पेज पर उपयोग करें",
+		"description": "Copied. Please use it at checkout page"
+	},
+	"SEARCH_WITH_BIGGO": {
+		"message": "सर्च「$word$」बिगगो के साथ",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"@SEARCH_WITH_BIGGO": {
+		"message": "Biggo के साथ सर्च करें",
+		"description": ""
+	},
+	"@IMAGE_SEARCH_WITH_BIGGO": {
+		"message": "BigGo इमेज सर्च  का उपयोग करें",
+		"description": ""
+	},
+	"price_up": {
+		"message": "भाव ऊपर",
+		"description": ""
+	},
+	"price_down": {
+		"message": "भाव उतरना",
+		"description": ""
+	},
+	"price_hold": {
+		"message": "स्थिर",
+		"description": ""
+	},
+	"already_active_cashback": {
+		"message": "आपने पहले ही $word$ कैशबैक सक्रिय कर दिया है",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"sign_active_cashback": {
+		"message": "साइन इन करें और $word$ कैशबैक सक्रिय करें",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"active_cashback": {
+		"message": "$word$ कैशबैक सक्रिय करें",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"cashback_detail": {
+		"message": "विस्तार",
+		"description": ""
+	},
+	"close": {
+		"message": "बंद करें",
+		"description": ""
+	},
+	"cashback_infomation": {
+		"message": "कैशबैक की जानकारी",
+		"description": ""
+	},
+	"idle_restart": {
+		"message": "आपने चेकआउट पूरा कर लिया है! कृपया हर खरीदारी के बाद BigGo शॉपिंग असिस्टेंट को फिर से सक्रिय करें।",
+		"description": ""
+	},
+	"idle_may_not_track": {
+		"message": "BigGo कैशबैक को ट्रैक नहीं किया जा सकता है!",
+		"description": ""
+	},
+	"idle_cashback_reason": {
+		"message": "यदि आपका कैशबैक ट्रैक नहीं किया गया है, तो यह निम्नलिखित कारणों से गायब हो सकता है लेकिन इन तक सीमित नहीं है: ब्राउज़र बंद करें, एक टैब खोलें जो BigGo से लिंक नहीं है, एक विज्ञापन बैनर या लिंक पर क्लिक करें, अन्य खरीदारी या तुलना वेबसाइटों से लिंक करें। , अन्य शॉपिंग एक्सटेंशन इंस्टॉल करें, या सत्र निष्क्रियता समयबाह्य 30 मिनट से अधिक है।",
+		"description": ""
+	},
+	"close_price_history_desc": {
+		"message": "आपने अभी तक BigGo शॉपिंग असिस्टेंट  में साइन इन नहीं किया है!",
+		"description": ""
+	},
+	"close_price_history_tip": {
+		"message": "क्या आप निश्चित रूप से मूल्य इतिहास पॉपअप बंद करना चाहते हैं?",
+		"description": ""
+	},
+	"confirm": {
+		"message": "पुष्टि",
+		"description": ""
+	},
+	"cancel": {
+		"message": "रद्द करें",
+		"description": ""
+	},
+	"coupon_popup_promotion": {
+		"message": "प्रोमोशंस!",
+		"description": ""
+	},
+	"coupon_popup_turnoff": {
+		"message": "कूपन रिमाइंडर फ़ंक्शन बंद करें (सेटिंग को चालू / बंद किया जा सकता है)",
+		"description": ""
+	},
+	"coupon_popup_autoclose": {
+		"message": "$word$ सेकंड के बाद स्वतः  पॉपअप बंद।",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"coupon_popup_alert_desc": {
+		"message": "क्या आप वाकई कूपन रिमाइंडर पॉपअप बंद करना चाहते हैं",
+		"description": ""
+	},
+	"no_mlt_result": {
+		"message": "कोई परिणाम नही",
+		"description": ""
+	},
+	"mlt_x_product_total": {
+		"message": "कुल मिलाकर $word$ समान प्रोडक्ट्स",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"x_items": {
+		"message": "$word$ परिणाम",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"x_products": {
+		"message": "$word$ प्रोडक्ट्स",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"searhc_product": {
+		"message": "सर्च  प्रोडक्ट",
+		"description": ""
+	},
+	"privacy_policy": {
+		"message": "Privacy Policy",
+		"description": ""
+	},
+	"privacy_title": {
+		"message": "BigGo शॉपिंग असिस्टेंट का अधिकतम लाभ उठाएं",
+		"description": ""
+	},
+	"privacy_sub_title": {
+		"message": "BigGo शॉपिंग असिस्टेंट का उपयोग शुरू करने के लिए, हमें निम्नलिखित जानकारी तक पहुंचने के लिए आपकी अनुमति की आवश्यकता है।",
+		"description": ""
+	},
+	"required": {
+		"message": "आवश्यक",
+		"description": ""
+	},
+	"cookies": {
+		"message": "कुकी",
+		"description": ""
+	},
+	"privacy_cookie_desc": {
+		"message": "BigGo कुकी का उपयोग करता है जो हमें अपनी सेवाओं को संचालित करने, कार्य और उपयोग का विश्लेषण करने और एक प्रासंगिक और व्यक्तिगत खरीदारी अनुभव प्रदान करने में मदद करता है।",
+		"description": ""
+	},
+	"privacy_user_interactions": {
+		"message": "उपयोगकर्ता और तकनीकी इंटरैक्शन",
+		"description": ""
+	},
+	"privacy_user_interactions_desc": {
+		"message": "अज्ञात डेटा जैसे आईपी एड्रेस, उपयोग की तिथि/समय और ब्राउज़र जानकारी BigGo शॉपिंग सहायक के कार्यों को सटीक रूप से सुनिश्चित करने में मदद करती है।",
+		"description": ""
+	},
+	"privacy_user_personal_data": {
+		"message": "व्यक्तिगत डेटा",
+		"description": ""
+	},
+	"privacy_user_personal_data_desc": {
+		"message": "व्यक्तिगत रूप से पहचान योग्य जानकारी जो आप वैकल्पिक रूप से हमें तब प्रदान करते हैं जब आप किसी BigGo सेवाओं के लिए पंजीकरण करते हैं या उनका उपयोग करते हैं। इस जानकारी में आपका ईमेल पता, उपयोगकर्ता का  नाम और पासवर्ड, बैंक जानकारी, फ़ोन नंबर, चाहे आपका BigGo खाता हो या आपकी पहचान करने वाली अन्य जानकारी शामिल हो सकती है।",
+		"description": ""
+	},
+	"agree": {
+		"message": "सहमत",
+		"description": ""
+	},
+	"privacy_learn_about_more": {
+		"message": "एक्सटेंशन द्वारा एकत्र किए जाने वाले डेटा और क्यों के बारे में अधिक जानने के लिए, कृपया पढ़ें $word$.",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": ""
+			}
+		}
+	},
+	"share_coupon_submit": {
+		"message": "एक कूपन जमा करें",
+		"description": ""
+	},
+	"share_coupon_title": {
+		"message": "कूपन जोड़कर BigGo को बेहतर बनाने में मदद करें, और अन्य उपयोगकर्ताओं को भी अधिक बचत करने में मदद करें।",
+		"description": ""
+	},
+	"share_coupon_desc": {
+		"message": "विवरण",
+		"description": ""
+	},
+	"share_coupon_cancel": {
+		"message": "रद्द करें",
+		"description": ""
+	},
+	"share_coupon_send": {
+		"message": "भेजना",
+		"description": ""
+	},
+	"share_coupon_tks": {
+		"message": "धन्यवाद।",
+		"description": ""
+	},
+	"share_coupon_code": {
+		"message": "हमारे सिस्टम द्वारा इसकी समीक्षा करने के बाद हम आपके कोड को BigGo के साथ साझा करेंगे।",
+		"description": ""
+	},
+	"share_coupon_done": {
+		"message": "पूर्ण",
+		"description": ""
+	},
+	"share_coupon_submit_other": {
+		"message": "एक और कूपन जमा करें",
+		"description": ""
+	},
+	"privacy_learn_about_link": {
+		"message": "BigGo Privacy Policy",
+		"description": ""
+	},
+	"privacy_access_permission": {
+		"message": "एक्सेस अनुमति हमें आपके अनुभव को वैयक्तिकृत करने देती है",
+		"description": ""
+	},
+	"privacy_access_permission_desc": {
+		"message": "आपके लिए सर्वोत्तम सौदे ढूंढ निकालना यह हमेशा हमारा मिशन रहा है। हम केवल डेटा एकत्र करते हैं जब आप सर्च करते हैं या आप शॉपिंग कार्ट वाली साइटों पर होते हैं। इस तरह, हम आपको प्रासंगिक कूपन, इनाम ढूंढ सकते हैं और अपने उपयोगकर्ताओं के लिए खरीदारी को बेहतर बनाना जारी रख सकते हैं। एक्सटेंशन सही ढंग से काम नहीं करेगा बिना कुकी एक्सेस के,और आपको प्रत्येक खरीदारी यात्रा शुरू करने से पहले BigGo वेबसाइट पर मैन्युअल रूप से जाना होगा।",
+		"description": ""
+	},
+	"enable": {
+		"message": "सक्षम",
+		"description": ""
+	},
+	"uninstall": {
+		"message": "अनइंस्टॉल",
+		"description": ""
+	},
+	"shopping_assistant": {
+		"message": "शॉपिंग असिस्टेंट",
+		"description": ""
+	},
+	"discount_code": {
+		"message": "कोड",
+		"description": ""
+	},
+	"permission_desc": {
+		"message": "आपके लिए सर्वोत्तम सौदे ढूंढ निकालना यह हमेशा हमारा मिशन रहा है। हम केवल डेटा एकत्र करते हैं जब आप सर्च करते हैं या आप शॉपिंग कार्ट वाली साइटों पर होते हैं। इस तरह, हम आपको प्रासंगिक कूपन, इनाम ढूंढ सकते हैं और अपने उपयोगकर्ताओं के लिए खरीदारी को बेहतर बनाना जारी रख सकते हैं। एक्सटेंशन सही ढंग से काम नहीं करेगा बिना कुकी एक्सेस के,और आपको प्रत्येक खरीदारी यात्रा शुरू करने से पहले BigGo वेबसाइट पर मैन्युअल रूप से जाना होगा।",
+		"description": ""
+	},
+	"permission_btn": {
+		"message": "सक्षम",
+		"description": ""
+	},
+	"header_name": {
+		"message": "शॉपिंग असिस्टेंट",
+		"description": ""
+	},
+	"review_do_you_like": {
+		"message": "क्या आपको BigGo की सेवा पसंद है?",
+		"description": ""
+	},
+	"review_feedback": {
+		"message": "कृपया हमें अपने फीडबैक दें।",
+		"description": ""
+	},
+	"review_skip": {
+		"message": "स्किप",
+		"description": ""
+	},
+	"review_rate": {
+		"message": "हमें रेटिंग दें",
+		"description": ""
+	},
+	"close_block_setting": {
+		"message": "बंद करें",
+		"description": ""
+	},
+	"login_hint": {
+		"message": "BigGo शॉपिंग असिस्टेंट में सफलतापूर्वक लॉग इन",
+		"description": ""
+	},
+	"price_history_add_to_fav": {
+		"message": "पसंदीदा में जोड़ें",
+		"description": ""
+	},
+	"price_history_favorited": {
+		"message": "पसंदीदा",
+		"description": ""
+	},
+	"price_history_fav": {
+		"message": "पसंदीदा",
+		"description": ""
+	},
+	"price_history_sub_tip": {
+		"message": "पसंदीदा में जोड़ा गया",
+		"description": ""
+	},
+	"image_search_btn_title": {
+		"message": "BigGo के साथ छवि द्वारा खोजें",
+		"description": ""
+	},
+	"image_search_btn_label": {
+		"message": "तुलना",
+		"description": ""
+	}
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="noindex , nofollow">
+  <link rel="stylesheet" href="./style/layout.css">
+  <link rel="stylesheet" href="./style/shared.css">
+  <link rel="stylesheet" href="./style/coupon.css">
+  <link rel="stylesheet" href="./style/couponIframe.css">
+  <script type="module" src="./script/couponIframe.rollup.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="head">
+      <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 16px;">
+        <img src="../../icons/biggo_ic_48.png" height="24">
+        <div class="d-flex align-items-center">
+          <div id="setting-wrap" style="position: relative;">
+            <img src="https://extension.biggo.com/images/extension/ic-setting@2x.png" height="36" style="cursor: pointer">
+
+            <div class="popup">
+              <div data-option="10s" class="option">
+                <span>Auto close popup after 10 seconds.</span>
+                <img src="./images/menu-ic-select@2x.png" class="current" height="16">
+              </div>
+              <div data-option="20s" class="option">
+                <span>Auto close popup after 20 seconds.</span>
+                <img src="./images/menu-ic-select@2x.png" class="current" height="16">
+              </div>
+              <div data-option="close" class="option">
+                <span>__MSG_coupon_popup_turnoff__</span>
+                <img src="./images/menu-ic-select@2x.png" class="current" height="16">
+              </div>
+            </div>
+          </div>
+          <img data-close src="./images/btn_close_gray@2x.png" height="36" style="cursor: pointer">
+        </div>
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <img src="./images/img-cp-no-logo-default@2x.png" data-store-img height="38" style="margin-right: 9px;">
+        <div style="font-weight: bold; font-size:18px;">
+          __MSG_coupon_popup_promotion__
+        </div>
+      </div>
+    </div>
+
+    <div class="body" id='content'></div>
+
+    <div class="d-flex justify-content-center align-items-center" style="min-height: 78px;">
+      <div data-close style="border-radius: 12px; box-shadow: 0 4px 7px 0 rgba(36, 52, 63, 0.13); background-color: #ffffff; padding: 9px 15px; cursor: pointer; min-width: 130px; color: #67737c; font-size: 16px; text-align: center;">
+        __MSG_close__
+      </div>
+    </div>
+  </div>
+</body>
+</html>

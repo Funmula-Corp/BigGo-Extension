@@ -1,0 +1,372 @@
+{
+	"exname": {
+		"message": "BigGo価格比較ヘルパー",
+		"description": "manifest name"
+	},
+	"exdescription": {
+		"message": "自動的に価格比較．価格履歴．店舗特典．クーポン取得でお得に買い物しましょう！",
+		"description": "manifest description"
+	},
+	"Copy": {
+		"message": "コピー",
+		"description": "Copy"
+	},
+	"discount_code_full": {
+		"message": "クーポンコード",
+		"description": "Discount code"
+	},
+	"Copied": {
+		"message": "コピーが完了しました",
+		"description": "Copied"
+	},
+	"coupon": {
+		"message": "プロモーション",
+		"description": "Promotions"
+	},
+	"PRICE_HISTORY": {
+		"message": "価格履歴",
+		"description": "price history"
+	},
+	"COPIED_CHECKOUT": {
+		"message": "コピーが完了しました。決済ページでペーストしてご利用ください。",
+		"description": "Copied. Please use it at checkout page"
+	},
+	"SEARCH_WITH_BIGGO": {
+		"message": "BigGoで「$word$」を検索する",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"@SEARCH_WITH_BIGGO": {
+		"message": "BigGoで検索する",
+		"description": ""
+	},
+	"@IMAGE_SEARCH_WITH_BIGGO": {
+		"message": "BigGoで画像検索する",
+		"description": ""
+	},
+	"price_up": {
+		"message": "値上げ",
+		"description": ""
+	},
+	"price_down": {
+		"message": "値下げ",
+		"description": ""
+	},
+	"price_hold": {
+		"message": "変わらない",
+		"description": ""
+	},
+	"already_active_cashback": {
+		"message": "最大 $word$ キャッシュバックが有効になっている",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"sign_active_cashback": {
+		"message": "ログインしてから、最大 $word$ キャッシュバックが有効にする",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"active_cashback": {
+		"message": "最大 $word$ キャッシュバックが有効にする",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"cashback_detail": {
+		"message": "詳細",
+		"description": ""
+	},
+	"close": {
+		"message": "閉じる",
+		"description": ""
+	},
+	"cashback_infomation": {
+		"message": "キャッシュバック詳細",
+		"description": ""
+	},
+	"idle_restart": {
+		"message": "会計完了！キャッシュバックが有効にするため、再度購入する場合、BigGo ヘルパーを再起動してください！",
+		"description": ""
+	},
+	"idle_may_not_track": {
+		"message": "BigGoキャッシュバックが無効になる可能性あり！",
+		"description": ""
+	},
+	"idle_cashback_reason": {
+		"message": "ブラウザが閉じられた、非BigGoからリンクしたタブを開いた、広告をクリックした、他の価格比較サイトに選択した、他の拡張機能をインストールした、またはタブを30分以上開いたままにしておいたことはキャッシュバックを追跡できない原因になる可能性が高いです。",
+		"description": ""
+	},
+	"close_price_history_desc": {
+		"message": "いまBigGo ヘルパーにログインしていません！この機能を再起動する場合は、アカウントメニューの機能設定へ再起動設定に進んでください。",
+		"description": ""
+	},
+	"close_price_history_tip": {
+		"message": "価格推移履歴のポップアップ通知をオフしますか？",
+		"description": ""
+	},
+	"confirm": {
+		"message": "確認",
+		"description": ""
+	},
+	"cancel": {
+		"message": "取り消し",
+		"description": ""
+	},
+	"coupon_popup_promotion": {
+		"message": "イベント",
+		"description": ""
+	},
+	"coupon_popup_turnoff": {
+		"message": "クーポンコード画面を閉じる（設定できます）",
+		"description": ""
+	},
+	"coupon_popup_autoclose": {
+		"message": "$word$ 秒後自動的に閉じる",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"coupon_popup_alert_desc": {
+		"message": "クーポンコード画面を閉じますか？",
+		"description": ""
+	},
+	"no_mlt_result": {
+		"message": "検索結果はありません",
+		"description": ""
+	},
+	"mlt_x_product_total": {
+		"message": "類似商品 $word$件",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"x_items": {
+		"message": "$word$件",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"x_products": {
+		"message": "合計$word$の商品",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"searhc_product": {
+		"message": "商品検索に飛ぶ",
+		"description": ""
+	},
+	"privacy_policy": {
+		"message": "Privacy Policy",
+		"description": ""
+	},
+	"privacy_title": {
+		"message": "Get the most out of BigGo Shopping Assistant",
+		"description": ""
+	},
+	"privacy_sub_title": {
+		"message": "To begin using BigGo Shopping Assistant, we need your permission to access the following information.",
+		"description": ""
+	},
+	"required": {
+		"message": "required",
+		"description": ""
+	},
+	"cookies": {
+		"message": "Cookies",
+		"description": ""
+	},
+	"privacy_cookie_desc": {
+		"message": "BigGo uses cookies that helps us operate our services, analyze engagement and usage, and provide a relevant and personalized shopping experience.",
+		"description": ""
+	},
+	"privacy_user_interactions": {
+		"message": "User and Technical interactions",
+		"description": ""
+	},
+	"privacy_user_interactions_desc": {
+		"message": "Anonymized data like IP addresses, date/time of use, and browser information helps ensure the BigGo Shopping Assistant functions accurately.",
+		"description": ""
+	},
+	"privacy_user_personal_data": {
+		"message": "Personal data",
+		"description": ""
+	},
+	"privacy_user_personal_data_desc": {
+		"message": "Personally identifiable information you optionally provide to us when you register for or use any BigGo services. This information may include your email address, username and password, bank information, phone number, whether you have a BigGo account, or other information that identifies you.",
+		"description": ""
+	},
+	"agree": {
+		"message": "Agree",
+		"description": ""
+	},
+	"privacy_learn_about_more": {
+		"message": "To learn more about the data the extension collects and why, please read $word$",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": ""
+			}
+		}
+	},
+	"share_coupon_submit": {
+		"message": "クーポンコード追加",
+		"description": ""
+	},
+	"share_coupon_title": {
+		"message": "ご提供いただきありがとうございます！クーポンコード追加により、これから使用者の皆様も節約できるクーポンが利用可能になります。",
+		"description": ""
+	},
+	"share_coupon_desc": {
+		"message": "クーポンコー詳細",
+		"description": ""
+	},
+	"share_coupon_cancel": {
+		"message": "取り消し",
+		"description": ""
+	},
+	"share_coupon_send": {
+		"message": "提出",
+		"description": ""
+	},
+	"share_coupon_tks": {
+		"message": "ご協力ありがとうございます。",
+		"description": ""
+	},
+	"share_coupon_code": {
+		"message": "審査後はこのクーポンコードをBigGoに提示します。ご助力のおかげ、感謝しております。",
+		"description": ""
+	},
+	"share_coupon_done": {
+		"message": "完成",
+		"description": ""
+	},
+	"share_coupon_submit_other": {
+		"message": "他のクーポンコード追加",
+		"description": ""
+	},
+	"privacy_learn_about_link": {
+		"message": "BigGo Privacy Policy",
+		"description": ""
+	},
+	"privacy_access_permission": {
+		"message": "Access permission lets us personalize your experience",
+		"description": ""
+	},
+	"privacy_access_permission_desc": {
+		"message": "It is always been our mission to find you the best deals. We only collect data when you search or you are on the sites with shopping cart. That way, we can find you relevant coupons, rewards and continue to make shopping better for our users. The extension won’t work correctly without access to Cookies, and you will need to manually visit the BigGo website before starting each shopping trip.",
+		"description": ""
+	},
+	"enable": {
+		"message": "Enable",
+		"description": ""
+	},
+	"uninstall": {
+		"message": "Uninstall",
+		"description": ""
+	},
+	"shopping_assistant": {
+		"message": "ヘルパー",
+		"description": ""
+	},
+	"discount_code": {
+		"message": "ディスカウントコード",
+		"description": ""
+	},
+	"permission_desc": {
+		"message": "BigGo ヘルパーが適切に動作するため、権限が必要になり、拒否される場合は機能が失われるようになります。",
+		"description": ""
+	},
+	"permission_btn": {
+		"message": "閉じる",
+		"description": ""
+	},
+	"header_name": {
+		"message": "ヘルパー",
+		"description": ""
+	},
+	"review_do_you_like": {
+		"message": "BigGo をお楽しみいただけましたか？",
+		"description": ""
+	},
+	"review_feedback": {
+		"message": "評価お願いします。",
+		"description": ""
+	},
+	"review_skip": {
+		"message": "あとで",
+		"description": ""
+	},
+	"review_rate": {
+		"message": "評価する",
+		"description": ""
+	},
+	"close_block_setting": {
+		"message": "閉じ",
+		"description": ""
+	},
+	"login_hint": {
+		"message": "BigGo 価格比較ヘルパーにログインしました",
+		"description": ""
+	},
+	"price_history_add_to_fav": {
+		"message": "お気に入りに登録",
+		"description": ""
+	},
+	"price_history_favorited": {
+		"message": "お気に入りに登録しました",
+		"description": ""
+	},
+	"price_history_fav": {
+		"message": "お気に入り",
+		"description": ""
+	},
+	"price_history_sub_tip": {
+		"message": "お気に入りに追加しました",
+		"description": ""
+	},
+	"image_search_btn_title": {
+		"message": "BigGo で画像検索",
+		"description": ""
+	},
+	"image_search_btn_label": {
+		"message": "比較",
+		"description": ""
+	}
+}

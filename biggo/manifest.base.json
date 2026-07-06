@@ -1,0 +1,39 @@
+{
+  "content_scripts": [
+    {
+      "js": [
+        "js/content.bundle.rollup.js",
+        "js/content.listener.rollup.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "run_at": "document_end"
+    },
+    {
+      "js": [
+        "js/iframe/biggo.internal.listener.rollup.js"
+      ],
+      "matches": [],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "incognito": "spanning",
+  "description": "__MSG_exdescription__",
+  "icons": {
+    "128": "icons/biggo_ic_128.png",
+    "48": "icons/biggo_ic_48.png",
+    "32": "icons/biggo_ic_32.png",
+    "16": "icons/biggo_ic_16.png"
+  },
+  "name": "__MSG_exname__",
+  "options_ui": {
+    "page": "pages/options/options.html",
+    "open_in_tab": true
+  },
+  "externally_connectable": {
+    "matches": []
+  },
+  "default_locale" : "en"
+}

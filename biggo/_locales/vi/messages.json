@@ -1,0 +1,372 @@
+{
+	"exname": {
+		"message": "Công cụ hỗ trợ mua sắm BigGo",
+		"description": "manifest name"
+	},
+	"exdescription": {
+		"message": "So sánh giá, lịch sử giá và mã khuyến mãi cửa hàng. Mua sắm thông minh với Công cụ hỗ trợ mua sắm BigGo.",
+		"description": "manifest description"
+	},
+	"Copy": {
+		"message": "Sao chép",
+		"description": "Copy"
+	},
+	"discount_code_full": {
+		"message": "Mã giảm giá",
+		"description": "Discount code"
+	},
+	"Copied": {
+		"message": "Đã sao chép",
+		"description": "Copied"
+	},
+	"coupon": {
+		"message": "Khuyến mãi!",
+		"description": "Promotions"
+	},
+	"PRICE_HISTORY": {
+		"message": "price history",
+		"description": "price history"
+	},
+	"COPIED_CHECKOUT": {
+		"message": "Đã sao chép. Vui lòng sử dụng nó trong trang thanh toán",
+		"description": "Copied. Please use it at checkout page"
+	},
+	"SEARCH_WITH_BIGGO": {
+		"message": "Search $word$ with Biggo",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"@SEARCH_WITH_BIGGO": {
+		"message": "Search with Biggo",
+		"description": ""
+	},
+	"@IMAGE_SEARCH_WITH_BIGGO": {
+		"message": "Sử dụng tìm kiếm hình ảnh BigGo",
+		"description": ""
+	},
+	"price_up": {
+		"message": "Tăng giá",
+		"description": ""
+	},
+	"price_down": {
+		"message": "Giảm giá",
+		"description": ""
+	},
+	"price_hold": {
+		"message": "Giá không đổi",
+		"description": ""
+	},
+	"already_active_cashback": {
+		"message": "Bạn đã kích hoạt hoàn tiền $word$",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"sign_active_cashback": {
+		"message": "Đăng nhập và kích hoạt hoàn tiền $word$",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"active_cashback": {
+		"message": "Kích hoạt hoàn tiền $word$",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"cashback_detail": {
+		"message": "Chi tiết",
+		"description": ""
+	},
+	"close": {
+		"message": "Đóng",
+		"description": ""
+	},
+	"cashback_infomation": {
+		"message": "Thông tin hoàn tiền",
+		"description": ""
+	},
+	"idle_restart": {
+		"message": "You've completed the checkout! Please reactivate BigGo Shopping Assistant after every purchase made.",
+		"description": ""
+	},
+	"idle_may_not_track": {
+		"message": "BigGo cashback may not be tracked!",
+		"description": ""
+	},
+	"idle_cashback_reason": {
+		"message": "If your Cashback isn't tracked, it may be missing for the following reasons but not limited to: close the browser, open a tab that is not linked from BigGo, click on an advertisement banners or link, link to other shopping or comparison websites, install other shopping extension, or the session inactivity timeout is more than 30 minutes.",
+		"description": ""
+	},
+	"close_price_history_desc": {
+		"message": "You are not sign in BigGo Shopping Assistant yet! ",
+		"description": ""
+	},
+	"close_price_history_tip": {
+		"message": "Are you sure to turn off price history popup?",
+		"description": ""
+	},
+	"confirm": {
+		"message": "Confirm",
+		"description": ""
+	},
+	"cancel": {
+		"message": "Đóng",
+		"description": ""
+	},
+	"coupon_popup_promotion": {
+		"message": "Khuyến mãi!",
+		"description": ""
+	},
+	"coupon_popup_turnoff": {
+		"message": "Tắt chức năng nhắc nhở phiếu giảm giá (Có thể bật / tắt cài đặt)",
+		"description": ""
+	},
+	"coupon_popup_autoclose": {
+		"message": "Tự động đóng cửa sổ bật lên sau $word$ giây.",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"coupon_popup_alert_desc": {
+		"message": "Bạn có chắc chắn tắt cửa sổ bật lên lời nhắc phiếu giảm giá không?",
+		"description": ""
+	},
+	"no_mlt_result": {
+		"message": "Không có kết quả",
+		"description": ""
+	},
+	"mlt_x_product_total": {
+		"message": "$word$ Sản phẩm tương tự",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"x_items": {
+		"message": "$word$ mặt hàng",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"x_products": {
+		"message": "Tổng cộng $word$ sản phẩm",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"searhc_product": {
+		"message": "Đi tới Tìm kiếm sản phẩm",
+		"description": ""
+	},
+	"privacy_policy": {
+		"message": "Privacy Policy",
+		"description": ""
+	},
+	"privacy_title": {
+		"message": "Get the most out of BigGo Shopping Assistant",
+		"description": ""
+	},
+	"privacy_sub_title": {
+		"message": "To begin using BigGo Shopping Assistant, we need your permission to access the following information.",
+		"description": ""
+	},
+	"required": {
+		"message": "required",
+		"description": ""
+	},
+	"cookies": {
+		"message": "Cookies",
+		"description": ""
+	},
+	"privacy_cookie_desc": {
+		"message": "BigGo uses cookies that helps us operate our services, analyze engagement and usage, and provide a relevant and personalized shopping experience.",
+		"description": ""
+	},
+	"privacy_user_interactions": {
+		"message": "User and Technical interactions",
+		"description": ""
+	},
+	"privacy_user_interactions_desc": {
+		"message": "Anonymized data like IP addresses, date/time of use, and browser information helps ensure the BigGo Shopping Assistant functions accurately.",
+		"description": ""
+	},
+	"privacy_user_personal_data": {
+		"message": "Personal data",
+		"description": ""
+	},
+	"privacy_user_personal_data_desc": {
+		"message": "Personally identifiable information you optionally provide to us when you register for or use any BigGo services. This information may include your email address, username and password, bank information, phone number, whether you have a BigGo account, or other information that identifies you.",
+		"description": ""
+	},
+	"agree": {
+		"message": "Agree",
+		"description": ""
+	},
+	"privacy_learn_about_more": {
+		"message": "To learn more about the data the extension collects and why, please read $word$",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": ""
+			}
+		}
+	},
+	"share_coupon_submit": {
+		"message": "Gửi phiếu giảm giá",
+		"description": ""
+	},
+	"share_coupon_title": {
+		"message": "Giúp cải thiện BigGo bằng cách thêm phiếu giảm giá và cũng làm cho những người dùng khác tiết kiệm nhiều hơn.",
+		"description": ""
+	},
+	"share_coupon_desc": {
+		"message": "Sự miêu tả",
+		"description": ""
+	},
+	"share_coupon_cancel": {
+		"message": "Hủy bỏ",
+		"description": ""
+	},
+	"share_coupon_send": {
+		"message": "Gửi",
+		"description": ""
+	},
+	"share_coupon_tks": {
+		"message": "Cảm ơn bạn!",
+		"description": ""
+	},
+	"share_coupon_code": {
+		"message": "Chúng tôi sẽ chia sẻ mã của bạn với BigGo sau khi hệ thống của chúng tôi xem xét mã đó.",
+		"description": ""
+	},
+	"share_coupon_done": {
+		"message": "Xong",
+		"description": ""
+	},
+	"share_coupon_submit_other": {
+		"message": "Gửi phiếu giảm giá khác",
+		"description": ""
+	},
+	"privacy_learn_about_link": {
+		"message": "BigGo Privacy Policy",
+		"description": ""
+	},
+	"privacy_access_permission": {
+		"message": "Access permission lets us personalize your experience",
+		"description": ""
+	},
+	"privacy_access_permission_desc": {
+		"message": "It is always been our mission to find you the best deals. We only collect data when you search or you are on the sites with shopping cart. That way, we can find you relevant coupons, rewards and continue to make shopping better for our users. The extension won’t work correctly without access to Cookies, and you will need to manually visit the BigGo website before starting each shopping trip.",
+		"description": ""
+	},
+	"enable": {
+		"message": "Enable",
+		"description": ""
+	},
+	"uninstall": {
+		"message": "Uninstall",
+		"description": ""
+	},
+	"shopping_assistant": {
+		"message": "Công cụ hỗ trợ mua sắm",
+		"description": ""
+	},
+	"discount_code": {
+		"message": "Mã giảm giá",
+		"description": ""
+	},
+	"permission_desc": {
+		"message": "Để hoạt động bình thường, Công cụ hỗ trợ mua sắm BigGo phải có sự cho phép của bạn để truy cập và sửa đổi dữ liệu của bạn trên các trang web extension.biggo.com. Cho phép Công cụ hỗ trợ mua sắm BigGo ngay bây giờ!",
+		"description": ""
+	},
+	"permission_btn": {
+		"message": "Tôi đã rõ",
+		"description": ""
+	},
+	"header_name": {
+		"message": "Công cụ hỗ trợ mua sắm",
+		"description": ""
+	},
+	"review_do_you_like": {
+		"message": "Bạn có hài lòng với dịch vụ cung cấp bởi BigGo?",
+		"description": ""
+	},
+	"review_feedback": {
+		"message": "Hãy cho chúng tôi biết ý kiến của bạn",
+		"description": ""
+	},
+	"review_skip": {
+		"message": "Bỏ qua",
+		"description": ""
+	},
+	"review_rate": {
+		"message": "Đánh giá",
+		"description": ""
+	},
+	"close_block_setting": {
+		"message": "Tắt nhắc nhở",
+		"description": ""
+	},
+	"login_hint": {
+		"message": "Đăng nhập thành công vào Trợ lý mua sắm BigGo",
+		"description": ""
+	},
+	"price_history_add_to_fav": {
+		"message": "Thêm vào Yêu thích",
+		"description": ""
+	},
+	"price_history_favorited": {
+		"message": "Được yêu thích",
+		"description": ""
+	},
+	"price_history_fav": {
+		"message": "yêu thích",
+		"description": ""
+	},
+	"price_history_sub_tip": {
+		"message": "Đã thêm vào Fav",
+		"description": ""
+	},
+	"image_search_btn_title": {
+		"message": "Tìm kiếm bằng hình ảnh với BigGo",
+		"description": ""
+	},
+	"image_search_btn_label": {
+		"message": "So giá",
+		"description": ""
+	}
+}

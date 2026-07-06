@@ -1,0 +1,376 @@
+{
+	"exname": {
+		"message": "BigGo 購物幫手",
+		"description": "manifest name"
+	},
+	"exdescription": {
+		"message": "自動比價、歷史價格與店家優惠，聰明買到最低價！",
+		"description": "manifest description"
+	},
+	"Copy": {
+		"message": "複製",
+		"description": "Copy"
+	},
+	"discount_code_full": {
+		"message": "折扣碼",
+		"description": "Discount code"
+	},
+	"Copied": {
+		"message": "已複製",
+		"description": "Copied"
+	},
+	"coupon": {
+		"message": "優惠活動",
+		"description": "Promotions"
+	},
+	"PRICE_HISTORY": {
+		"message": "歷史價格",
+		"description": "price history"
+	},
+	"COPIED_CHECKOUT": {
+		"message": "已完成複製，請於結帳時使用!",
+		"description": "Copied. Please use it at checkout page"
+	},
+	"SEARCH_WITH_BIGGO": {
+		"message": "用 BigGo 查詢 「$word$」",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"@SEARCH_WITH_BIGGO": {
+		"message": "用 BigGo 查詢",
+		"description": ""
+	},
+	"@IMAGE_SEARCH_WITH_BIGGO": {
+		"message": "用 BigGo 搜尋此圖片",
+		"description": ""
+	},
+	"price_up": {
+		"message": "漲價",
+		"description": ""
+	},
+	"price_down": {
+		"message": "降價",
+		"description": ""
+	},
+	"price_hold": {
+		"message": "價格持平",
+		"description": ""
+	},
+	"already_active_cashback": {
+		"message": "已啟動最高 $word$ 現金回饋",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"sign_active_cashback": {
+		"message": "登入啟動最高 $word$ 現金回饋",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"active_cashback": {
+		"message": "啟動最高 $word$ 現金回饋",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": " "
+			}
+		}
+	},
+	"cashback_detail": {
+		"message": "了解詳情",
+		"description": ""
+	},
+	"close": {
+		"message": "關閉",
+		"description": ""
+	},
+	"cashback_infomation": {
+		"message": "現金回饋詳情",
+		"description": ""
+	},
+	"idle_restart": {
+		"message": "您已完成結帳！要再次購買請重新啟動小幫手，才能獲得回饋。",
+		"description": ""
+	},
+	"idle_may_not_track": {
+		"message": "BigGo現金回饋追蹤可能失效！",
+		"description": ""
+	},
+	"idle_cashback_reason": {
+		"message": "您的現金回饋無法被追蹤，可能的原因是：關閉瀏覽器、開啟非從BigGo連結的分頁、點擊廣告、進入其他購物或比價網站、安裝其他購物小幫手，或是閒置時間超過30分鐘。",
+		"description": ""
+	},
+	"close_price_history_desc": {
+		"message": "您目前尚未登入 BigGo 小幫手！未來若要再次開啟此功能，請先登入之後，到個人設定中的功能設定頁，點擊重新開啟設定。",
+		"description": ""
+	},
+	"close_price_history_tip": {
+		"message": "確定要關閉歷史價格提醒？",
+		"description": ""
+	},
+	"confirm": {
+		"message": "確定",
+		"description": ""
+	},
+	"cancel": {
+		"message": "取消",
+		"description": ""
+	},
+	"coupon_popup_promotion": {
+		"message": "優惠活動！",
+		"description": ""
+	},
+	"coupon_popup_turnoff": {
+		"message": "關閉優惠碼（設定可開關）",
+		"description": ""
+	},
+	"coupon_popup_autoclose": {
+		"message": "$word$秒自動關閉",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"coupon_popup_alert_desc": {
+		"message": "確定要關閉優惠碼提醒？",
+		"description": ""
+	},
+	"no_mlt_result": {
+		"message": "無相關商品",
+		"description": ""
+	},
+	"mlt_x_product_total": {
+		"message": "共有 $word$ 筆類似商品",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"x_items": {
+		"message": "$word$筆",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"x_products": {
+		"message": "$word$ 件商品",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "10"
+			}
+		}
+	},
+	"searhc_product": {
+		"message": "前往搜尋商品",
+		"description": ""
+	},
+	"privacy_policy": {
+		"message": "Privacy Policy",
+		"description": ""
+	},
+	"privacy_title": {
+		"message": "充分發揮BigGo購物幫手的功能",
+		"description": ""
+	},
+	"privacy_sub_title": {
+		"message": "在您開始使用BigGo購物幫手前，我們需要您的許可來獲取以下資訊。",
+		"description": ""
+	},
+	"required": {
+		"message": "需勾選",
+		"description": ""
+	},
+	"cookies": {
+		"message": "Cookies",
+		"description": ""
+	},
+	"privacy_cookie_desc": {
+		"message": "我們使用Cookies讓服務順利運作，分析互動和使用情況，瞭解網站有何可改進之處並提供相關及個人化的購物體驗。",
+		"description": ""
+	},
+	"privacy_user_interactions": {
+		"message": "用戶和技術互動",
+		"description": ""
+	},
+	"privacy_user_interactions_desc": {
+		"message": "匿名的數據，如IP位置、使用日期/時間和瀏覽器資訊，有助於確保BigGo購物幫手的準確運作。",
+		"description": ""
+	},
+	"privacy_user_personal_data": {
+		"message": "個人數據",
+		"description": ""
+	},
+	"privacy_user_personal_data_desc": {
+		"message": "您在註冊或使用任何BigGo服務時可選擇性地向我們提供您個人可識別資訊。這些資訊可能包括您的電子郵件地址、用戶名和密碼、銀行資訊、電話號碼、您是否有BigGo帳戶，或其他可識別您的資訊。",
+		"description": ""
+	},
+	"agree": {
+		"message": "我同意",
+		"description": ""
+	},
+	"privacy_learn_about_more": {
+		"message": "了解更多關於擴充功能收集的數據和原因，請詳閱 $word$",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": ""
+			}
+		}
+	},
+	"share_coupon_submit": {
+		"message": "提供優惠碼",
+		"description": ""
+	},
+	"share_coupon_title": {
+		"message": "感謝您讓這個服務更加優秀，透過您提供的優惠碼，讓其他使用者在購物時省下更多。",
+		"description": ""
+	},
+	"share_coupon_desc": {
+		"message": "優惠碼詳情",
+		"description": ""
+	},
+	"share_coupon_cancel": {
+		"message": "取消",
+		"description": ""
+	},
+	"share_coupon_send": {
+		"message": "送出",
+		"description": ""
+	},
+	"share_coupon_tks": {
+		"message": "感謝您的分享",
+		"description": ""
+	},
+	"share_coupon_code": {
+		"message": "我們將審核過後分享此優惠碼在BigGo上面，感謝您的提供。",
+		"description": ""
+	},
+	"share_coupon_done": {
+		"message": "完成",
+		"description": ""
+	},
+	"share_coupon_submit_other": {
+		"message": "提供其他優惠碼",
+		"description": ""
+	},
+	"privacy_learn_about_link": {
+		"message": "BigGo 隱私權政策",
+		"description": ""
+	},
+	"privacy_access_permission": {
+		"message": "允許訪問權限，讓我們可以為您提供更豐富且個人化的使用體驗。",
+		"description": ""
+	},
+	"privacy_access_permission_desc": {
+		"message": "為你找到最優惠的商品一直是我們的使命。我們會在你搜尋或是進入有購物車功能之網站時收集數據，為你找到相關的優惠券、獎勵，並繼續為用戶提供更好的購物比價服務。如果不能訪問Cookies，該擴充功能將無法正常使用，你需要在每次開始購物時前往BigGo網站。",
+		"description": ""
+	},
+	"enable": {
+		"message": "了解",
+		"description": ""
+	},
+	"uninstall": {
+		"message": "取消安裝",
+		"description": ""
+	},
+	"shopping_assistant": {
+		"message": "購物幫手",
+		"description": ""
+	},
+	"discount_code": {
+		"message": "優惠碼",
+		"description": ""
+	},
+	"permission_desc": {
+		"message": "為了完整使用 BigGo 購物幫手的功能，請點選【允許】以同意提供擴充功能要求的權限。若不同意授權，將無法成功顯示商店優惠碼、現金回饋提示，以及商店搜尋等功能。",
+		"description": ""
+	},
+	"permission_btn": {
+		"message": "知道了",
+		"description": ""
+	},
+	"header_name": {
+		"message": "購物幫手",
+		"description": ""
+	},
+	"review_do_you_like": {
+		"message": "喜歡這個服務嗎？",
+		"description": ""
+	},
+	"review_feedback": {
+		"message": "請給我們好評",
+		"description": ""
+	},
+	"review_skip": {
+		"message": "略過",
+		"description": ""
+	},
+	"review_rate": {
+		"message": "評價BigGo",
+		"description": ""
+	},
+	"adblock_tip": {
+		"message": "請記得先關閉阻擋廣告插件(如:ublock)",
+		"description": ""
+	},
+	"close_block_setting": {
+		"message": "關閉提醒",
+		"description": ""
+	},
+	"login_hint": {
+		"message": "您已登入 BigGo 購物幫手",
+		"description": ""
+	},
+	"price_history_add_to_fav": {
+		"message": "加入收藏",
+		"description": ""
+	},
+	"price_history_favorited": {
+		"message": "已收藏",
+		"description": ""
+	},
+	"price_history_fav": {
+		"message": "收藏",
+		"description": ""
+	},
+	"price_history_sub_tip": {
+		"message": "已加入收藏！",
+		"description": ""
+	},
+	"image_search_btn_title": {
+		"message": "使用 BigGo 以圖搜圖",
+		"description": ""
+	},
+	"image_search_btn_label": {
+		"message": "比價",
+		"description": ""
+	}
+}

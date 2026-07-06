@@ -1,0 +1,1039 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		075ABA0D2788404800E23088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F027FC274B9AD100A2DEE3 /* Assets.xcassets */; };
+		07A399AF2775C48900E8EA8B /* img-safari-pravicy-tw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A399AE2775C48900E8EA8B /* img-safari-pravicy-tw@2x.png */; };
+		07A399B02775C48900E8EA8B /* img-safari-pravicy-tw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A399AE2775C48900E8EA8B /* img-safari-pravicy-tw@2x.png */; };
+		07A399B22779627E00E8EA8B /* header-ic-close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A399B12779627E00E8EA8B /* header-ic-close@2x.png */; };
+		07A399B32779627E00E8EA8B /* header-ic-close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A399B12779627E00E8EA8B /* header-ic-close@2x.png */; };
+		07A399B52779680400E8EA8B /* img-safari-pravicy-en@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A399B42779680400E8EA8B /* img-safari-pravicy-en@2x.png */; };
+		07A399B62779680400E8EA8B /* img-safari-pravicy-en@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A399B42779680400E8EA8B /* img-safari-pravicy-en@2x.png */; };
+		07F02807274B9AD100A2DEE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F02806274B9AD100A2DEE3 /* AppDelegate.swift */; };
+		07F02809274B9AD100A2DEE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F02808274B9AD100A2DEE3 /* SceneDelegate.swift */; };
+		07F0280C274B9AD100A2DEE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F0280A274B9AD100A2DEE3 /* LaunchScreen.storyboard */; };
+		07F0280F274B9AD100A2DEE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F0280D274B9AD100A2DEE3 /* Main.storyboard */; };
+		07F02818274B9AD100A2DEE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F02817274B9AD100A2DEE3 /* AppDelegate.swift */; };
+		07F0281B274B9AD100A2DEE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F02819274B9AD100A2DEE3 /* Main.storyboard */; };
+		07F02823274B9AD100A2DEE3 /* BigGo Shopping Assistant Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 07F02822274B9AD100A2DEE3 /* BigGo Shopping Assistant Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		07F0282D274B9AD200A2DEE3 /* BigGo Shopping Assistant Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 07F0282C274B9AD200A2DEE3 /* BigGo Shopping Assistant Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		07F02833274B9AD200A2DEE3 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 07F027F6274B9ACF00A2DEE3 /* Main.html */; };
+		07F02834274B9AD200A2DEE3 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 07F027F6274B9ACF00A2DEE3 /* Main.html */; };
+		07F02835274B9AD200A2DEE3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 07F027F8274B9ACF00A2DEE3 /* Icon.png */; };
+		07F02836274B9AD200A2DEE3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 07F027F8274B9ACF00A2DEE3 /* Icon.png */; };
+		07F02837274B9AD200A2DEE3 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 07F027F9274B9ACF00A2DEE3 /* Style.css */; };
+		07F02838274B9AD200A2DEE3 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 07F027F9274B9ACF00A2DEE3 /* Style.css */; };
+		07F02839274B9AD200A2DEE3 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 07F027FA274B9ACF00A2DEE3 /* Script.js */; };
+		07F0283A274B9AD200A2DEE3 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 07F027FA274B9ACF00A2DEE3 /* Script.js */; };
+		07F0283B274B9AD200A2DEE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F027FB274B9ACF00A2DEE3 /* ViewController.swift */; };
+		07F0283C274B9AD200A2DEE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F027FB274B9ACF00A2DEE3 /* ViewController.swift */; };
+		07F0283D274B9AD200A2DEE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F027FC274B9AD100A2DEE3 /* Assets.xcassets */; };
+		07F0283E274B9AD200A2DEE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F027FC274B9AD100A2DEE3 /* Assets.xcassets */; };
+		07F0283F274B9AD200A2DEE3 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F027FE274B9AD100A2DEE3 /* SafariWebExtensionHandler.swift */; };
+		07F02840274B9AD200A2DEE3 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F027FE274B9AD100A2DEE3 /* SafariWebExtensionHandler.swift */; };
+		07F0285C274B9AD200A2DEE3 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 07F02852274B9AD200A2DEE3 /* images */; };
+		07F0285D274B9AD200A2DEE3 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 07F02853274B9AD200A2DEE3 /* js */; };
+		07F0285E274B9AD200A2DEE3 /* template in Resources */ = {isa = PBXBuildFile; fileRef = 07F02854274B9AD200A2DEE3 /* template */; };
+		07F0285F274B9AD200A2DEE3 /* style in Resources */ = {isa = PBXBuildFile; fileRef = 07F02855274B9AD200A2DEE3 /* style */; };
+		07F02860274B9AD200A2DEE3 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 07F02856274B9AD200A2DEE3 /* icons */; };
+		07F02861274B9AD200A2DEE3 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		07F02862274B9AD200A2DEE3 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F02858274B9AD200A2DEE3 /* manifest.json */; };
+		07F02863274B9AD200A2DEE3 /* background.html in Resources */ = {isa = PBXBuildFile; fileRef = 07F02859274B9AD200A2DEE3 /* background.html */; };
+		07F02864274B9AD200A2DEE3 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 07F0285A274B9AD200A2DEE3 /* _locales */; };
+		07F02865274B9AD200A2DEE3 /* pages in Resources */ = {isa = PBXBuildFile; fileRef = 07F0285B274B9AD200A2DEE3 /* pages */; };
+		07F02866274B9AD200A2DEE3 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 07F02852274B9AD200A2DEE3 /* images */; };
+		07F02867274B9AD200A2DEE3 /* js in Resources */ = {isa = PBXBuildFile; fileRef = 07F02853274B9AD200A2DEE3 /* js */; };
+		07F02868274B9AD200A2DEE3 /* template in Resources */ = {isa = PBXBuildFile; fileRef = 07F02854274B9AD200A2DEE3 /* template */; };
+		07F02869274B9AD200A2DEE3 /* style in Resources */ = {isa = PBXBuildFile; fileRef = 07F02855274B9AD200A2DEE3 /* style */; };
+		07F0286A274B9AD200A2DEE3 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 07F02856274B9AD200A2DEE3 /* icons */; };
+		07F0286B274B9AD200A2DEE3 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		07F0286C274B9AD200A2DEE3 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F02858274B9AD200A2DEE3 /* manifest.json */; };
+		07F0286D274B9AD200A2DEE3 /* background.html in Resources */ = {isa = PBXBuildFile; fileRef = 07F02859274B9AD200A2DEE3 /* background.html */; };
+		07F0286E274B9AD200A2DEE3 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 07F0285A274B9AD200A2DEE3 /* _locales */; };
+		07F0286F274B9AD200A2DEE3 /* pages in Resources */ = {isa = PBXBuildFile; fileRef = 07F0285B274B9AD200A2DEE3 /* pages */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07F02824274B9AD100A2DEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07F027F0274B9ACF00A2DEE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07F02821274B9AD100A2DEE3;
+			remoteInfo = "BigGo Shopping Assistant Extension (iOS)";
+		};
+		07F0282E274B9AD200A2DEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07F027F0274B9ACF00A2DEE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07F0282B274B9AD200A2DEE3;
+			remoteInfo = "BigGo Shopping Assistant Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		07F02846274B9AD200A2DEE3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				07F02823274B9AD100A2DEE3 /* BigGo Shopping Assistant Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F0284D274B9AD200A2DEE3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				07F0282D274B9AD200A2DEE3 /* BigGo Shopping Assistant Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07A399AE2775C48900E8EA8B /* img-safari-pravicy-tw@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-safari-pravicy-tw@2x.png"; sourceTree = "<group>"; };
+		07A399B12779627E00E8EA8B /* header-ic-close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header-ic-close@2x.png"; sourceTree = "<group>"; };
+		07A399B42779680400E8EA8B /* img-safari-pravicy-en@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-safari-pravicy-en@2x.png"; sourceTree = "<group>"; };
+		07F027F7274B9ACF00A2DEE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		07F027F8274B9ACF00A2DEE3 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		07F027F9274B9ACF00A2DEE3 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		07F027FA274B9ACF00A2DEE3 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		07F027FB274B9ACF00A2DEE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07F027FC274B9AD100A2DEE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07F027FE274B9AD100A2DEE3 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		07F02803274B9AD100A2DEE3 /* BigGo Shopping Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BigGo Shopping Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F02806274B9AD100A2DEE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07F02808274B9AD100A2DEE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		07F0280B274B9AD100A2DEE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07F0280E274B9AD100A2DEE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07F02810274B9AD100A2DEE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07F02815274B9AD100A2DEE3 /* BigGo Shopping Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BigGo Shopping Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F02817274B9AD100A2DEE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07F0281A274B9AD100A2DEE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07F0281C274B9AD100A2DEE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07F0281D274B9AD100A2DEE3 /* BigGo Shopping Assistant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BigGo Shopping Assistant.entitlements"; sourceTree = "<group>"; };
+		07F02822274B9AD100A2DEE3 /* BigGo Shopping Assistant Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BigGo Shopping Assistant Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F02827274B9AD100A2DEE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07F0282C274B9AD200A2DEE3 /* BigGo Shopping Assistant Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BigGo Shopping Assistant Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F02831274B9AD200A2DEE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07F02832274B9AD200A2DEE3 /* BigGo Shopping Assistant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BigGo Shopping Assistant.entitlements"; sourceTree = "<group>"; };
+		07F02852274B9AD200A2DEE3 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = ../../../../dist/images; sourceTree = "<group>"; };
+		07F02853274B9AD200A2DEE3 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; name = js; path = ../../../../dist/js; sourceTree = "<group>"; };
+		07F02854274B9AD200A2DEE3 /* template */ = {isa = PBXFileReference; lastKnownFileType = folder; name = template; path = ../../../../dist/template; sourceTree = "<group>"; };
+		07F02855274B9AD200A2DEE3 /* style */ = {isa = PBXFileReference; lastKnownFileType = folder; name = style; path = ../../../../dist/style; sourceTree = "<group>"; };
+		07F02856274B9AD200A2DEE3 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../../../dist/icons; sourceTree = "<group>"; };
+		07F02858274B9AD200A2DEE3 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../../dist/manifest.json; sourceTree = "<group>"; };
+		07F02859274B9AD200A2DEE3 /* background.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = background.html; path = ../../../../dist/background.html; sourceTree = "<group>"; };
+		07F0285A274B9AD200A2DEE3 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = ../../../../dist/_locales; sourceTree = "<group>"; };
+		07F0285B274B9AD200A2DEE3 /* pages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pages; path = ../../../../dist/pages; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07F02800274B9AD100A2DEE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F02812274B9AD100A2DEE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F0281F274B9AD100A2DEE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F02829274B9AD200A2DEE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07F027EF274B9ACF00A2DEE3 = {
+			isa = PBXGroup;
+			children = (
+				07F027F4274B9ACF00A2DEE3 /* Shared (App) */,
+				07F027FD274B9AD100A2DEE3 /* Shared (Extension) */,
+				07F02805274B9AD100A2DEE3 /* iOS (App) */,
+				07F02816274B9AD100A2DEE3 /* macOS (App) */,
+				07F02826274B9AD100A2DEE3 /* iOS (Extension) */,
+				07F02830274B9AD200A2DEE3 /* macOS (Extension) */,
+				07F02804274B9AD100A2DEE3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07F027F4274B9ACF00A2DEE3 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				07F027FB274B9ACF00A2DEE3 /* ViewController.swift */,
+				07F027FC274B9AD100A2DEE3 /* Assets.xcassets */,
+				07F027F5274B9ACF00A2DEE3 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		07F027F5274B9ACF00A2DEE3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				07A399B42779680400E8EA8B /* img-safari-pravicy-en@2x.png */,
+				07A399B12779627E00E8EA8B /* header-ic-close@2x.png */,
+				07A399AE2775C48900E8EA8B /* img-safari-pravicy-tw@2x.png */,
+				07F027F6274B9ACF00A2DEE3 /* Main.html */,
+				07F027F8274B9ACF00A2DEE3 /* Icon.png */,
+				07F027F9274B9ACF00A2DEE3 /* Style.css */,
+				07F027FA274B9ACF00A2DEE3 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		07F027FD274B9AD100A2DEE3 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				07F02851274B9AD200A2DEE3 /* Resources */,
+				07F027FE274B9AD100A2DEE3 /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		07F02804274B9AD100A2DEE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07F02803274B9AD100A2DEE3 /* BigGo Shopping Assistant.app */,
+				07F02815274B9AD100A2DEE3 /* BigGo Shopping Assistant.app */,
+				07F02822274B9AD100A2DEE3 /* BigGo Shopping Assistant Extension.appex */,
+				07F0282C274B9AD200A2DEE3 /* BigGo Shopping Assistant Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07F02805274B9AD100A2DEE3 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				07F02806274B9AD100A2DEE3 /* AppDelegate.swift */,
+				07F02808274B9AD100A2DEE3 /* SceneDelegate.swift */,
+				07F0280A274B9AD100A2DEE3 /* LaunchScreen.storyboard */,
+				07F0280D274B9AD100A2DEE3 /* Main.storyboard */,
+				07F02810274B9AD100A2DEE3 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		07F02816274B9AD100A2DEE3 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				07F02817274B9AD100A2DEE3 /* AppDelegate.swift */,
+				07F02819274B9AD100A2DEE3 /* Main.storyboard */,
+				07F0281C274B9AD100A2DEE3 /* Info.plist */,
+				07F0281D274B9AD100A2DEE3 /* BigGo Shopping Assistant.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		07F02826274B9AD100A2DEE3 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				07F02827274B9AD100A2DEE3 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		07F02830274B9AD200A2DEE3 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				07F02831274B9AD200A2DEE3 /* Info.plist */,
+				07F02832274B9AD200A2DEE3 /* BigGo Shopping Assistant.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		07F02851274B9AD200A2DEE3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				07F02852274B9AD200A2DEE3 /* images */,
+				07F02853274B9AD200A2DEE3 /* js */,
+				07F02854274B9AD200A2DEE3 /* template */,
+				07F02855274B9AD200A2DEE3 /* style */,
+				07F02856274B9AD200A2DEE3 /* icons */,
+				07F02858274B9AD200A2DEE3 /* manifest.json */,
+				07F02859274B9AD200A2DEE3 /* background.html */,
+				07F0285A274B9AD200A2DEE3 /* _locales */,
+				07F0285B274B9AD200A2DEE3 /* pages */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07F02802274B9AD100A2DEE3 /* BigGo Shopping Assistant (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F02847274B9AD200A2DEE3 /* Build configuration list for PBXNativeTarget "BigGo Shopping Assistant (iOS)" */;
+			buildPhases = (
+				07F027FF274B9AD100A2DEE3 /* Sources */,
+				07F02800274B9AD100A2DEE3 /* Frameworks */,
+				07F02801274B9AD100A2DEE3 /* Resources */,
+				07F02846274B9AD200A2DEE3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07F02825274B9AD100A2DEE3 /* PBXTargetDependency */,
+			);
+			name = "BigGo Shopping Assistant (iOS)";
+			productName = "BigGo Shopping Assistant (iOS)";
+			productReference = 07F02803274B9AD100A2DEE3 /* BigGo Shopping Assistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07F02814274B9AD100A2DEE3 /* BigGo Shopping Assistant (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F0284E274B9AD200A2DEE3 /* Build configuration list for PBXNativeTarget "BigGo Shopping Assistant (macOS)" */;
+			buildPhases = (
+				07F02811274B9AD100A2DEE3 /* Sources */,
+				07F02812274B9AD100A2DEE3 /* Frameworks */,
+				07F02813274B9AD100A2DEE3 /* Resources */,
+				07F0284D274B9AD200A2DEE3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07F0282F274B9AD200A2DEE3 /* PBXTargetDependency */,
+			);
+			name = "BigGo Shopping Assistant (macOS)";
+			productName = "BigGo Shopping Assistant (macOS)";
+			productReference = 07F02815274B9AD100A2DEE3 /* BigGo Shopping Assistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07F02821274B9AD100A2DEE3 /* BigGo Shopping Assistant Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F02843274B9AD200A2DEE3 /* Build configuration list for PBXNativeTarget "BigGo Shopping Assistant Extension (iOS)" */;
+			buildPhases = (
+				07F0281E274B9AD100A2DEE3 /* Sources */,
+				07F0281F274B9AD100A2DEE3 /* Frameworks */,
+				07F02820274B9AD100A2DEE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BigGo Shopping Assistant Extension (iOS)";
+			productName = "BigGo Shopping Assistant Extension (iOS)";
+			productReference = 07F02822274B9AD100A2DEE3 /* BigGo Shopping Assistant Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		07F0282B274B9AD200A2DEE3 /* BigGo Shopping Assistant Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F0284A274B9AD200A2DEE3 /* Build configuration list for PBXNativeTarget "BigGo Shopping Assistant Extension (macOS)" */;
+			buildPhases = (
+				07F02828274B9AD200A2DEE3 /* Sources */,
+				07F02829274B9AD200A2DEE3 /* Frameworks */,
+				07F0282A274B9AD200A2DEE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BigGo Shopping Assistant Extension (macOS)";
+			productName = "BigGo Shopping Assistant Extension (macOS)";
+			productReference = 07F0282C274B9AD200A2DEE3 /* BigGo Shopping Assistant Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07F027F0274B9ACF00A2DEE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					07F02802274B9AD100A2DEE3 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					07F02814274B9AD100A2DEE3 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					07F02821274B9AD100A2DEE3 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					07F0282B274B9AD200A2DEE3 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 07F027F3274B9ACF00A2DEE3 /* Build configuration list for PBXProject "BigGo Shopping Assistant" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07F027EF274B9ACF00A2DEE3;
+			productRefGroup = 07F02804274B9AD100A2DEE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07F02802274B9AD100A2DEE3 /* BigGo Shopping Assistant (iOS) */,
+				07F02814274B9AD100A2DEE3 /* BigGo Shopping Assistant (macOS) */,
+				07F02821274B9AD100A2DEE3 /* BigGo Shopping Assistant Extension (iOS) */,
+				07F0282B274B9AD200A2DEE3 /* BigGo Shopping Assistant Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07F02801274B9AD100A2DEE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F02835274B9AD200A2DEE3 /* Icon.png in Resources */,
+				07A399B22779627E00E8EA8B /* header-ic-close@2x.png in Resources */,
+				07F0280C274B9AD100A2DEE3 /* LaunchScreen.storyboard in Resources */,
+				07F02833274B9AD200A2DEE3 /* Main.html in Resources */,
+				07A399B52779680400E8EA8B /* img-safari-pravicy-en@2x.png in Resources */,
+				07F02839274B9AD200A2DEE3 /* Script.js in Resources */,
+				07A399AF2775C48900E8EA8B /* img-safari-pravicy-tw@2x.png in Resources */,
+				07F0283D274B9AD200A2DEE3 /* Assets.xcassets in Resources */,
+				07F0280F274B9AD100A2DEE3 /* Main.storyboard in Resources */,
+				07F02837274B9AD200A2DEE3 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F02813274B9AD100A2DEE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A399B32779627E00E8EA8B /* header-ic-close@2x.png in Resources */,
+				07F02836274B9AD200A2DEE3 /* Icon.png in Resources */,
+				07F02838274B9AD200A2DEE3 /* Style.css in Resources */,
+				07F0281B274B9AD100A2DEE3 /* Main.storyboard in Resources */,
+				07A399B62779680400E8EA8B /* img-safari-pravicy-en@2x.png in Resources */,
+				07F0283A274B9AD200A2DEE3 /* Script.js in Resources */,
+				07A399B02775C48900E8EA8B /* img-safari-pravicy-tw@2x.png in Resources */,
+				07F0283E274B9AD200A2DEE3 /* Assets.xcassets in Resources */,
+				07F02834274B9AD200A2DEE3 /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F02820274B9AD100A2DEE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F0286E274B9AD200A2DEE3 /* _locales in Resources */,
+				07F0286F274B9AD200A2DEE3 /* pages in Resources */,
+				07F02868274B9AD200A2DEE3 /* template in Resources */,
+				07F0286C274B9AD200A2DEE3 /* manifest.json in Resources */,
+				07F0286D274B9AD200A2DEE3 /* background.html in Resources */,
+				07F02866274B9AD200A2DEE3 /* images in Resources */,
+				07F0286B274B9AD200A2DEE3 /* (null) in Resources */,
+				07F02869274B9AD200A2DEE3 /* style in Resources */,
+				07F0286A274B9AD200A2DEE3 /* icons in Resources */,
+				07F02867274B9AD200A2DEE3 /* js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F0282A274B9AD200A2DEE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F02864274B9AD200A2DEE3 /* _locales in Resources */,
+				07F02865274B9AD200A2DEE3 /* pages in Resources */,
+				075ABA0D2788404800E23088 /* Assets.xcassets in Resources */,
+				07F0285E274B9AD200A2DEE3 /* template in Resources */,
+				07F02862274B9AD200A2DEE3 /* manifest.json in Resources */,
+				07F02863274B9AD200A2DEE3 /* background.html in Resources */,
+				07F0285C274B9AD200A2DEE3 /* images in Resources */,
+				07F02861274B9AD200A2DEE3 /* (null) in Resources */,
+				07F0285F274B9AD200A2DEE3 /* style in Resources */,
+				07F02860274B9AD200A2DEE3 /* icons in Resources */,
+				07F0285D274B9AD200A2DEE3 /* js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07F027FF274B9AD100A2DEE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F0283B274B9AD200A2DEE3 /* ViewController.swift in Sources */,
+				07F02807274B9AD100A2DEE3 /* AppDelegate.swift in Sources */,
+				07F02809274B9AD100A2DEE3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F02811274B9AD100A2DEE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F0283C274B9AD200A2DEE3 /* ViewController.swift in Sources */,
+				07F02818274B9AD100A2DEE3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F0281E274B9AD100A2DEE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F0283F274B9AD200A2DEE3 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F02828274B9AD200A2DEE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F02840274B9AD200A2DEE3 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07F02825274B9AD100A2DEE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07F02821274B9AD100A2DEE3 /* BigGo Shopping Assistant Extension (iOS) */;
+			targetProxy = 07F02824274B9AD100A2DEE3 /* PBXContainerItemProxy */;
+		};
+		07F0282F274B9AD200A2DEE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07F0282B274B9AD200A2DEE3 /* BigGo Shopping Assistant Extension (macOS) */;
+			targetProxy = 07F0282E274B9AD200A2DEE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07F027F6274B9ACF00A2DEE3 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07F027F7274B9ACF00A2DEE3 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		07F0280A274B9AD100A2DEE3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07F0280B274B9AD100A2DEE3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		07F0280D274B9AD100A2DEE3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07F0280E274B9AD100A2DEE3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07F02819274B9AD100A2DEE3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07F0281A274B9AD100A2DEE3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07F02841274B9AD200A2DEE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07F02842274B9AD200A2DEE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		07F02844274B9AD200A2DEE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BigGo Shopping Assistant Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.funmula.biggo.extension.ios;
+				PRODUCT_NAME = "BigGo Shopping Assistant Extension";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07F02845274B9AD200A2DEE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BigGo Shopping Assistant Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.funmula.biggo.extension.ios;
+				PRODUCT_NAME = "BigGo Shopping Assistant Extension";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07F02848274B9AD200A2DEE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BigGo Shopping Assistant";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.funmula.biggo.extension.ios;
+				PRODUCT_NAME = "BigGo Shopping Assistant";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07F02849274B9AD200A2DEE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BigGo Shopping Assistant";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.funmula.biggo.extension.ios;
+				PRODUCT_NAME = "BigGo Shopping Assistant";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07F0284B274B9AD200A2DEE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/BigGo Shopping Assistant.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 63;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BigGo Shopping Assistant Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 2.3.11;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.funmula.biggo.extension.macos.appex;
+				PRODUCT_NAME = "BigGo Shopping Assistant Extension";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		07F0284C274B9AD200A2DEE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/BigGo Shopping Assistant.entitlements";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 63;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BigGo Shopping Assistant Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 2.3.11;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.funmula.biggo.extension.macos.appex;
+				PRODUCT_NAME = "BigGo Shopping Assistant Extension";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		07F0284F274B9AD200A2DEE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/BigGo Shopping Assistant.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 76;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BigGo Shopping Assistant";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 2.5.4;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.funmula.biggo.extension.macos;
+				PRODUCT_NAME = "BigGo Shopping Assistant";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		07F02850274B9AD200A2DEE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/BigGo Shopping Assistant.entitlements";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "3rd Party Mac Developer Application";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 76;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BigGo Shopping Assistant";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 2.5.4;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.funmula.biggo.extension.macos;
+				PRODUCT_NAME = "BigGo Shopping Assistant";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07F027F3274B9ACF00A2DEE3 /* Build configuration list for PBXProject "BigGo Shopping Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F02841274B9AD200A2DEE3 /* Debug */,
+				07F02842274B9AD200A2DEE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07F02843274B9AD200A2DEE3 /* Build configuration list for PBXNativeTarget "BigGo Shopping Assistant Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F02844274B9AD200A2DEE3 /* Debug */,
+				07F02845274B9AD200A2DEE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07F02847274B9AD200A2DEE3 /* Build configuration list for PBXNativeTarget "BigGo Shopping Assistant (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F02848274B9AD200A2DEE3 /* Debug */,
+				07F02849274B9AD200A2DEE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07F0284A274B9AD200A2DEE3 /* Build configuration list for PBXNativeTarget "BigGo Shopping Assistant Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F0284B274B9AD200A2DEE3 /* Debug */,
+				07F0284C274B9AD200A2DEE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07F0284E274B9AD200A2DEE3 /* Build configuration list for PBXNativeTarget "BigGo Shopping Assistant (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F0284F274B9AD200A2DEE3 /* Debug */,
+				07F02850274B9AD200A2DEE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07F027F0274B9ACF00A2DEE3 /* Project object */;
+}

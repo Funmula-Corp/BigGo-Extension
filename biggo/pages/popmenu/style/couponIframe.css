@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+}
+
+.head {
+  padding: 10px 20px 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #e2e6ef;
+}
+
+.body {
+  max-height: 430px;
+  overflow: auto;
+}
+
+.close-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.main-icon {
+  max-width: 155px;
+  max-height: 89px;
+  width: auto;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  right: -10px;
+  border-radius: 6px;
+  box-shadow: 0 6px 28px 0 rgba(0, 41, 83, 0.25);
+  background-color: #ffffff;
+  max-width: 75vw;
+  outline: 0;
+  width: 280px;
+}
+
+[data-open] .popup {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup .option {
+  padding: 10px 10px 10px 20px;
+  border-bottom: 1px solid #e5e9ed;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.popup .option:last-child {
+  border-bottom: none;
+}
+
+.popup .option:hover, .popup .option[data-open] {
+  background-color: rgba(16, 40, 65, 0.08);
+}
+
+.popup .option img.current {
+  display: none;
+  height: 16px;
+  width: 16px;
+  margin-left: 6px;
+}
+
+.popup .option[data-open] img.current {
+  display: block;
+}

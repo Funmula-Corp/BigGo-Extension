@@ -1,0 +1,167 @@
+.main-success {
+  column-gap: 65px;
+}
+
+.footer-report {
+  color: #8c9aa3;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.left-success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.right-success {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-success .title {
+  padding-bottom: 20px;
+  border-bottom: 1px #e2e6ef solid;
+  margin-bottom: 20px;
+  color: #24343f;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.right-success .save-money {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.right-success .save-money * {
+  color: #667680;
+}
+
+.money {
+  color: #28a745 !important;
+}
+
+.coupon {
+  min-width: 129px;
+  max-width: 167px;
+  min-height: 35px;
+  padding: 5px 10px;
+  background-color: #f2f5f9;
+  border: 1px #d1d9e6 dashed;
+  font-size: 16px;
+  color: #24343f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+}
+
+.hint-success {
+  color: #00b5b7;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.submit {
+  min-width: 200px;
+  padding: 9px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.main-success .submit {
+  margin-top: 26px;
+  min-width: 241px;
+}
+
+.main-no-discount .title,
+.main-thank-advice .title {
+  color: #24343f;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+}
+
+.main-no-discount .submit {
+  min-width: 256px;
+  margin-top: 18px;
+}
+
+.main-thank-advice .hint {
+  color: #8c9aa3;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.main-thank-advice .submit {
+  margin-top: 20px;
+}
+
+.main-thank-advice .title {
+  font-weight: bold;
+}
+
+.main-advice .title {
+  font-size: 14px;
+  color: #24343f;
+  line-height: 1.57;
+  text-align: center;
+  font-weight: bold;
+}
+
+.main-advice .hint {
+  color: #8c9aa3;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.main-advice .check-group {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  font-size: 14px;
+  row-gap: 10px;
+}
+
+.main-advice .check-group .check-item {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.check-group * {
+  color: #667680;
+}
+
+.advice-textarea {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #eceff4;
+  font-size: 14px;
+  height: 74px;
+  width: 100%;
+  resize: none;
+  margin-top: 18px;
+  border: none;
+}
+
+.advice-textarea:focus {
+  outline: rgba(2, 195, 195, 0.7) 1px solid;
+}
+
+.advice-textarea::placeholder {
+  color: #c3cbd2;
+}
+
+.main-advice .submit {
+  margin-top: 17px;
+}

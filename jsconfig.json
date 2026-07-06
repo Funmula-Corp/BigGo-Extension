@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@core/*": ["./biggo/js/core/*"],
+      "@shared/*": ["./biggo/js/core/shared/*"],
+      "@background/*": ["./biggo/js/libs/*"],
+      "@/*": ["./biggo/js/*"]
+    },
+  },
+  "exclude": ["node_modules"]
+}

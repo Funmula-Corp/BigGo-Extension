@@ -1,0 +1,140 @@
+html {
+    max-height: 135px;
+}
+
+body {
+    min-width: 400px;
+    margin: 0px;
+    background-color: #f9fafb;
+}
+
+.wrap {
+    overflow: hidden;
+    max-height: inherit;
+}
+
+.biggo-log {
+    cursor: pointer;
+}
+
+.head {
+    padding: 8px 10px 0 17px;
+    background: url('../images/bg_icon_popup@2x.png') no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    position: relative;
+    z-index: 100;
+    flex-flow: column;
+    min-height: 135px;
+    justify-content: space-between;
+}
+
+.head .tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head .account-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head .account-info .normal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head .account-info .cashback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head .account-info .cashback .store-img {
+    max-height: 48px;
+    max-width: 109px;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+.head .tabs {
+    margin-left: -17px;
+    margin-right: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.16);
+}
+
+.head .tabs .tab {
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: NotoSansCJKtc;
+    color: #24343f;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    flex: 1 1 33%;
+}
+
+.head .tabs .tab.active {
+    color: #1aa1a9;
+    border-color: rgb(0, 181, 183);
+}
+
+.body {
+    background-color: #f9fafb;
+    min-height: 457px;
+    max-height: 457px;
+}
+
+.body > div {
+    min-height: inherit;
+    max-height: inherit;
+    overflow: auto;
+}
+
+.body > div iframe {
+    min-height: inherit;
+    max-height: inherit;
+}
+
+.store-cbinfo-cb {
+    min-width: 50px;
+    color: #d78e01;
+    text-align: right;
+    font-weight: bold;
+    font-size: 16px;
+    padding-right: 12px;
+    padding-bottom: 5px;
+    line-height: 1;
+}
+
+#cashback-desc ul {
+    list-style: none;
+    padding: 0;
+    display: table;
+    margin: 0px;
+    width: 100%;
+}
+
+#cashback-desc li {
+    display: flex;
+    flex-flow: column;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-bottom: inset;
+    border-width: 1px;
+}
+
+#cashback-desc li span {
+    display: flex;
+    padding-left: 19px;
+    padding-right: 19px;
+}

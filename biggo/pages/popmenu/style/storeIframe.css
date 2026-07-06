@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+}
+
+.head {
+  padding: 12px 17px 5px 19px;
+  background: url('../images/bg_popup@2x.png') no-repeat;
+  background-position: left bottom;
+  background-size: 100% auto;
+  display: flex;
+  z-index: 100;
+  flex-flow: column;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px 0px;
+}
+
+.body {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.close-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.expend-up {
+  transform: rotate(270deg);
+}
+
+.expend-down {
+  transform: rotate(90deg);
+}
+
+.store-cbinfo-cb {
+  color: #d78e01;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#content ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+#content li {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5px;
+  padding: 14px 19px;
+  border-bottom: 1px #e2e8eb solid;
+}
+
+#content li span {
+  font-size: 14px;
+}

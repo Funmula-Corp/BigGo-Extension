@@ -1,0 +1,41 @@
+{
+  "background": {
+    "service_worker": "./js/background.bundle.rollup.js"
+  },
+  "action": {
+    "default_icon": "icons/ic_B_nocashback@2x.png",
+    "default_popup": "pages/popmenu/popmenu.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons/*",
+        "images/*",
+        "css/*",
+        "pages/*",
+        "template/*",
+        "style/*",
+        "js/*"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "content_security_policy": {
+    "script-src": "self",
+    "object-src": "self"
+  },
+  "permissions": [
+    "tabs",
+    "cookies",
+    "contextMenus",
+    "webNavigation",
+    "alarms",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "https://www.google.com/*",
+    "https://google.com/*"
+  ],
+  "manifest_version": 3
+}

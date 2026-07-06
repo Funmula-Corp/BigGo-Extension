@@ -1,0 +1,125 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 600px;
+  width: 350px;
+}
+
+.wrap {
+  all: initial;
+}
+
+
+.container {
+  height: 600px;
+  width: 350px;
+  padding-bottom: 60px;
+}
+
+.main {
+  height: 600px;
+  width: 100%;
+}
+
+.main .head {
+  /* height: 60px; */
+  width: inherit;
+}
+
+.main iframe.content {
+  height: 546px;
+  width: inherit;
+}
+
+.footer {
+  height: 54px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 0 76px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px #eceff4 solid;
+  background-color: #fff;
+}
+
+.footer .nav {
+  cursor: pointer;
+  height: 54px;
+  width: 50px;
+}
+
+.nav {
+  position: relative;
+}
+
+.nav[active]::before, .nav:hover::before {
+  content: '';
+  background-color: #02c3c3;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  right: 0;
+  border-radius: 4px 4px 0 0;
+}
+
+.nav[data-nav] {
+  background-size: 22px 22px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.nav[data-nav="home"] {
+  background-image: url(../images/nav/ic-tab-home@2x.png);
+}
+
+.nav[data-nav="home"]:hover {
+  background-image: url(../images/nav/ic-tab-home-i@2x.png);
+}
+
+.nav[data-nav="home"][active], .nav[data-nav="home"][active]:hover {
+  background-image: url(../images/nav/ic-tab-home-select@2x.png);
+}
+
+.nav[data-nav="search"] {
+  background-image: url(../images/nav/ic-tab-search@2x.png);
+}
+
+.nav[data-nav="search"]:hover {
+  background-image: url(../images/nav/ic-tab-search-i@2x.png);
+}
+
+.nav[data-nav="search"][active], .nav[data-nav="search"][active]:hover {
+  background-image: url(../images/nav/ic-tab-search-select@2x.png);
+}
+
+.nav[data-nav="account"] {
+  background-image: url(../images/nav/ic-tab-account@2x.png);
+}
+
+.nav[data-nav="account"]:hover {
+  background-image: url(../images/nav/ic-tab-account-i@2x.png);
+}
+
+.nav[data-nav="account"][active], .nav[data-nav="account"][active]:hover {
+  background-image: url(../images/nav/ic-tab-account-select@2x.png);
+}
+
+img.close {
+  position: absolute;
+  height: 36px;
+  top: 9px;
+  right: 12px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+img.close:hover {
+  background-color: #e2e5ea;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BigGo Privacy Policy</title>
+  <link rel="stylesheet" href="../../style/grid.min.css">
+  <link rel="stylesheet" href="./layout.css">
+</head>
+<body>
+  <div class="head">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center left-side">
+          <a href="/">
+            <img class="logo" src="./img/header-logo-biggo@2x.png" alt="BigGo">
+          </a>
+          <span class="logo-sub">
+            __MSG_shopping_assistant__
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="container d-flex justify-content-center">
+      <div class="d-flex align-items-center justify-content-center flex-column main-top item-group">
+        <img src="./img/img-privacy@2x.png" height="65">
+        <div class="mt-3 title">
+          __MSG_privacy_title__
+        </div>
+
+        <div class="sub-title" style="margin-top: 16px">
+          __MSG_privacy_sub_title__
+        </div>
+
+        <div class="item" style="margin-top: 30px">
+          <label class="check-item control control-checkbox d-flex align-items-center">
+            <input type="checkbox" id="check1" data-permission="cookie" data-require>
+            <span>__MSG_cookies__<b class="require-hover invisible">(__MSG_required__)</b></span>
+            <div class="control_indicator"></div>
+          </label>
+
+          <div class="sub-title" style="margin-top: 16px">
+            __MSG_privacy_cookie_desc__
+          </div>
+        </div>
+
+        <div class="item" style="margin-top: 18px">
+          <label class="check-item control control-checkbox d-flex align-items-center">
+            <input type="checkbox" data-permission="interactions" id="check2">
+            <span>__MSG_privacy_user_interactions__</span>
+            <div class="control_indicator"></div>
+          </label>
+
+          <div class="sub-title" style="margin-top: 16px">
+            __MSG_privacy_user_interactions_desc__
+          </div>
+        </div>
+
+        <div class="item" style="margin-top: 18px">
+          <label class="check-item control control-checkbox d-flex align-items-center">
+            <input type="checkbox" data-permission="personal" id="check3">
+            <span>__MSG_privacy_user_personal_data__</span>
+            <div class="control_indicator"></div>
+          </label>
+
+          <div class="sub-title" style="margin-top: 16px">
+            __MSG_privacy_user_personal_data_desc__
+          </div>
+        </div>
+
+        <div class="hint">
+          <a href="http://biggo.tw/privacy" target="_blank" style="color: #004aaf">
+            __MSG_privacy_learn_about_link__
+          </a>
+        </div>
+
+        <div class="submit-btn mt-4" id="submit">__MSG_agree__</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup align-items-center justify-content-center flex-column" id="popup">
+    <div class="title">__MSG_privacy_access_permission__</div>
+    <div class="sub-title">
+      __MSG_privacy_access_permission_desc__
+    </div>
+    <div class="hint">
+      <a href="http://biggo.tw/privacy" target="_blank" style="color: #004aaf">
+        __MSG_privacy_learn_about_link__
+      </a>
+    </div>
+
+    <div class="btn-group d-flex align-items-center justify-content-center">
+      <div class="btn" id="uninstall">__MSG_uninstall__</div>
+      <div class="submit-btn" id="allcheck">__MSG_enable__</div>
+    </div>
+  </div>
+</body>
+
+<script type="module" src="./page.rollup.js"></script>
+
+</html>

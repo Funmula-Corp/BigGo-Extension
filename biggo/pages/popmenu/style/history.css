@@ -1,0 +1,341 @@
+body {
+    min-width: 280px;
+    min-height: 120px;
+    margin:0px !important;
+    background-color: #f9fafb;
+    font-family: 'Microsoft JhengHei' !important;
+    font-family: 'Lato' !important;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.hint-pop {
+    display: none;
+}
+
+.expend-hover:hover {
+    border-radius: 18px;
+    background-color: rgba(36, 52, 63, 0.16);
+}
+
+.expend-hover:hover ~ .hint-pop {
+    display: flex;
+    background:rgb(36, 52, 63);
+    color: #fff;
+    position: absolute;
+    right: 40px;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.hint-pop::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 8.7px;
+    border-color: transparent transparent transparent rgb(36, 52, 63);
+    position: absolute;
+    right: -8px;
+    top: 8px;
+}
+
+#biggo_logo {
+    width: 55px;
+}
+#biggo_logo:hover {
+    cursor:pointer;
+}
+#biggo_profile_email {
+    font-size: 15px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.47;
+    letter-spacing: normal;
+    text-align: center;
+    color: #24343f;
+}
+.wrap {
+    position: fixed;
+    min-width: 280px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    /*background-color: #fff;*/
+    background-color: #f9fafb;
+}
+.helper:hover{
+    cursor:pointer;
+}
+
+.iniframe {
+    /*top: 5px;*/
+    /*right: 5px;*/
+    /*border-radius: 2px;*/
+}
+
+.head-wrap {
+    background: url('./images/bg_popup@2x.png') no-repeat;
+    background-position: left bottom;
+    background-size: 100% auto;
+    display: flex;
+    position: relative;
+    z-index: 100;
+    flex-flow: column;
+    min-height: 36px;
+    width: 280px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px 0px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.info-wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.login-btn {
+    background: #00a8af;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px 0 rgba(0, 67, 124, 0.32);
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    width: 230px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    margin-right: 14px;
+    margin-bottom: 32px;
+}
+
+.login-btn-hover {
+    text-decoration: underline;
+}
+
+.un-login-btn {
+    background: #e3a500;
+}
+
+.close-btn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    z-index: 101;
+}
+
+.content-wrap {
+    width: 280px;
+    background-color: #f9fafb;
+}
+
+.content {
+    /*margin-top: 10px;*/
+    height:420px;
+    overflow: auto;
+    /*background-color: #f9fafb;*/
+}
+
+.block-cp {
+    padding: 12px 14px 15px 11px;
+    border-bottom: solid 1px #F1F1F1;
+    display: flex;
+}
+
+.discount-cp {
+    margin-right: 9px;
+    min-width: 72px;
+    max-width: 72px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+
+.discount-number-cp {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+
+.title-cp {
+    color: #24343f;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: Lato;
+}
+
+.conten-cp {
+    color: #616c74;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-family: Lato;
+    line-height: 1.5;
+}
+
+.code-cp {
+    font-size: 12px;
+    color: #f5396b;
+    text-align: center;
+    min-width: 220px;
+    height: 44px;
+    border-radius: 8px;
+    border: dashed 1.5px #f5396b;
+    background-color: #ffffff;
+    white-space: nowrap;
+    cursor: pointer;
+    max-width: 208px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.code-button-cp {
+    margin-right: 10px;
+    font-size: 12px;
+    color: #f5396b;
+    text-align: center;
+    line-height: normal
+}
+
+.code-block-cp {
+    font-size: 12.5px;
+    color: #f5396b;
+    text-align: center;
+}
+
+.code-text-cp {
+    font-size: 17px;
+    color: #24343f;
+    width: 100%;
+    background-color: #ffe5ec;
+    height: 32px;
+    box-shadow: none;
+    border: none;
+    opacity: 1;
+    padding: 6px 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.store-cbinfo-cb {
+    min-width: 50px;
+    color: #d78e01;
+    text-align: right;
+    font-weight: bold;
+    font-size: 16px;
+    padding-right: 12px;
+    padding-bottom: 5px;
+    line-height: 1;
+}
+
+.store-content {
+    line-height: 1.43;
+}
+
+#biggo_ec_long_desc {
+}
+
+#biggo_ec_long_desc ul {
+    list-style: none;
+    padding: 0;
+    display: table;
+    margin: 0px;
+    width: 100%;
+}
+
+#biggo_ec_long_desc li {
+    display: flex;
+    flex-flow: column;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-bottom: inset;
+    border-width: 1px;
+}
+
+#biggo_ec_long_desc li span {
+    display: flex;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.store-hide-desc {
+    display: none !important;
+}
+
+.event-cp {
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff!important;
+}
+
+.event-cp:hover {
+    text-decoration: underline;
+}
+
+.event-cp-none {
+    cursor: default;
+    text-decoration: none;
+    color: #fff!important;
+}
+
+.event-btn-cp {
+    width: 244px;
+    /*width: 208px;*/
+    height: 40px;
+    border-radius: 8px;
+    background-color: #e7b021;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-btn-cp:hover {
+    background-color: #d98e00;
+}
+
+.coupon-tag {
+    background: #0fc9d3;
+    color: #fff;
+    font-size: 12px;
+    width: 70px;
+    height: 18px;
+    border-radius: 4px;
+    margin-bottom: 3px;
+    align-items: center!important;
+    justify-content: center!important;
+    display: flex!important;
+}
+
+.checkout-done {
+    height: 40px;
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.checkout-done-text {
+    width: 212px;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #24343f;
+}

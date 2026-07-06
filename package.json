@@ -1,0 +1,38 @@
+{
+  "name": "biggo_extension",
+  "version": "3.2.7",
+  "description": "BigGo Extension",
+  "type": "module",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production MANIFEST_VERSION=3 node util/build.js",
+    "build:v2": "cross-env NODE_ENV=production MANIFEST_VERSION=2 node util/build.js",
+    "build:safari": "cross-env NODE_ENV=production MANIFEST_VERSION=2 BROWSER=safari node util/build.js",
+    "build:dev": "cross-env NODE_ENV=development node util/build.js",
+    "watch": "cross-env NODE_ENV=development MANIFEST_VERSION=3 node util/vite-build.js --watch",
+    "bundle": "node util/bundle.js",
+    "bundle:all": "npm run build:v2 && npm run bundle; npm run build && npm run bundle",
+    "clean:sites": "node util/clean-sites.js",
+    "update:sites": "node util/update-sites.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:Funmula-Corp/BigGo-Extension.git"
+  },
+  "author": "Funmula",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Funmula-Corp/BigGo-Extension/issues"
+  },
+  "homepage": "https://github.com/Funmula-Corp/BigGo-Extension",
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5",
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.4.2",
+    "svelte": "^5",
+    "terser": "^5",
+    "vite": "^6"
+  },
+  "dependencies": {
+    "uuid": "^8.3.2"
+  }
+}
