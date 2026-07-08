@@ -1,0 +1,61 @@
+name: 問題回報 (Bug report)
+description: 回報 BigGo 購物幫手的問題 / Report a problem with the BigGo Extension
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感謝你花時間回報問題！請**勿**在此回報安全漏洞——見 [SECURITY.md](../blob/main/SECURITY.md)。
+        Thanks for filing a bug report! Please **do not** report security vulnerabilities here.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 發生什麼問題？ / What happened?
+      description: 清楚描述這個問題，以及你原本預期的結果。 / Describe the bug and what you expected instead.
+      placeholder: 當我造訪 ... 時，歷史價格面板 ... / When I visit ..., the price-history panel ...
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: 重現步驟 / Steps to reproduce
+      placeholder: |
+        1. 前往 '...'
+        2. 點擊 '...'
+        3. 看到錯誤
+    validations:
+      required: true
+  - type: input
+    id: site
+    attributes:
+      label: 受影響的站台 / URL (Affected site)
+      description: 哪個購物站或搜尋頁？（可遮蔽個人資訊部分）/ Which shopping site or search page? You may redact personal parts.
+    validations:
+      required: false
+  - type: dropdown
+    id: browser
+    attributes:
+      label: 瀏覽器 / Browser
+      options:
+        - Chrome
+        - Edge
+        - Firefox
+        - Safari
+        - 其他 Chromium 系 (Other Chromium-based)
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: 瀏覽器版本與擴充功能版本 / Browser & extension version
+      placeholder: "Chrome 126 / Extension 3.2.7"
+    validations:
+      required: true
+  - type: textarea
+    id: console
+    attributes:
+      label: Console 錯誤訊息（選填）/ Console errors (optional)
+      description: 擴充功能 background 或頁面 console 的相關輸出。 / Relevant output from the extension's background or page console.
+      render: shell
+    validations:
+      required: false

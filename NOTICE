@@ -1,0 +1,19 @@
+BigGo Extension
+Copyright 2026 Funmula Corp., Limited
+
+This product includes software developed at Funmula Corp., Limited.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+---
+
+Third-party components:
+
+  uuid (https://github.com/uuidjs/uuid) — MIT License
+
+Build-time dependencies (Vite, Svelte, Terser, cross-env) are listed in
+package.json and are not redistributed as part of the published extension.

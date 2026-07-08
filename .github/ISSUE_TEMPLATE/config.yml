@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 安全漏洞回報 (Security vulnerability)
+    url: https://github.com/Funmula-Corp/BigGo-Extension/security/advisories/new
+    about: 安全問題請透過 GitHub Security Advisories 私下回報，勿開公開 issue。 / Report security issues privately, not via public issues.
+  - name: 問題諮詢 (Question / usage help)
+    url: https://github.com/Funmula-Corp/BigGo-Extension/discussions
+    about: 在 GitHub Discussions 提問與交流。 / Ask and answer questions in GitHub Discussions.
