@@ -16,9 +16,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:Funmula-Corp/BigGo-Extension.git"
+    "url": "git+https://github.com/Funmula-Corp/BigGo-Extension.git"
   },
-  "author": "Funmula",
+  "author": "Funmula Corp., Limited",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/Funmula-Corp/BigGo-Extension/issues"
