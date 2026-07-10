@@ -34,15 +34,18 @@
 - **🎟️ 優惠券推薦** — 在店家頁面自動帶出可用的優惠券與折扣碼。
 - **🛍️ 看相似** — 瀏覽時推薦相似商品（與更低的價格）。
 - **🌏 多地區支援** — 支援多個市場，各地區有在地化的店家覆蓋。
+- **🏆 商店精選** — Chrome 線上應用程式商店與 Microsoft Edge 外掛程式商店雙雙列為「精選」擴充功能。
 
 ## 安裝
 
-| 瀏覽器 | 連結 |
-| ------ | ---- |
-| 🌐 Chrome / Chromium | [Chrome Web Store](https://chromewebstore.google.com/detail/biggo-shopping-assistant/enlbnppjlpkmjponagpelanookhiejao) |
-| 🌐 Edge | [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/biggo-shopping-assistant/ipjeihekfhfpmohahknkialknlipnnop) |
-| 🦊 Firefox | [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/biggo%E6%AF%94%E5%80%8B%E5%A4%A0%E5%B0%8F%E5%B9%AB%E6%89%8B/) |
-| 🧭 Safari | [Mac App Store](https://apps.apple.com/tw/app/id1596059795?mt=12) |
+| 瀏覽器 | 連結 | 徽章 |
+| ------ | ---- | ---- |
+| 🌐 Chrome / Chromium | [Chrome Web Store](https://chromewebstore.google.com/detail/biggo-shopping-assistant/enlbnppjlpkmjponagpelanookhiejao) | <img src="docs/images/badge-featured-chrome.png" alt="Chrome 線上應用程式商店的「精選商品」徽章" height="24"> |
+| 🌐 Edge | [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/biggo-shopping-assistant/ipjeihekfhfpmohahknkialknlipnnop) | <img src="docs/images/badge-featured-edge.png" alt="Microsoft Edge 外掛程式商店的「精選」徽章" height="24"> |
+| 🦊 Firefox | [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/biggo%E6%AF%94%E5%80%8B%E5%A4%A0%E5%B0%8F%E5%B9%AB%E6%89%8B/) | — |
+| 🧭 Safari | [Mac App Store](https://apps.apple.com/tw/app/id1596059795?mt=12) | — |
+
+<sub>「精選」徽章擷取自各商店頁面，2026 年 7 月。</sub>
 
 想自己建置？見 [從原始碼建置](#從原始碼建置)。
 

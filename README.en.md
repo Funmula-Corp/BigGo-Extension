@@ -35,15 +35,18 @@
 - **🎟️ Coupon recommendations** — Surfaces applicable coupons and promo codes on store pages.
 - **🛍️ "More Like This"** — Suggests similar products (and better prices) while you browse.
 - **🌏 Multi-region** — Works across many markets with localized store coverage.
+- **🏆 Store featured** — A **Featured** extension on both the Chrome Web Store and Microsoft Edge Add-ons.
 
 ## Install
 
-| Browser | Link |
-| ------- | ---- |
-| 🌐 Chrome / Chromium | [Chrome Web Store](https://chromewebstore.google.com/detail/biggo-shopping-assistant/enlbnppjlpkmjponagpelanookhiejao) |
-| 🌐 Edge | [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/biggo-shopping-assistant/ipjeihekfhfpmohahknkialknlipnnop) |
-| 🦊 Firefox | [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/biggo%E6%AF%94%E5%80%8B%E5%A4%A0%E5%B0%8F%E5%B9%AB%E6%89%8B/) |
-| 🧭 Safari | [Mac App Store](https://apps.apple.com/tw/app/id1596059795?mt=12) |
+| Browser | Link | Badge |
+| ------- | ---- | ----- |
+| 🌐 Chrome / Chromium | [Chrome Web Store](https://chromewebstore.google.com/detail/biggo-shopping-assistant/enlbnppjlpkmjponagpelanookhiejao) | <img src="docs/images/badge-featured-chrome.en.png" alt="Featured badge on the Chrome Web Store" height="24"> |
+| 🌐 Edge | [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/biggo-shopping-assistant/ipjeihekfhfpmohahknkialknlipnnop) | <img src="docs/images/badge-featured-edge.en.png" alt="Featured badge on Microsoft Edge Add-ons" height="24"> |
+| 🦊 Firefox | [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/biggo%E6%AF%94%E5%80%8B%E5%A4%A0%E5%B0%8F%E5%B9%AB%E6%89%8B/) | — |
+| 🧭 Safari | [Mac App Store](https://apps.apple.com/tw/app/id1596059795?mt=12) | — |
+
+<sub>Featured badges captured from the store listings, July 2026.</sub>
 
 Prefer to build it yourself? See [Build from source](#build-from-source).
 
