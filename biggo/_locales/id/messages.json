@@ -188,14 +188,8 @@
 		}
 	},
 	"search_on_biggo": {
-		"message": "Cari “$word$” di BigGo",
-		"description": "",
-		"placeholders": {
-			"word": {
-				"content": "$1",
-				"example": "iphone"
-			}
-		}
+		"message": "Cari “{0}” di BigGo",
+		"description": ""
 	},
 	"searhc_product": {
 		"message": "Pergi ke Pencarian produk",

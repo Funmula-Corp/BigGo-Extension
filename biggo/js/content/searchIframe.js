@@ -51,7 +51,9 @@ function bindTooltip(dom, query) {
 
   const tooltip = document.createElement("div")
   tooltip.setAttribute("style", `background: rgb(45,45,45); border: 1px solid #${isDark?"3c4043":"fff"}; display: block; font-size: 11px; font-weight: bold;line-height: 29px; padding: 0 10px;text-align: center;white-space:nowrap;z-index: 2000;box-shadow:rgba(0,0,0,0.2) 0px 1px 4px;box-sizing: border-box; transition: opacity 0.13s ease 0s; color: #fff; position: relative; width: fit-content;`)
-  tooltip.textContent = i18n("search_on_biggo", [query])
+  // 不用 chrome.i18n 的 placeholder：Safari 在 $word$ 緊鄰「」“” 等非 ASCII 字元時會把變數
+  // 連同前一個字元一起吃掉，所以訊息裡用 {0} token，在這裡自己代入
+  tooltip.textContent = i18n("search_on_biggo").replace("{0}", query)
 
   const tri = document.createElement("div")
   tri.setAttribute("style", "width: 0;height: 0;border-style: solid;border-width: 0 6px 7px 6px;border-color: transparent transparent #2d2d2d transparent;top: -7px; position: absolute; left: 50%;transform: translate(-50%, 0)")

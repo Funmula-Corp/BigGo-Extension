@@ -188,14 +188,8 @@
 		}
 	},
 	"search_on_biggo": {
-		"message": "BigGo で「$word$」を検索",
-		"description": "",
-		"placeholders": {
-			"word": {
-				"content": "$1",
-				"example": "iphone"
-			}
-		}
+		"message": "BigGo で「{0}」を検索",
+		"description": ""
 	},
 	"searhc_product": {
 		"message": "商品検索に飛ぶ",

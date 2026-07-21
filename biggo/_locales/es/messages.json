@@ -188,14 +188,8 @@
 		}
 	},
 	"search_on_biggo": {
-		"message": "Buscar “$word$” en BigGo",
-		"description": "",
-		"placeholders": {
-			"word": {
-				"content": "$1",
-				"example": "iphone"
-			}
-		}
+		"message": "Buscar “{0}” en BigGo",
+		"description": ""
 	},
 	"searhc_product": {
 		"message": "Buscar producto",
