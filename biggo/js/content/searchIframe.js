@@ -39,7 +39,7 @@ function buildBottomDom() {
   return fragment
 }
 
-function bindTooltip(dom, count) {
+function bindTooltip(dom, query) {
   const isDark = isDarkMode()
 
   const wrap = document.createElement("div")
@@ -51,9 +51,7 @@ function bindTooltip(dom, count) {
 
   const tooltip = document.createElement("div")
   tooltip.setAttribute("style", `background: rgb(45,45,45); border: 1px solid #${isDark?"3c4043":"fff"}; display: block; font-size: 11px; font-weight: bold;line-height: 29px; padding: 0 10px;text-align: center;white-space:nowrap;z-index: 2000;box-shadow:rgba(0,0,0,0.2) 0px 1px 4px;box-sizing: border-box; transition: opacity 0.13s ease 0s; color: #fff; position: relative; width: fit-content;`)
-  tooltip.textContent = +count === 0
-    ? i18n("searhc_product")
-    : i18n("x_products", [(+count).toLocaleString("us")])
+  tooltip.textContent = i18n("search_on_biggo", [query])
 
   const tri = document.createElement("div")
   tri.setAttribute("style", "width: 0;height: 0;border-style: solid;border-width: 0 6px 7px 6px;border-color: transparent transparent #2d2d2d transparent;top: -7px; position: absolute; left: 50%;transform: translate(-50%, 0)")
@@ -70,14 +68,15 @@ function bindTooltip(dom, count) {
     const rect = dom.getBoundingClientRect()
     wrap.style.display = "flex"
     wrap.style.top = `${rect.top + 25}px`
-    wrap.style.left = `${rect.left - 5}px`
+    wrap.style.left = `${rect.left + rect.width / 2}px`
+    wrap.style.transform = "translateX(-50%)"
   })
   dom.addEventListener("mouseleave", () => {
     wrap.style.display = "none"
   })
 }
 
-function getTopOption(count=0, mode=1) {
+function getTopOption(mode=1) {
   const isDark = isDarkMode()
   const icon = isDark
     ? chrome.runtime.getURL("./images/ic_B_enabled_google_suggestion_dark.svg")
@@ -92,6 +91,7 @@ function getTopOption(count=0, mode=1) {
   img.style.marginRight = "5px"
   img.src = icon
   img.style.position = "relative"
+  img.style.top = "2px"
 
   const span = document.createElement("span")
   span.textContent = "BigGo"
@@ -120,25 +120,24 @@ function getTopOption(count=0, mode=1) {
 
   el.style.alignItems = "center"
   el.style.zIndex = "100"
+  el.style.top = "3px"
   el.dataset.biggo = "top"
 
   el.appendChild(img)
   el.appendChild(span)
 
-  if(count > 0) {
-    el.addEventListener("mouseenter", () => {
-      img.src = hoverIcon
-    })
+  el.addEventListener("mouseenter", () => {
+    img.src = hoverIcon
+  })
 
-    el.addEventListener("mouseleave", () => {
-      img.src = icon
-    })
-  }
+  el.addEventListener("mouseleave", () => {
+    img.src = icon
+  })
 
   return el
 }
 
-export function setTopOptions(count) {
+export function setTopOptions() {
   let root = document.getElementById("uddia_1")
   let mode = 1
 
@@ -164,7 +163,7 @@ export function setTopOptions(count) {
     root.insertBefore(line, root.firstChild)
   }
 
-  root.appendChild(getTopOption(count, mode))
+  root.appendChild(getTopOption(mode))
 }
 
 function isAllGoogleTab() {
@@ -235,9 +234,9 @@ export function setBottomSearchResult() {
   root.appendChild(el)
 }
 
-export async function build(query, count) {
+export async function build(query) {
   await sleep(1000)
-  setTopOptions(count)
+  setTopOptions()
   setBottomSearchResult()
 
   const handle = getBindEvent(query)
@@ -247,15 +246,11 @@ export async function build(query, count) {
       ga(`google_query_${dom.dataset.biggo}`, "click", "")
     })
 
-    if(+count === 0 && dom.dataset.biggo === "top") {
-      return
-    }
-
     if(!dom.style.position) {
       dom.style.position = "relative"
     }
 
-    bindTooltip(dom, count)
+    bindTooltip(dom, query)
   })
 }
 

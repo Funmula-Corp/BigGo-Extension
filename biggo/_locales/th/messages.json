@@ -187,6 +187,16 @@
 			}
 		}
 	},
+	"search_on_biggo": {
+		"message": "ค้นหา “$word$” บน BigGo",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "iphone"
+			}
+		}
+	},
 	"searhc_product": {
 		"message": "ค้นหาสินค้า",
 		"description": ""

@@ -139,7 +139,7 @@ async function buildPageFeature(isUpdateIconAnimation=true) {
     const isSupportRegion = isSupportSearchRegion(region)
 
     if(isSupportRegion && featureConfig.searchEngineSuggest && isGoogleTextSearchPage()) {
-      googleSearchPage.build(searchEngineQuery, 0)
+      googleSearchPage.build(searchEngineQuery)
     }
 
     return

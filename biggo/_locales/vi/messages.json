@@ -187,6 +187,16 @@
 			}
 		}
 	},
+	"search_on_biggo": {
+		"message": "Tìm “$word$” trên BigGo",
+		"description": "",
+		"placeholders": {
+			"word": {
+				"content": "$1",
+				"example": "iphone"
+			}
+		}
+	},
 	"searhc_product": {
 		"message": "Đi tới Tìm kiếm sản phẩm",
 		"description": ""
