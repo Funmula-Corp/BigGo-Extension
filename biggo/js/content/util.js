@@ -205,8 +205,8 @@ export async function shareCoupon({nindex, code, desc}) {
 export function openLoginWindow(url) {
   const height = 650
   const width = 600
-  const left = (screen.width/2)-(width/2)
-  const top = (screen.height/2)-(height/2)
+  const left = Math.floor((screen.width/2)-(width/2))
+  const top = Math.floor((screen.height/2)-(height/2))
 
   send("util", "social_login_window", {
     url, height, width, left, top,
