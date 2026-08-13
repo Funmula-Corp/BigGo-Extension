@@ -64,7 +64,7 @@ export async function isProduct(nindex, pid) {
   return getProduct(nindex, pid).then(res => res.result)
 }
 
-const PRODUCT_CACHE_TTL = 1000 * 60 * 5
+const PRODUCT_CACHE_TTL = 1000 * 60 * 60
 const productCache = new Map()
 
 function getProductCacheKey(nindex, pid) {
