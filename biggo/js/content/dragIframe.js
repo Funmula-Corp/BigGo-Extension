@@ -455,8 +455,10 @@ async function getHistoryInfo(nindex, pid, day) {
     return data[item]
   }
 
-  for (const _item of data) {
-    if(!Array.isArray(_item)) {
+  // data 是以 doc id 為 key 的物件（查無資料時值為空陣列，或整包回 {result: false}），
+  // 直接 for...of 會丟 TypeError: data is not iterable，要走 Object.values 取值。
+  for (const _item of Object.values(data)) {
+    if(_item && !Array.isArray(_item)) {
       return _item
     }
   }
