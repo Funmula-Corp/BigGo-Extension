@@ -437,11 +437,21 @@ async function setSubscribe(type) {
 }
 
 /**
+ * 判斷 API 回來的值是不是一筆歷史價格資料
+ * 查無資料時值是空陣列，整包失敗時是 {result: false}，兩者都不算
+ * @param {any} value
+ * @returns {boolean}
+ */
+function isHistoryDoc(value) {
+  return !!value && typeof value === "object" && !Array.isArray(value)
+}
+
+/**
  * 從server拿歷史價格資料
  * @param {string} nindex
  * @param {string} pid
  * @param {number} day
- * @returns
+ * @returns {Object|false} 找不到資料時回 false
  */
 async function getHistoryInfo(nindex, pid, day) {
   const item = `${nindex}-${pid}`
@@ -451,12 +461,14 @@ async function getHistoryInfo(nindex, pid, day) {
     return false
   }
 
-  if(data[item] && !Array.isArray(data[item])) {
+  if(isHistoryDoc(data[item])) {
     return data[item]
   }
 
-  for (const _item of data) {
-    if(!Array.isArray(_item)) {
+  // data 是以 doc id 為 key 的物件（查無資料時值為空陣列，或整包回 {result: false}），
+  // 直接 for...of 會丟 TypeError: data is not iterable，要走 Object.values 取值。
+  for (const _item of Object.values(data)) {
+    if(isHistoryDoc(_item)) {
       return _item
     }
   }
@@ -758,7 +770,9 @@ export async function build(nindex, pid) {
   }
 
   // cache price history data
-  cacheObj = history
+  // 沒資料時 getHistoryInfo 回 false，這裡統一成 null（cacheObj 的初始值），
+  // 免得 get-cache-pricehistory 把 boolean 當成一筆資料回給 iframe
+  cacheObj = history || null
 
   injectStyle("dragIframe.css")
   const dom = await getTemplateDom("drag_price_history.html")
@@ -786,6 +800,10 @@ export async function build(nindex, pid) {
  * 功能 rollback
  */
 export async function remove() {
+  // SPA 換頁會先 remove 再 build，不清掉的話下一個商品在 build 失敗時，
+  // get-cache-pricehistory 會回上一個商品的歷史價格
+  cacheObj = null
+
   const dom = document.getElementById(ROOT_DOM_ID)
   if(dom) {
     dom.remove()
