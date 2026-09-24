@@ -174,8 +174,17 @@ function showBtn(img) {
 // 直接用它定位會讓按鈕跑到容器外亂飄，所以裁切成實際可見範圍
 function getVisibleRect(el) {
   let rect = el.getBoundingClientRect()
+  // absolute/fixed 元素不會被 containing block 以外的祖先 overflow 裁切
+  let pos = getComputedStyle(el).position
   for (let node = el.parentElement; node && node !== document.body; node = node.parentElement) {
     const style = getComputedStyle(node)
+    const isContainingBlock = style.position !== "static" || style.transform !== "none" || style.filter !== "none"
+    if ((pos === "absolute" || pos === "fixed") && !isContainingBlock) {
+      continue
+    }
+    if (isContainingBlock) {
+      pos = style.position
+    }
     if (!/(hidden|clip|scroll|auto)/.test(style.overflow + style.overflowX + style.overflowY)) {
       continue
     }
@@ -204,10 +213,16 @@ function positionBtn() {
   hoverBtn.style.setProperty("left", `${rect.right - hoverBtn.offsetWidth - 10 + window.scrollX}px`, "important")
 }
 
+let scrollRaf = null
+
+// capture 模式下任何元素捲動都會觸發，getVisibleRect 又要逐層量測，用 rAF 節流
 function handleScroll() {
-  if (hoverTarget && hoverBtn.style.getPropertyValue("display") !== "none") {
+  if (!hoverTarget || hoverBtn.style.getPropertyValue("display") === "none") return
+  if (scrollRaf) return
+  scrollRaf = requestAnimationFrame(() => {
+    scrollRaf = null
     positionBtn()
-  }
+  })
 }
 
 function hideBtn() {
