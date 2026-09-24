@@ -29,7 +29,7 @@ export async function getECList() {
 }
 
 export async function getCashbackList() {
-  const sites = await getSiteList()
+  let sites = await getSiteList()
   if(Object.keys(sites).length === 0) {
     sites = await getSites()
   }
