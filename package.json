@@ -1,6 +1,6 @@
 {
   "name": "biggo_extension",
-  "version": "3.2.9",
+  "version": "3.2.10",
   "description": "BigGo Extension",
   "type": "module",
   "scripts": {
