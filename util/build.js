@@ -37,7 +37,8 @@ if(manifestVersion == 2) {
 }
 
 for (const path of assetsPath) {
-  execSync(`cp ${isProduction?"-f":"--update=none"} -R biggo/${path} dist/${path}`, {stdio: 'inherit'})
+  // -n 等同 --update=none，但 coreutils 9.3 以前也支援
+  execSync(`cp ${isProduction?"-f":"-n"} -R biggo/${path} dist/${path}`, {stdio: 'inherit'})
 }
 
 execSync(`rm -rf ./dist/pages/popmenu/script`, {stdio: 'inherit'})
