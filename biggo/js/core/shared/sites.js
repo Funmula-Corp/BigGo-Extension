@@ -28,22 +28,6 @@ export async function getECList() {
   }) || {}
 }
 
-export async function getCashbackList() {
-  const sites = await getSiteList()
-  if(Object.keys(sites).length === 0) {
-    sites = await getSites()
-  }
-
-  let obj = {}
-  for (const nindex in sites) {
-    const site = sites[nindex]
-    if(site.detail && site.detail.rate_desc) {
-      obj[nindex] = site
-    }
-  }
-  return obj
-}
-
 /**
  * 取得同個網站但有多國版本的nindex對照表
  */
