@@ -170,9 +170,35 @@ function showBtn(img) {
   positionBtn()
 }
 
+// 輪播（如 swiper）切換時，滑進來的 img rect 會超出 overflow:hidden 容器，
+// 直接用它定位會讓按鈕跑到容器外亂飄，所以裁切成實際可見範圍
+function getVisibleRect(el) {
+  let rect = el.getBoundingClientRect()
+  for (let node = el.parentElement; node && node !== document.body; node = node.parentElement) {
+    const style = getComputedStyle(node)
+    if (!/(hidden|clip|scroll|auto)/.test(style.overflow + style.overflowX + style.overflowY)) {
+      continue
+    }
+    const clip = node.getBoundingClientRect()
+    const top = Math.max(rect.top, clip.top)
+    const left = Math.max(rect.left, clip.left)
+    const right = Math.min(rect.right, clip.right)
+    const bottom = Math.min(rect.bottom, clip.bottom)
+    if (right <= left || bottom <= top) {
+      return null
+    }
+    rect = { top, left, right, bottom }
+  }
+  return rect
+}
+
 function positionBtn() {
   if (!hoverTarget) return
-  const rect = hoverTarget.getBoundingClientRect()
+  const rect = getVisibleRect(hoverTarget)
+  if (!rect) {
+    hideBtn()
+    return
+  }
   hoverBtn.style.setProperty("display", "flex", "important")
   hoverBtn.style.setProperty("top", `${window.scrollY + rect.top + 10}px`, "important")
   hoverBtn.style.setProperty("left", `${rect.right - hoverBtn.offsetWidth - 10 + window.scrollX}px`, "important")
