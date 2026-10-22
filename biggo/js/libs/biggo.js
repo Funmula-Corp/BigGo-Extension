@@ -1,6 +1,7 @@
 import * as Region from "@shared/region"
 import { getNindexFromURL } from "@shared/sites"
-import { isNotMainFrame } from "./util"
+import { getProductId } from "@shared/eclist"
+import { isNotMainFrame, getShopeePid } from "./util"
 import Sync from "./sync"
 import User from "./user"
 import { sleep } from "../util.shared"
@@ -25,14 +26,30 @@ export function getDomainList() {
 }
 
 // 組 https://{API_DOMAIN}/r/?... BigGo 自家導購連結；purl 只做編碼、逐字保留，不竄改既有參數
-export function getRUrl({nindex, url, domain, lb="", pid="biggo", loginRequired=false}={}) {
+// pid 解析不到（空字串）時退回 biggo
+export function getRUrl({nindex, url, domain, lb="", pid="", loginRequired=false}={}) {
   let purl = encodeURIComponent(url)
 
   if(nindex === "tw_ec_carrefour") {
     purl = encodeURIComponent(purl)
   }
 
-  return `https://${domain}/r/?f=extension&id=${pid}&i=${nindex}&purl=${purl}${loginRequired?"&rasklogin=1":""}${lb?`&lb=${lb}`:""}`
+  return `https://${domain}/r/?f=extension&id=${pid || "biggo"}&i=${nindex}&purl=${purl}${loginRequired?"&rasklogin=1":""}${lb?`&lb=${lb}`:""}`
+}
+
+// 用 eclist 的 regex 規則從商家網址解析商品 id（與 popup 同一套）；解析不到回傳空字串
+// 蝦皮的規則統一掛在 tw_mall_shopeemall，直接用 getShopeePid，不走 resolveTrueNindex 以免多打一次商品 API
+async function getPidFromURL(nindex, url) {
+  try {
+    if(["tw_mall_shopeemall", "tw_bid_shopee"].includes(nindex)) {
+      return await getShopeePid(url) || ""
+    }
+    return getProductId(await Sync.syncECList(), nindex, url)
+  } catch(error) {
+    // 解析失敗不能擋住導購，退回 biggo
+    console.error("get pid from url error: ", error)
+    return ""
+  }
 }
 
 export async function r(url, nindex, loginRequired=false, lb="") {
@@ -45,7 +62,8 @@ export async function r(url, nindex, loginRequired=false, lb="") {
     return
   }
   const domain = process.env.API_DOMAIN
-  const rurl = getRUrl({nindex, domain, url, loginRequired, lb})
+  const pid = await getPidFromURL(nindex, url)
+  const rurl = getRUrl({nindex, domain, url, pid, loginRequired, lb})
 
   let query = {url}
   if(loginRequired) {
@@ -110,7 +128,7 @@ export async function redirectActiveTab(nindex, lb="") {
 
   // 只導目前作用中的分頁（使用者正在看的那個商家頁），不碰背景分頁
   chrome.tabs.query({active: true, currentWindow: true}, tabs => {
-    tabs.forEach(tab => {
+    tabs.forEach(async tab => {
       if(!tab.url) {
         return
       }
@@ -119,6 +137,7 @@ export async function redirectActiveTab(nindex, lb="") {
         nindex, lb,
         domain: bigGoDomain,
         url: tab.url,
+        pid: await getPidFromURL(nindex, tab.url),
       })
       chrome.tabs.update(tab.id, {url: rurl})
     })
