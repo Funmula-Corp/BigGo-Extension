@@ -15,12 +15,14 @@ import * as env from "@shared/env"
 import * as storage from "@shared/storage"
 import { installContextMenu } from "./libs/contextMenu"
 import "./background.listener"
+import installationTracker from './libs/installationTracker'
 
 function cacheCurrentVersion() {
   storage.setItem("version", chrome.runtime.getManifest().version)
 }
 
 async function firstStart() {
+  await installationTracker.recordInstall().catch(() => {})
   const url = isFirefox()
     ? chrome.runtime.getURL("/pages/privacy/index.html")
     : `https://${process.env.API_DOMAIN}/welcome.php?is_install=true`

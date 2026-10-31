@@ -17,6 +17,7 @@ import { isActivity } from "@shared/cashback"
 import { getId } from "@background/domain"
 import { installContextMenu } from "@background/contextMenu"
 import { getUnionMapFromList } from "@core/union"
+import installationTracker from './libs/installationTracker'
 
 const receiver = {}
 
@@ -54,6 +55,9 @@ receiver.get = (() => {
 
 receiver.util = (() => {
   return {
+    claim_install_conversion(_, sender) {
+      return installationTracker.claim(sender)
+    },
     async get_coupon(nindex) {
       // const couponObj = await Sync.syncCoupon(nindex)
       return []
