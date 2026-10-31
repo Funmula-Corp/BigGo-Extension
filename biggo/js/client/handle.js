@@ -152,6 +152,9 @@ export default function(){
     async get_region(_, postMessage) {
       postMessage(await getRegion())
     },
+    async claim_install_conversion(_, postMessage) {
+      postMessage(await msg.post('util', 'claim_install_conversion'))
+    },
     open_store_detail_popup({name, descHTML, image}) {
       msg.send("pop", "open_store_detail_popup", {name, descHTML, image})
     },
