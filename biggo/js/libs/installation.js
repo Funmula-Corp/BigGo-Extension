@@ -1,4 +1,5 @@
 const KEY = 'installation_conversion_v1'
+export const INSTALL_CONVERSION_MAX_AGE_MS = 24 * 60 * 60 * 1000
 
 // Kept in extension storage, so clearing website cookies cannot count it again.
 export function createInstallationTracker(storage, allowedOrigin, now = Date.now, makeId = () => crypto.randomUUID()) {
@@ -30,6 +31,10 @@ export function createInstallationTracker(storage, allowedOrigin, now = Date.now
         // Old installations upgraded to this version have no record and must not
         // turn into new installs just because a welcome page is visited.
         if(!record || record.claimed || typeof record.id !== 'string') return null
+        const age = now() - record.installedAt
+        // Keep expired records so updates/revisits cannot renew their eligibility.
+        if(!Number.isFinite(record.installedAt) || record.installedAt <= 0
+          || age < 0 || age >= INSTALL_CONVERSION_MAX_AGE_MS) return null
         if(await storage.setItem(KEY, {...record, claimed: true}) === false) return null
         return {installation_id: record.id, installed_at: record.installedAt}
       }).catch(() => null)

@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import {createInstallationTracker} from '../biggo/js/libs/installation.js'
+import {createInstallationTracker, INSTALL_CONVERSION_MAX_AGE_MS} from '../biggo/js/libs/installation.js'
 
 const sender = {url: 'https://extension.biggo.com/welcome.php?is_install=true', frameId: 0}
 function fixture(fail = false) {
@@ -42,4 +42,30 @@ test('storage failure must not authorize a conversion', async () => {
   const {tracker} = fixture(true)
   assert.equal(await tracker.recordInstall(), null)
   assert.equal(await tracker.claim(sender), null)
+})
+
+test('only installs less than 24 hours old are eligible, including after restart', async () => {
+  for(const age of [0, INSTALL_CONVERSION_MAX_AGE_MS - 1, INSTALL_CONVERSION_MAX_AGE_MS,
+    INSTALL_CONVERSION_MAX_AGE_MS + 1, 60 * INSTALL_CONVERSION_MAX_AGE_MS, -1]) {
+    const {tracker, storage} = fixture()
+    await tracker.recordInstall()
+    const restarted = createInstallationTracker(storage, 'https://extension.biggo.com', () => 123 + age)
+    const receipt = await restarted.claim(sender)
+    assert.equal(!!receipt, age >= 0 && age < INSTALL_CONVERSION_MAX_AGE_MS, `age=${age}`)
+    if(age >= INSTALL_CONVERSION_MAX_AGE_MS) {
+      await restarted.recordInstall()
+      assert.equal(await restarted.claim(sender), null, 'recordInstall must not refresh an expired install')
+      assert.equal((await storage.getItem('installation_conversion_v1')).installedAt, 123)
+    }
+  }
+})
+
+test('missing and invalid installation times cannot convert', async () => {
+  for(const installedAt of [undefined, null, 0, -1, NaN, Infinity, '123']) {
+    const {tracker, storage} = fixture()
+    await tracker.recordInstall()
+    const record = await storage.getItem('installation_conversion_v1')
+    await storage.setItem('installation_conversion_v1', {...record, installedAt})
+    assert.equal(await tracker.claim(sender), null)
+  }
 })
