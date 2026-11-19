@@ -31,16 +31,9 @@ content.bundle.js IIFE
   ├─ bindRuntimeListener()
   │    └─ chrome.runtime.onMessage.addListener()
   │         處理 background → content 訊息：
-  │         ├─ coupon_code → setupCoupon()
   │         ├─ store_detail → FrontendSender.send("open_store_detail")
-  │         ├─ coupon_iframe_alert → 建立優惠券 modal
   │         ├─ share_coupon_popup → 開啟回報 popup
   │         └─ login_success → onLoginSuccess()
-  │
-  ├─ listenSimpleIframeEvent()
-  │    └─ window.message listener
-  │         ├─ IFRAME_FIT_CONTENT → 調整 iframe 高度
-  │         └─ IFRAME_DESTROY → 移除 iframe DOM
   │
   └─ onceTrigger(buildPageFeature)
        └─ 頁面可見後執行一次
@@ -70,10 +63,9 @@ getNindex(currentUrl)
   │
   └─ 有 nindex → handleNormalEC(nindex)
        │
-       ├─ 結帳頁面偵測
-       │    ├─ isCheckoutPage(checkout_url) → couponIframe.init(nindex)
+       ├─ 結帳完成頁面偵測
        │    └─ isCheckoutPage(checkout_done_url) + isCashback
-       │         → cancelCashbackAndClearPopup()
+       │         → cancelCashback()
        │
        ├─ 返現商店資訊
        │    └─ isCashbackNindex → FrontendSender.send("open_store_desc")
@@ -155,7 +147,6 @@ chrome.runtime.sendMessage({ name, type, msg }, callback)
 | `sync` | `sites` | 同步 sites 資料 |
 | `sync` | `eclist` | 同步 ECList |
 | `sync` | `region` | 同步地區 |
-| `util` | `get_coupon` | 取得優惠券列表 |
 | `util` | `get_product` | 驗證商品頁面 |
 | `util` | `get_price_history` | 取得價格歷史 |
 | `util` | `resolve_true_nindex` | 解析真實 nindex |
@@ -227,13 +218,6 @@ dragIframe.build(nindex, pid)
 mltIframe.build(nindex, id)
   └─ FrontendSender.send("open_mlt", {nindex, id})
        └─ Svelte 元件建立 <biggo-mlt> custom element
-```
-
-### 優惠券（couponIframe）
-
-```
-couponIframe.init(nindex)
-  └─ iframe.src = chrome.runtime.getURL(pages/popmenu/couponIframe.html#nindex=...)
 ```
 
 ---

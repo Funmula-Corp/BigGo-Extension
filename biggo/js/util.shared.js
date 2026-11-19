@@ -21,12 +21,6 @@ export function i18n(key, param=[]) {
   return chrome.i18n.getMessage(key, param)
 }
 
-export function i18nTemplate(template) {
-  return template.replace(/__MSG_(\w+)__/g, function(match, v1) {
-    return v1 ? i18n(v1) : ""
-  })
-}
-
 export function getNindexRegion(nindex) {
   if(!(nindex+"").match(/[a-z]{2,5}_[a-z0-9A-Z]+_[a-z0-9A-Z]+/)) {
     return "us"
@@ -64,26 +58,6 @@ export function getPageImage(filepath) {
   }
 }
 
-export async function formatTemplate(template, formatter={}) {
-  // format image @IMG_xxx.xxx@
-  template = (template+"").replaceAll(/\@IMG_([0-9a-zA-Z\-\_\.\/\@]+(jpg|png|bmp))\@/gi, repl => {
-    const image = repl.slice(5, -1)
-    return chrome.runtime.getURL(image)
-  })
-
-  return Object.keys(formatter).reduce((_template, name) => {
-    const value = formatter[name]
-    const replName = `%${name}%`
-
-    return _template.replaceAll(replName, value)
-  }, template)
-}
-
-export async function getFormatTemplate(filepath, formatter={}) {
-  const template = await getTemplate(filepath)
-  return formatTemplate(template, formatter)
-}
-
 export function getScriptDom(path) {
   const src = chrome.runtime.getURL(path)
   const dom = document.createElement("script")
@@ -113,19 +87,6 @@ export function getRegionISO(region) {
 
   if(list[region]) return list[region]
   return "en-US"
-}
-
-/**
- * 複製文字
- * @param {String} text
- */
-export function copy(text) {
-  const input = document.createElement("input")
-  document.body.appendChild(input)
-  input.value = text
-  input.select()
-  document.execCommand("copy")
-  input.remove()
 }
 
 export async function replaceAsync(string, searchValue, replacer) {

@@ -4,7 +4,7 @@
 
 # BigGo Shopping Assistant
 
-**Automatic price comparison, price history, cashback, and coupons — right where you shop.**
+**Automatic price comparison, price history, and cashback — right where you shop.**
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](./LICENSE)
 [![Chrome Web Store](https://img.shields.io/badge/Chrome-Web%20Store-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/biggo-shopping-assistant/enlbnppjlpkmjponagpelanookhiejao)
@@ -19,7 +19,7 @@
 
 > **BigGo Shopping Assistant** is the browser extension behind [BigGo](https://biggo.com),
 > a shopping search engine used across Taiwan, Japan, Southeast Asia, and the Americas.
-> It adds price comparison, price history, cashback, and coupons right on the
+> It adds price comparison, price history, and cashback right on the
 > e-commerce sites and search results you already use.
 >
 > This repository is the **open-source upstream** for the extension.
@@ -32,7 +32,6 @@
 
 - **📉 Price history** — See how a product's price has moved over time, so you know if "on sale" is really a deal, and subscribe to price-drop alerts.
 - **💰 Cashback tracking** — Activate and track cashback when you shop at supported stores.
-- **🎟️ Coupon recommendations** — Surfaces applicable coupons and promo codes on store pages.
 - **🛍️ "More Like This"** — Suggests similar products (and better prices) while you browse.
 - **🌏 Multi-region** — Works across many markets with localized store coverage.
 - **🏆 Store featured** — A **Featured** extension on both the Chrome Web Store and Microsoft Edge Add-ons.

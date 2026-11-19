@@ -20,10 +20,6 @@ export async function getNindex(url) {
   return result.nindex
 }
 
-export async function getCoupon(nindex) {
-  return await send("util", "get_coupon", nindex)
-}
-
 export async function markCashbackActivity(nindex) {
   send("cashback", "mark_activity", nindex)
 }
@@ -40,48 +36,6 @@ export function updateSelectText(text) {
   send("util", "update_select_menu_text", text)
 }
 
-export async function setupCoupon(code, title, content) {
-  if (document.getElementById('cp_popup')) {
-    document.getElementById('cp_popup').remove();
-  }
-
-  const coupon = document.createElement('div');
-  coupon.id = 'cp_popup';
-  coupon.innerHTML = await share.getFormatTemplate("coupon_pop.html", {
-    title, content, code,
-    copy: share.i18n("Copy"),
-    discount_code: share.i18n("discount_code_full"),
-    copied: share.i18n("COPIED_CHECKOUT")
-  })
-
-  share.copy(code)
-
-  const script = document.createElement('script')
-  script.text = `
-    function clickCode() {
-      var sctarget = document.getElementById('pop-copy');
-      var ohtml = '<span>${share.i18n("Copy")}</span><span>${share.i18n("discount_code_full")}</span>';
-      var nhtml = '<span>${share.i18n("Copied")}</span>';
-      sctarget.innerHTML = nhtml;
-
-      var el = document.getElementById('coupon-pop-code');
-      var range = document.createRange();
-      range.selectNodeContents(el);
-      var sel = window.getSelection();
-      sel.removeAllRanges();
-      sel.addRange(range);
-      document.execCommand('copy');
-      window.getSelection().removeAllRanges();
-
-      setTimeout(function() {
-        sctarget.innerHTML = ohtml;
-      }, 3000)
-    }`
-
-  document.body.appendChild(coupon)
-  document.body.appendChild(script)
-}
-
 export function isCheckoutPage(urlList, url=window.location.href) {
   for (const checkoutUrl of urlList) {
     if((url+"").indexOf(checkoutUrl) > -1) {
@@ -93,11 +47,6 @@ export function isCheckoutPage(urlList, url=window.location.href) {
 
 export async function cancelCashback(nindex) {
   return await send("cashback", "cancel_cashback", nindex)
-}
-
-export async function cancelCashbackAndClearPopup(nindex) {
-  send("popup", "clear", nindex)
-  return cancelCashback(nindex)
 }
 
 export async function resolveTrueNindex(nindex, url=window.location.href) {

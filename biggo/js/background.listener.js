@@ -50,9 +50,6 @@ receiver.util = (() => {
     claim_install_conversion(_, sender) {
       return installationTracker.claim(sender)
     },
-    async get_coupon(nindex) {
-      return []
-    },
     async resolve_true_nindex({nindex, url}) {
       return util.resolveTrueNindex(nindex, url)
     },

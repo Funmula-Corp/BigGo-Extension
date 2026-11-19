@@ -6,7 +6,7 @@ import { isLogin, getUserProfile } from "@shared/user"
 import { isOverShowPopupDoc, increasePopupDocShow, isReviewed, setReviewed, getMLTFold, openMLTFold, closeMLTFold } from "@shared/status"
 import { isActivity } from "@shared/cashback"
 import { getConfig } from "@shared/config"
-import { arrayBufferToBase64, copy, getNindexRegion } from "@/util.shared"
+import { arrayBufferToBase64, getNindexRegion } from "@/util.shared"
 import * as storage from "@shared/storage"
 
 async function getHistoryClick() {
@@ -60,13 +60,6 @@ export default function(){
     },
     async logout_user(_, postMessage) {
       postMessage(await msg.post("util", "logout"))
-    },
-    async get_coupon(nindex, postMessage) {
-      postMessage(await msg.post("util", "get_coupon", nindex))
-    },
-    async set_coupon({code, title, content}) {
-      copy(code)
-      util.setupCoupon(code, title, content)
     },
     async enable_cashback({nindex}) {
       msg.send("cashback", "enable", {nindex, lb: "extension_logobutton"})
