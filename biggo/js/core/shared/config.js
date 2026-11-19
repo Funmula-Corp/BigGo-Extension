@@ -6,7 +6,6 @@ export function getDefConfig() {
       priceHistory: true,
       moreLikeThis: true,
       searchEngineSuggest: true,
-      idleCashback: true,
       blockSetting: true,
       region: "auto",
       imageSearchContext: true,
