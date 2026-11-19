@@ -51,30 +51,6 @@ export async function setPopupMenu(tabId, tabUrl, nindex, itemId, {animation=tru
   const region = await getRegion()
   const isCbRegion = isCashbackRegion(region)
 
-  // 確認付款的頁面要做的處理
-  try {
-    if(site && site[nindex] && site[nindex].item && site[nindex].item.checkout_done_url) {
-      const checkoutUrls = site[nindex].item.checkout_done_url
-      for (const url of checkoutUrls) {
-        if(tabUrl.toLowerCase().indexOf(url.toLowerCase()) > -1) {
-          let matchKey = /https:\/\//i
-          if(tabUrl.toUpperCase().indexOf('%3A%2F%2F') > -1) {
-            matchKey = /(http\S+%3A%2F%2F)/i
-          }
-          if(tabUrl.indexOf('://') > -1) {
-            matchKey = /(http\S+\:\/\/)/i
-          }
-
-          if(tabUrl.toUpperCase().indexOf('%3A%2F%2F') > -1 || tabUrl.indexOf('://') > -1 && site[nindex].domain && site[nindex].domain[0]) {
-            tabUrl = tabUrl.match(matchKey)[1] + site[nindex].domain[0]
-          }
-        }
-      }
-    }
-  } catch (error) {
-    console.error("decoded urls error: ", error)
-  }
-
   // 處理蝦皮的狀態
   try {
     const tab = await getCurrentTab()

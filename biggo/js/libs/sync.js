@@ -187,13 +187,9 @@ export async function syncLoginProcess(force=false) {
       }
 
       const isLogin = !!data.is_login
-      const username = data.name || ""
 
       User.setLogin(isLogin, data)
       storage.setItem(STORAGE_KEY_LOGIN_LAST_TIME, Date.now())
-      if(username) {
-        storage.setItem("username", username)
-      }
 
       // 如果有設定值
       if(data.extension_config) {

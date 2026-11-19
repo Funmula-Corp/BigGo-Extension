@@ -7,18 +7,6 @@
 		"message": "Perbandingan harga, sejarah harga dan promosi kedai. Membeli-belah pintar dengan Pembantu Beli Belah BigGo.",
 		"description": "manifest description"
 	},
-	"Copy": {
-		"message": "Copy",
-		"description": "Copy"
-	},
-	"discount_code_full": {
-		"message": "Discount code",
-		"description": "Discount code"
-	},
-	"Copied": {
-		"message": "Copied",
-		"description": "Copied"
-	},
 	"coupon": {
 		"message": "Promotions",
 		"description": "Promotions"
@@ -26,10 +14,6 @@
 	"PRICE_HISTORY": {
 		"message": "price history",
 		"description": "price history"
-	},
-	"COPIED_CHECKOUT": {
-		"message": "Copied. Please use it at checkout page",
-		"description": "Copied. Please use it at checkout page"
 	},
 	"SEARCH_WITH_BIGGO": {
 		"message": "Search $word$ with Biggo",
@@ -123,18 +107,6 @@
 		"message": "Sekiranya Pulangan Tunai anda tidak dijejaki, mungkin hilang kerana alasan berikut tetapi tidak terhad kepada: tutup penyemak imbas, buka tab yang tidak dihubungkan dari BigGo, klik pada sepanduk iklan atau pautan, pautan ke laman web membeli-belah atau perbandingan lain , pasang peluasan membeli-belah yang lain, atau masa tamat aktiviti tidak melebihi 30 minit.",
 		"description": ""
 	},
-	"close_price_history_desc": {
-		"message": "Anda belum masuk Pembantu Beli-belah BigGo!",
-		"description": ""
-	},
-	"close_price_history_tip": {
-		"message": "Adakah anda pasti mematikan tetingkap petuah sejarah harga?",
-		"description": ""
-	},
-	"confirm": {
-		"message": "Mengesahkan",
-		"description": ""
-	},
 	"cancel": {
 		"message": "Batal",
 		"description": ""
@@ -156,10 +128,6 @@
 				"example": "10"
 			}
 		}
-	},
-	"coupon_popup_alert_desc": {
-		"message": "Adakah anda pasti mematikan pop timbul peringatan kupon?",
-		"description": ""
 	},
 	"no_mlt_result": {
 		"message": "Tiada keputusan",
@@ -256,42 +224,6 @@
 				"example": ""
 			}
 		}
-	},
-	"share_coupon_submit": {
-		"message": "Hantar kupon",
-		"description": ""
-	},
-	"share_coupon_title": {
-		"message": "Bantu menjadikan BigGo lebih baik dengan menambahkan kupon, dan juga menjadikan pengguna lain lebih berjimat.",
-		"description": ""
-	},
-	"share_coupon_desc": {
-		"message": "Penerangan",
-		"description": ""
-	},
-	"share_coupon_cancel": {
-		"message": "Batal",
-		"description": ""
-	},
-	"share_coupon_send": {
-		"message": "Kirim",
-		"description": ""
-	},
-	"share_coupon_tks": {
-		"message": "Terima kasih",
-		"description": ""
-	},
-	"share_coupon_code": {
-		"message": "Kami akan berkongsi kod anda dengan BigGo sebaik sahaja sistem kami menyemaknya.",
-		"description": ""
-	},
-	"share_coupon_done": {
-		"message": "Selesai",
-		"description": ""
-	},
-	"share_coupon_submit_other": {
-		"message": "Hantar kupon lain",
-		"description": ""
 	},
 	"privacy_learn_about_link": {
 		"message": "Dasar Privasi BigGo",

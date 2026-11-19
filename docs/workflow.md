@@ -33,9 +33,8 @@
 | `"ec_list_update_at"` | （字串直接使用） | `updateECList()` API 成功時 | timestamp，用於 3 小時 TTL 判斷 |
 | `"account_token"` | `STORAGE_KEY_ACCOUNT_TOKEN` | `syncAccountToken()` 取得 token 時 | account token 字串 |
 | `"sync_token_update_at"` | （字串直接使用） | `syncAccountToken()` 取得 token 時 | timestamp，用於 30 分鐘 TTL 判斷 |
-| `"login"` | `STORAGE_KEY_LOGIN` | `syncLoginProcess()` 透過 `User.setLogin()` | 登入狀態（JSON boolean） |
+| `"login_status"` | `STORAGE_KEY_LOGIN` | `syncLoginProcess()` 透過 `User.setLogin()` | 登入狀態（JSON boolean） |
 | `"login_last_time"` | `STORAGE_KEY_LOGIN_LAST_TIME` | `syncLoginProcess()` API 成功時 | timestamp，用於 30 分鐘 TTL 判斷 |
-| `"username"` | （字串直接使用） | `syncLoginProcess()` API 回傳有 name 時 | 使用者名稱 |
 
 ---
 

@@ -7,18 +7,6 @@
 		"message": "ค้นหาสินค้า เปรียบเทียบราคา เช็คประวัติราคา โปรโมชั่นร้านค้า | ช้อปสุดคุ้มด้วย BigGo ผู้ช่วยช้อปปิ้ง",
 		"description": "manifest description"
 	},
-	"Copy": {
-		"message": "คัดลอก",
-		"description": "Copy"
-	},
-	"discount_code_full": {
-		"message": "รหัสส่วนลด",
-		"description": "Discount code"
-	},
-	"Copied": {
-		"message": "คัดลอก",
-		"description": "Copied"
-	},
 	"coupon": {
 		"message": "โปรโมชั่น",
 		"description": "Promotions"
@@ -26,10 +14,6 @@
 	"PRICE_HISTORY": {
 		"message": "ประวัติราคา",
 		"description": "price history"
-	},
-	"COPIED_CHECKOUT": {
-		"message": "คัดลอกแล้ว โปรดใช้รหัสนี้ในหน้าสั่งซื้อ",
-		"description": "Copied. Please use it at checkout page"
 	},
 	"SEARCH_WITH_BIGGO": {
 		"message": "ค้นหา เปรียบเทียบราคา [$word$] ด้วย BigGo",
@@ -115,18 +99,6 @@
 		"message": "หาก cashback ของคุณจะไม่ถูกติดตาม อาจเพราะด้วยเหตุผลดังต่อไปนี้: ปิดเบราว์เซอร์แล้วเปิดแท็บที่ไม่ได้เชื่อมโยงกับ Biggo, คลิกที่ป้ายโฆษณาหรือลิงค์อื่นๆ, คลิกไปยังร้านค้าหรือเว็บไซต์เปรียบเทียบอื่น ๆ, ติดตั้ง extension ช้อปปิ้งอื่น ๆ หรือ หมดเวลาที่โค้ดสามารถติดตามได้คือมากกว่า 30 นาที",
 		"description": ""
 	},
-	"close_price_history_desc": {
-		"message": "คุณยังไม่ได้เข้าสู่ระบบ BigGo ผู้ช่วยช้อปปิ้ง",
-		"description": ""
-	},
-	"close_price_history_tip": {
-		"message": "คุณต้องการปิดหน้าต่างประวัติราคา?",
-		"description": ""
-	},
-	"confirm": {
-		"message": "ยืนยัน",
-		"description": ""
-	},
 	"cancel": {
 		"message": "ยกเลิก",
 		"description": ""
@@ -148,10 +120,6 @@
 				"example": "10"
 			}
 		}
-	},
-	"coupon_popup_alert_desc": {
-		"message": "คุณยืนยันที่จะปิดหน้าต่างการแจ้งเตือนคูปองส่วนลด?",
-		"description": ""
 	},
 	"no_mlt_result": {
 		"message": "ไม่มีผลลัพธ์",
@@ -248,42 +216,6 @@
 				"example": ""
 			}
 		}
-	},
-	"share_coupon_submit": {
-		"message": "ใส่คูปองส่วนลด",
-		"description": ""
-	},
-	"share_coupon_title": {
-		"message": "ใช้คูปองส่วนลด ช่วยประหยัดเงินได้มากขึ้น",
-		"description": ""
-	},
-	"share_coupon_desc": {
-		"message": "รายละเอียดคูปองส่วนลด",
-		"description": ""
-	},
-	"share_coupon_cancel": {
-		"message": "ยกเลิก",
-		"description": ""
-	},
-	"share_coupon_send": {
-		"message": "ส่ง",
-		"description": ""
-	},
-	"share_coupon_tks": {
-		"message": "ขอบคุณ",
-		"description": ""
-	},
-	"share_coupon_code": {
-		"message": "เราจะส่งโค้ดส่วนลดให้ หลังจากตรวจสอบแล้ว",
-		"description": ""
-	},
-	"share_coupon_done": {
-		"message": "สำเร็จ",
-		"description": ""
-	},
-	"share_coupon_submit_other": {
-		"message": "ใส่คูปองส่วนลดอื่นๆ",
-		"description": ""
 	},
 	"privacy_learn_about_link": {
 		"message": "BigGo Privacy Policy",

@@ -7,18 +7,6 @@
 		"message": "So sánh giá, lịch sử giá và mã khuyến mãi cửa hàng. Mua sắm thông minh với Công cụ hỗ trợ mua sắm BigGo.",
 		"description": "manifest description"
 	},
-	"Copy": {
-		"message": "Sao chép",
-		"description": "Copy"
-	},
-	"discount_code_full": {
-		"message": "Mã giảm giá",
-		"description": "Discount code"
-	},
-	"Copied": {
-		"message": "Đã sao chép",
-		"description": "Copied"
-	},
 	"coupon": {
 		"message": "Khuyến mãi!",
 		"description": "Promotions"
@@ -26,10 +14,6 @@
 	"PRICE_HISTORY": {
 		"message": "price history",
 		"description": "price history"
-	},
-	"COPIED_CHECKOUT": {
-		"message": "Đã sao chép. Vui lòng sử dụng nó trong trang thanh toán",
-		"description": "Copied. Please use it at checkout page"
 	},
 	"SEARCH_WITH_BIGGO": {
 		"message": "Search $word$ with Biggo",
@@ -115,18 +99,6 @@
 		"message": "If your Cashback isn't tracked, it may be missing for the following reasons but not limited to: close the browser, open a tab that is not linked from BigGo, click on an advertisement banners or link, link to other shopping or comparison websites, install other shopping extension, or the session inactivity timeout is more than 30 minutes.",
 		"description": ""
 	},
-	"close_price_history_desc": {
-		"message": "You are not sign in BigGo Shopping Assistant yet! ",
-		"description": ""
-	},
-	"close_price_history_tip": {
-		"message": "Are you sure to turn off price history popup?",
-		"description": ""
-	},
-	"confirm": {
-		"message": "Confirm",
-		"description": ""
-	},
 	"cancel": {
 		"message": "Đóng",
 		"description": ""
@@ -148,10 +120,6 @@
 				"example": "10"
 			}
 		}
-	},
-	"coupon_popup_alert_desc": {
-		"message": "Bạn có chắc chắn tắt cửa sổ bật lên lời nhắc phiếu giảm giá không?",
-		"description": ""
 	},
 	"no_mlt_result": {
 		"message": "Không có kết quả",
@@ -248,42 +216,6 @@
 				"example": ""
 			}
 		}
-	},
-	"share_coupon_submit": {
-		"message": "Gửi phiếu giảm giá",
-		"description": ""
-	},
-	"share_coupon_title": {
-		"message": "Giúp cải thiện BigGo bằng cách thêm phiếu giảm giá và cũng làm cho những người dùng khác tiết kiệm nhiều hơn.",
-		"description": ""
-	},
-	"share_coupon_desc": {
-		"message": "Sự miêu tả",
-		"description": ""
-	},
-	"share_coupon_cancel": {
-		"message": "Hủy bỏ",
-		"description": ""
-	},
-	"share_coupon_send": {
-		"message": "Gửi",
-		"description": ""
-	},
-	"share_coupon_tks": {
-		"message": "Cảm ơn bạn!",
-		"description": ""
-	},
-	"share_coupon_code": {
-		"message": "Chúng tôi sẽ chia sẻ mã của bạn với BigGo sau khi hệ thống của chúng tôi xem xét mã đó.",
-		"description": ""
-	},
-	"share_coupon_done": {
-		"message": "Xong",
-		"description": ""
-	},
-	"share_coupon_submit_other": {
-		"message": "Gửi phiếu giảm giá khác",
-		"description": ""
 	},
 	"privacy_learn_about_link": {
 		"message": "BigGo Privacy Policy",

@@ -7,7 +7,6 @@ export function getDefConfig() {
       moreLikeThis: true,
       searchEngineSuggest: true,
       idleCashback: true,
-      couponPopup: true,
       blockSetting: true,
       region: "auto",
       imageSearchContext: true,
@@ -16,9 +15,6 @@ export function getDefConfig() {
     dragPriceHistory: {
       position: 30,
       default: "15sec"
-    },
-    popCouponSetting: {
-      default: "def"
     }
   }
 }
@@ -37,11 +33,6 @@ export async function getConfig() {
     ...config.dragPriceHistory,
   }
 
-  config.popCouponSetting = {
-    ...defConfig.popCouponSetting,
-    ...config.popCouponSetting,
-  }
-
   return config
 }
 
@@ -58,12 +49,6 @@ export async function setConfig(config) {
     ...getDefConfig().dragPriceHistory,
     ...(currentConfig.dragPriceHistory || {}),
     ...(config.dragPriceHistory || {})
-  }
-
-  _config.popCouponSetting = {
-    ...getDefConfig().popCouponSetting,
-    ...(currentConfig.popCouponSetting || {}),
-    ...(config.popCouponSetting || {})
   }
 
   storage.setItem(STORAGE_KEY_CONFIG, _config)
@@ -87,7 +72,6 @@ export async function setConfigFromServer(remoteConfig) {
   await setPageFeature({
     priceHistory: !!remoteConfig.price_history,
     moreLikeThis: !!remoteConfig.more_like_this,
-    couponPopup: !!remoteConfig.promocode,
     region: remoteConfig.region || current.pageFeature.region || "auto",
     searchEngineSuggest: typeof remoteConfig.google_query === "undefined" ? true : !!remoteConfig.google_query,
     blockSetting: typeof remoteConfig.block_setting === "undefined" ? true : !!remoteConfig.block_setting,

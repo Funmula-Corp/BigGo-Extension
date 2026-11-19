@@ -18,7 +18,7 @@ Popup 選單和 Icon 狀態根據目前分頁的網站類型、返現狀態、�
 | Icon | 常數 | 檔案 | 條件 |
 |------|------|------|------|
 | 灰色 | `ICON_GRAY` | `ic_B_nocashback@2x.png` | 非電商網站 |
-| 綠色 | `ICON_GREEN` | `ic_B_enabled@2x.png` | 電商但無返現（或有優惠券） |
+| 綠色 | `ICON_GREEN` | `ic_B_enabled@2x.png` | 電商但無返現 |
 | 黃色 | `ICON_YELLOW` | `ic_B_disabled@2x.png` | 有返現但未啟用（未登入 / 未活動） |
 | 紫色 | `ICON_MURASAKI` | `ic-b-p@2x.png` | 返現活動中 |
 | 黃紅框 | `ICON_YELLOW_RED_BORDER` | `ic-b-erro@2x.png` | Firefox 閃爍動畫用 |

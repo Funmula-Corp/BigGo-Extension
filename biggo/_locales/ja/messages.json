@@ -7,18 +7,6 @@
 		"message": "自動的に価格比較．価格履歴．店舗特典．クーポン取得でお得に買い物しましょう！",
 		"description": "manifest description"
 	},
-	"Copy": {
-		"message": "コピー",
-		"description": "Copy"
-	},
-	"discount_code_full": {
-		"message": "クーポンコード",
-		"description": "Discount code"
-	},
-	"Copied": {
-		"message": "コピーが完了しました",
-		"description": "Copied"
-	},
 	"coupon": {
 		"message": "プロモーション",
 		"description": "Promotions"
@@ -26,10 +14,6 @@
 	"PRICE_HISTORY": {
 		"message": "価格履歴",
 		"description": "price history"
-	},
-	"COPIED_CHECKOUT": {
-		"message": "コピーが完了しました。決済ページでペーストしてご利用ください。",
-		"description": "Copied. Please use it at checkout page"
 	},
 	"SEARCH_WITH_BIGGO": {
 		"message": "BigGoで「$word$」を検索する",
@@ -115,18 +99,6 @@
 		"message": "ブラウザが閉じられた、非BigGoからリンクしたタブを開いた、広告をクリックした、他の価格比較サイトに選択した、他の拡張機能をインストールした、またはタブを30分以上開いたままにしておいたことはキャッシュバックを追跡できない原因になる可能性が高いです。",
 		"description": ""
 	},
-	"close_price_history_desc": {
-		"message": "いまBigGo ヘルパーにログインしていません！この機能を再起動する場合は、アカウントメニューの機能設定へ再起動設定に進んでください。",
-		"description": ""
-	},
-	"close_price_history_tip": {
-		"message": "価格推移履歴のポップアップ通知をオフしますか？",
-		"description": ""
-	},
-	"confirm": {
-		"message": "確認",
-		"description": ""
-	},
 	"cancel": {
 		"message": "取り消し",
 		"description": ""
@@ -148,10 +120,6 @@
 				"example": "10"
 			}
 		}
-	},
-	"coupon_popup_alert_desc": {
-		"message": "クーポンコード画面を閉じますか？",
-		"description": ""
 	},
 	"no_mlt_result": {
 		"message": "検索結果はありません",
@@ -248,42 +216,6 @@
 				"example": ""
 			}
 		}
-	},
-	"share_coupon_submit": {
-		"message": "クーポンコード追加",
-		"description": ""
-	},
-	"share_coupon_title": {
-		"message": "ご提供いただきありがとうございます！クーポンコード追加により、これから使用者の皆様も節約できるクーポンが利用可能になります。",
-		"description": ""
-	},
-	"share_coupon_desc": {
-		"message": "クーポンコー詳細",
-		"description": ""
-	},
-	"share_coupon_cancel": {
-		"message": "取り消し",
-		"description": ""
-	},
-	"share_coupon_send": {
-		"message": "提出",
-		"description": ""
-	},
-	"share_coupon_tks": {
-		"message": "ご協力ありがとうございます。",
-		"description": ""
-	},
-	"share_coupon_code": {
-		"message": "審査後はこのクーポンコードをBigGoに提示します。ご助力のおかげ、感謝しております。",
-		"description": ""
-	},
-	"share_coupon_done": {
-		"message": "完成",
-		"description": ""
-	},
-	"share_coupon_submit_other": {
-		"message": "他のクーポンコード追加",
-		"description": ""
 	},
 	"privacy_learn_about_link": {
 		"message": "BigGo Privacy Policy",

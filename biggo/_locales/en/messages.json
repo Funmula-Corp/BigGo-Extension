@@ -7,18 +7,6 @@
 		"message": "Price comparison and product price history. Smart shopping with BigGo Shopping Assistant.",
 		"description": "manifest description"
 	},
-	"Copy": {
-		"message": "Copy",
-		"description": "Copy"
-	},
-	"discount_code_full": {
-		"message": "Discount code",
-		"description": "Discount code"
-	},
-	"Copied": {
-		"message": "Copied",
-		"description": "Copied"
-	},
 	"coupon": {
 		"message": "Promotions",
 		"description": "Promotions"
@@ -26,10 +14,6 @@
 	"PRICE_HISTORY": {
 		"message": "price history",
 		"description": "price history"
-	},
-	"COPIED_CHECKOUT": {
-		"message": "Copied. Please use it at checkout page",
-		"description": "Copied. Please use it at checkout page"
 	},
 	"SEARCH_WITH_BIGGO": {
 		"message": "Search $word$ with Biggo",
@@ -115,18 +99,6 @@
 		"message": "If your Cashback isn't tracked, it may be missing for the following reasons but not limited to: close the browser, open a tab that is not linked from BigGo, click on an advertisement banners or link, link to other shopping or comparison websites, install other shopping extension, or the session inactivity timeout is more than 30 minutes.",
 		"description": ""
 	},
-	"close_price_history_desc": {
-		"message": "You are not sign in BigGo Shopping Assistant yet! ",
-		"description": ""
-	},
-	"close_price_history_tip": {
-		"message": "Are you sure to turn off price history popup?",
-		"description": ""
-	},
-	"confirm": {
-		"message": "Confirm",
-		"description": ""
-	},
 	"cancel": {
 		"message": "Cancel",
 		"description": ""
@@ -148,10 +120,6 @@
 				"example": "10"
 			}
 		}
-	},
-	"coupon_popup_alert_desc": {
-		"message": "Are you sure to turn off coupon reminder popup?",
-		"description": ""
 	},
 	"no_mlt_result": {
 		"message": "No result",
@@ -248,42 +216,6 @@
 				"example": ""
 			}
 		}
-	},
-	"share_coupon_submit": {
-		"message": "Submit a coupon",
-		"description": ""
-	},
-	"share_coupon_title": {
-		"message": "Help make BigGo better by adding a coupon, and also make other users save more.",
-		"description": ""
-	},
-	"share_coupon_desc": {
-		"message": "Description",
-		"description": ""
-	},
-	"share_coupon_cancel": {
-		"message": "Cancel",
-		"description": ""
-	},
-	"share_coupon_send": {
-		"message": "Send",
-		"description": ""
-	},
-	"share_coupon_tks": {
-		"message": "Thank you!",
-		"description": ""
-	},
-	"share_coupon_code": {
-		"message": "We'll share your code with BigGo once our system reviews it.",
-		"description": ""
-	},
-	"share_coupon_done": {
-		"message": "Done",
-		"description": ""
-	},
-	"share_coupon_submit_other": {
-		"message": "Submit another coupon",
-		"description": ""
 	},
 	"privacy_learn_about_link": {
 		"message": "BigGo Privacy Policy",
