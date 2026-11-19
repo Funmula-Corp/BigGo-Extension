@@ -37,7 +37,7 @@ chrome.webNavigation.onCommitted (main frame only)
         ├─ 取得 sites 資料：getSiteList()
         ├─ site = sites[nindex]
         ├─ isEC = site && site.item
-        ├─ isCashback = isEC && site.detail.desc
+        ├─ isCashback = isEC && site.detail && site.detail.desc
         │
         ├─ isLogin = await syncLogin()
         ├─ isAct = isLogin && isCashback && await Cashback.isActivity(nindex, tabId)
@@ -50,7 +50,7 @@ chrome.webNavigation.onCommitted (main frame only)
         ├─ !isEC                                           │
         │    └─ ICON_GRAY                                  │
         │                                                  │
-        ├─ isEC && !isCashback                              │
+        ├─ isEC && (!isCashback || (!isCbRegion && !isAct)) │
         │    └─ ICON_GREEN                                 │
         │                                                  │
         ├─ isCashback && isCbRegion && (!isLogin || !isAct) │

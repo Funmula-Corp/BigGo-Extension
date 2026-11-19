@@ -11,14 +11,6 @@ import { getRegion } from "@shared/region"
 import { getSiteList } from "@core/shared/sites"
 import { isCashbackRegion } from "@shared/cashback"
 
-function getCurrentTab() {
-  return new Promise(resolve => {
-    chrome.tabs.query({ currentWindow: true, active: true }, async tabs => {
-      resolve(tabs && tabs.length && tabs[0] || tabs)
-    })
-  })
-}
-
 export function updateAllPopMenu() {
   chrome.tabs.query({}, async (tabs) => {
     for (const tab of tabs) {
@@ -53,8 +45,7 @@ export async function setPopupMenu(tabId, tabUrl, nindex, itemId, {animation=tru
 
   // 處理蝦皮的狀態
   try {
-    const tab = await getCurrentTab()
-    const resolved = await util.resolveTrueNindex(nindex, tab.url)
+    const resolved = await util.resolveTrueNindex(nindex, tabUrl)
     nindex = resolved.nindex
   } catch (error) {}
 
@@ -65,8 +56,8 @@ export async function setPopupMenu(tabId, tabUrl, nindex, itemId, {animation=tru
     await Icon.setIcon(ICON_GRAY, tabId)
   }
 
-  // 不支援反現的電商就綠色
-  if(isEC && !isCashback){
+  // 不支援返現的電商，或返現電商但所在地區不支援返現（且未啟動），都用綠色
+  if(isEC && (!isCashback || (!isCbRegion && !isAct))){
     await Icon.setIcon(ICON_GREEN, tabId)
   }
 
