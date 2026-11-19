@@ -70,12 +70,12 @@ export function setCountPopupDocShow(v) {
   storage.setItem(POPUP_DOC_SHOW_STORAGE_KEY, +v)
 }
 
-export function increasePopupDocShow(count=1) {
-  setCountPopupDocShow(getCountPopupDocShow() + count)
+export async function increasePopupDocShow(count=1) {
+  setCountPopupDocShow(await getCountPopupDocShow() + count)
 }
 
-export function isOverShowPopupDoc() {
-  return getCountPopupDocShow() > POPUP_DOC_SHOW_LIMIT
+export async function isOverShowPopupDoc() {
+  return await getCountPopupDocShow() > POPUP_DOC_SHOW_LIMIT
 }
 
 /* ----------------------------------------------------------------- */
