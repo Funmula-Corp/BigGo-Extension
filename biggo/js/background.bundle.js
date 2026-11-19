@@ -22,7 +22,7 @@ function cacheCurrentVersion() {
 }
 
 async function firstStart() {
-  await installationTracker.recordInstall().catch(() => {})
+  await installationTracker.recordInstall().catch(console.error)
   const url = isFirefox()
     ? chrome.runtime.getURL("/pages/privacy/index.html")
     : `https://${process.env.API_DOMAIN}/welcome.php?is_install=true`
