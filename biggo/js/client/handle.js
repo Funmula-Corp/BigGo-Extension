@@ -107,7 +107,7 @@ export default function(){
       postMessage(await isLogin())
     },
     async is_over_show_doc(_, postMessage) {
-      postMessage(isOverShowPopupDoc())
+      postMessage(await isOverShowPopupDoc())
     },
     async show_doc() {
       increasePopupDocShow()
