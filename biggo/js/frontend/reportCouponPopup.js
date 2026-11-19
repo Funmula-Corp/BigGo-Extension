@@ -133,7 +133,3 @@ export function remove() {
     dom.style.display = "none"
   }
 }
-
-export default {
-  build, remove
-}

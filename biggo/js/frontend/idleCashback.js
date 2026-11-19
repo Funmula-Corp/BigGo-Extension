@@ -1,5 +1,5 @@
 import { inject } from "./shadowDom"
-import { getFilePath, getFormatTemplateDom, i18n, biggoR, getSiteList } from "./util"
+import { getFormatTemplateDom, i18n, biggoR, getSiteList } from "./util"
 
 const COMPONENT_NAME = "biggo-idle"
 
@@ -76,7 +76,7 @@ export async function build(nindex) {
   const dom = await getDom(nindex)
   buildFeat(dom, site, nindex)
 
-  const shadow = inject(COMPONENT_NAME, dom, {
+  inject(COMPONENT_NAME, dom, {
     left: 0,
     right: 0,
     bottom: 0,

@@ -11,7 +11,3 @@ export async function syncToServer() {
     region: config.pageFeature.region,
   })
 }
-
-export default {
-  syncToServer
-}

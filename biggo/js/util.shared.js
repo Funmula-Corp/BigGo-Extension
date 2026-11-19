@@ -208,10 +208,6 @@ export async function sleep(ms) {
   })
 }
 
-export function getDomFromHTML(html) {
-  return document.createRange().createContextualFragment(html)
-}
-
 export function arrayBufferToBase64(arrayBuffer) {
   var binary = ""
   var bytes = new Uint8Array(arrayBuffer)
@@ -255,26 +251,4 @@ export function isImageSearchSupportFormat(buffer) {
   }
 
   return false
-}
-
-export default {
-  addExtensionInfo2Url,
-  getQueryVariable,
-  getNindexRegion,
-  i18n,
-  i18nTemplate,
-  getSitesLang,
-  getTemplate,
-  formatTemplate,
-  getFormatTemplate,
-  getScriptDom,
-  getNindexISO,
-  getRegionISO,
-  copy,
-  replaceAsync,
-  uuid,
-  isFirefox,
-  isUrl,
-  chunk,
-  sleep
 }

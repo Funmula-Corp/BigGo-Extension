@@ -7,10 +7,6 @@ import { getFilePath } from "./frontend/util"
 
 const rev = Receiver.getReceiver(Receiver)
 
-rev.onMessage("is_ready", (_, reply) => {
-  reply(true)
-})
-
 rev.onMessage("open_store_desc", data => {
   StoreDescPopup.build(data)
 })

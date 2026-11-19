@@ -4,7 +4,6 @@ import { shareCoupon, getNindex } from "./content/util"
 import { send } from "./content/messenger"
 import ga from "@shared/ga"
 import { getMLTFold, closeMLTFold, openMLTFold, isReviewed, setReviewed } from "@shared/status"
-import { getRegion } from "@shared/region"
 import { getSiteList } from "@shared/sites"
 
 // TODO 之後有多種命名要改
@@ -13,10 +12,6 @@ import { getSiteList } from "@shared/sites"
 
   rev.onMessage("get_sites_list", async (_, reply) => {
     reply(await getSiteList())
-  })
-
-  rev.onMessage("get_region", async (_, reply) => {
-    reply(await getRegion())
   })
 
   rev.onMessage("get_extension_url", ({path}, reply) => {

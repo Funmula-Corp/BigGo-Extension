@@ -2,7 +2,6 @@ import { getIdWithRegexp } from "../core/shared/eclist"
 import localStorage from "../core/shared/storage"
 import wrapQueue from "./queue"
 
-const HTTP_TIME_OUT = 1000 * 60 * 10
 export function request(url, method="GET", body="", param={}) {
   const HTTP_TIME_OUT = 1000 * 60 * 10
 
@@ -52,14 +51,6 @@ export function postJson(url, data={}) {
   return post(url, data).then(res => res.json())
 }
 
-export function postText(url, data={}) {
-  return post(url, data).then(res => res.text())
-}
-
-export const http = {
-  getJson, getText, postJson, postText
-}
-
 export async function isProduct(nindex, pid) {
   return getProduct(nindex, pid).then(res => res.result)
 }
@@ -97,16 +88,8 @@ export async function getProduct(nindex, pid) {
   })
 }
 
-export async function detectShopeeBid(pid) {
-  return isProduct("tw_bid_shopee", pid)
-}
-
 export async function detectShopeeMall(pid) {
   return isProduct("tw_mall_shopeemall", pid)
-}
-
-export function getProductInfo(pid, nindex) {
-  return getJson(`https://biggo.com.tw/api/get_product.php?nindex=${nindex}&oid=${pid}`)
 }
 
 export async function getShopeePid(url) {

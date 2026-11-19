@@ -31,16 +31,6 @@ function isGooglePage() {
   return false
 }
 
-function isGoogleFirstPage() {
-  try {
-    const url = new URL(window.location.href)
-    const start = url.searchParams.get("start")
-    return !start || start == "0"
-  } catch(e) {}
-
-  return false
-}
-
 function isGoogleTextSearchPage() {
   try {
     const url = new URL(window.location.href)

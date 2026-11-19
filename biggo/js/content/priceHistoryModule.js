@@ -13,19 +13,6 @@ export const HOLD_IMG = getPageImage("history/btn_diff_price_unchanged_i@2x.png"
 export function getPriceUpColor(region="TW") {
   region = (region+"").toUpperCase()
 
-  // switch(region) {
-  //   case "MY":
-  //   case "SG":
-  //   case "ID":
-  //   case "PH":
-  //     return GREEN
-  //   case "TW":
-  //   case "TH": case "THAI":
-  //   case "JP":
-  //   default:
-  //     return RED
-  // }
-
   return RED
 }
 
@@ -79,14 +66,4 @@ export async function getDiffImgWithFrontend(region, diff) {
     case RED_DOWN_IMG: return getFilePath("images/history/btn-diff-price-down-red-20-x-19-2@2x.png")
     default: return getFilePath("images/history/btn-diff-price-unchanged-20-x-18@2x.png")
   }
-}
-
-export default {
-  getPriceDownColor, getPriceUpColor,
-  getPriceUpImage, getPriceDownImage,
-  getDiffImg,
-  GREEN, RED,
-  RED_UP_IMG, GREEN_UP_IMG,
-  RED_DOWN_IMG, GREEN_DOWN_IMG,
-  HOLD_IMG,
 }

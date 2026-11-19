@@ -1,12 +1,10 @@
 import { getTemplateDom, injectStyle, getPriceHistory, emailLogin, closePageFeature } from "./util"
-import { getPageImage, i18n, getNindexISO, getNindexRegion, getSitesLang } from "../util.shared"
+import { getPageImage, i18n, getNindexISO, getSitesLang } from "../util.shared"
 import addInternalListener from "../iframe/biggo.internal.bundle"
 import msg from "./messenger"
 import buildAlert from "./dragIframeAlert"
-import PriceHistory from "./priceHistoryModule"
-import { UNION_MAP } from "../core/union"
 import EventBus from "./EventBus"
-import { setPageFeature, getConfig } from "@shared/config"
+import { getConfig } from "@shared/config"
 import { isLogin } from "@core/shared/user"
 import { getDragPricehistoryDays, setDragPricehistoryDays } from "@shared/status"
 
@@ -699,7 +697,6 @@ async function processDragIframe(data, nindex, pid, oid, defPrice, currency, con
       : data.price_history[data.price_history.length-2].y
     const diff = price - lastPrice
     localeDiffPrice = `${symbol}${Math.abs(+diff).toLocaleString(getNindexISO(nindex))}`
-    const nindexRegion = getNindexRegion(nindex)
 
     if(diff < 0) {
       diffImg = getPageImage("ic_price-history_price-down.svg")

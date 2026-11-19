@@ -93,18 +93,6 @@ export const getParser = (url, nindex, config) => {
   return pid
 }
 
-export const getParserWrap = (nindex, config) => {
-  return url => getParser(url, nindex, config)
-}
-
-export const buildEcList = (list) => {
-  tmp = {...list}
-  for (const nindex in tmp) {
-    tmp[nindex].pparser = getParserWrap(nindex, tmp[nindex])
-  }
-  return tmp
-}
-
 export const getProductId = (list, nindex, url) => {
   let pid = ""
   if(list[nindex]) {
@@ -119,4 +107,4 @@ export const getProductId = (list, nindex, url) => {
   return ""
 }
 
-export default {buildEcList, getIdWithRegexp, getProductId}
+export default {getIdWithRegexp, getProductId}

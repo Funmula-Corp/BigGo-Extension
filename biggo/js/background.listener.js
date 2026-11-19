@@ -1,4 +1,3 @@
-import * as Region from "@shared/region"
 import * as Sync from "./libs/sync"
 import * as util from "./libs/util"
 import * as Cashback from "./libs/cashback"
@@ -32,18 +31,11 @@ receiver.sync = (() => {
     region() {
       return Sync.syncRegion()
     },
-    login() {
-      return Sync.syncLogin()
-    },
   }
 })()
 
 receiver.get = (() => {
   return {
-    async shopee(url) {
-      const { nindex, pid } = await util.resolveTrueNindex("tw_bid_shopee", url)
-      return { id: pid, nindex }
-    },
     tabId(_, sender) {
       return getCurrentTabId(sender.tab?.id || "")
     },
@@ -59,22 +51,10 @@ receiver.util = (() => {
       return installationTracker.claim(sender)
     },
     async get_coupon(nindex) {
-      // const couponObj = await Sync.syncCoupon(nindex)
       return []
-    },
-    is_shopee_mall(pid) {
-      return util.detectShopeeMall(pid)
-    },
-    is_shopee_bid(pid) {
-      return util.detectShopeeBid()
     },
     async resolve_true_nindex({nindex, url}) {
       return util.resolveTrueNindex(nindex, url)
-    },
-    update_url(url) {
-      chrome.tabs.query({active: true}, (tab)=>{
-        chrome.tabs.update(tab.id, {url})
-      })
     },
     update_same_nindex_url({nindex, lb}) {
       BigGo.redirectActiveTab(nindex, lb)
@@ -118,9 +98,6 @@ receiver.util = (() => {
       chrome.tabs.remove(id, () => {
         console.log(`remove tab ${id}`)
       })
-    },
-    is_product({nindex, pid}) {
-      return util.isProduct(nindex, pid)
     },
     get_product({nindex, pid}) {
       return util.getProduct(nindex, pid)
@@ -207,9 +184,6 @@ receiver.util = (() => {
         })
       })
     },
-    save_permission(obj) {
-      storage.setItem("permission", obj)
-    },
     async get_nindex_from_url(url) {
       const nindex = await Sites.getNindexFromURL(url)
       const result = await util.resolveTrueNindex(nindex, url)
@@ -254,9 +228,6 @@ receiver.pop = (() => {
     },
     show_share_coupon({nindex}) {
       util.sendMsgToCurrentPage("share_coupon_popup", {nindex})
-    },
-    clear(nindex) {
-      Status.clearPopuped(nindex)
     },
     async upload_image(src) {
       if(!src) {
@@ -321,9 +292,6 @@ receiver.cashback = (() => {
     },
     enable({nindex}) {
       BigGo.redirectActiveTab(nindex)
-    },
-    get_r_url({nindex, url, domain, pid="biggo"}) {
-      return BigGo.getRUrl({nindex, url, domain, pid})
     },
     get_cashback_detail(nindex) {
       return Cashback.getCashbackDetail(nindex)

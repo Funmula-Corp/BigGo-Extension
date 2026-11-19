@@ -33,25 +33,6 @@ export async function getItem(key, def="") {
   })
 }
 
-export async function getItemWithExpire(key, onExpire=()=>undefined) {
-  const value = await getItem(key, false)
-  if(!value) {
-    return
-  }
-
-  if(!value.expire) {
-    return value
-  }
-
-  if(Date.now() > (+value.expire + value.timestamp)) {
-    const res = await onExpire()
-    setItemWithExpire(key, value, Date.now())
-    return res
-  }
-
-  return value.value
-}
-
 export async function setItem(key, value) {
   return new Promise(resolve => {
     chrome.storage.local.set({[key]: value}, () => {
@@ -62,14 +43,6 @@ export async function setItem(key, value) {
 
       resolve()
     })
-  })
-}
-
-export async function setItemWithExpire(key, value, expire = 60000) {
-  return setItem(key, {
-    timestamp: Date.now(),
-    expire,
-    value,
   })
 }
 

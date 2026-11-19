@@ -1,6 +1,5 @@
 import {getDataType} from "../Bridge"
 
-const GLOBAL_FN = "__biggo_msg_receiver"
 /**
  * 訊息傳遞原型物件
  * @interface

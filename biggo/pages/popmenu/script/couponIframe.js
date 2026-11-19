@@ -6,7 +6,6 @@ import couponFactory from "./util/coupon"
 import { getSiteList } from "@shared/sites"
 import { isLogin } from "@core/shared/user"
 import { getConfig, setConfig, setPageFeature } from "@core/shared/config"
-import ga from "@shared/ga"
 import { i18n } from "@/util.shared"
 
 /**

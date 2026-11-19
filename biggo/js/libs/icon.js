@@ -5,7 +5,6 @@ export const ICON_ROOT_PATH = "/icons/"
 export const ICON_GREEN = "ic_B_enabled@2x.png"
 export const ICON_YELLOW = "ic_B_disabled@2x.png"
 export const ICON_GRAY = "ic_B_nocashback@2x.png"
-export const ICON_FLASH_YELLOW = "2021_Extension icon.gif"
 export const ICON_YELLOW_RED_BORDER = "ic-b-erro@2x.png"
 export const ICON_MURASAKI = "ic-b-p@2x.png"
 
@@ -167,7 +166,6 @@ export default {
   ICON_GREEN,
   ICON_YELLOW,
   ICON_GRAY,
-  ICON_FLASH_YELLOW,
   ICON_YELLOW_RED_BORDER,
   ICON_MURASAKI
 }

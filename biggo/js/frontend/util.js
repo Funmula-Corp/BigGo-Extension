@@ -1,5 +1,5 @@
 import * as sender from "../prototype/Sender/content"
-import shared from "../util.shared"
+import { replaceAsync } from "../util.shared"
 
 export async function getFormatTemplateDom(path, format={}) {
   const html = await getFormatTemplate(path, format)
@@ -8,7 +8,7 @@ export async function getFormatTemplateDom(path, format={}) {
 
 export async function formatTemplate(template, formatter={}) {
   // format image @IMG_xxx.xxx@
-  template = await shared.replaceAsync(template, /\@IMG_([0-9a-zA-Z\-\_\.\/\@]+(jpg|png|bmp))\@/gi, repl => {
+  template = await replaceAsync(template, /\@IMG_([0-9a-zA-Z\-\_\.\/\@]+(jpg|png|bmp))\@/gi, repl => {
     const path = repl.slice(5, -1)
     return sender.post("get_extension_url", {path})
   })
@@ -58,8 +58,4 @@ export function ga(label, action, desc) {
 
 export function getSiteList() {
   return sender.post("get_sites_list")
-}
-
-export function getRegion() {
-  return sender.post("get_region")
 }

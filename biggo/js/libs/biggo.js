@@ -11,18 +11,11 @@ import { send as sendPopup } from "../prototype/Sender/popup.js"
 import BigGoDomains from "../../manifest.biggo.json"
 import { installContextMenu } from "./contextMenu"
 
-const BIGGO_SESSIONID_COOKIE_NAME = "PHPSESSID"
-const TARGET_BIGGO_DOMAIN = process.env.API_DOMAIN || "extension.biggo.com"
-
 function getDomainsFilter(opt={}) {
   return BigGoDomains.map(dn => ({
     hostEquals: dn,
     ...opt
   }))
-}
-
-export function getDomainList() {
-  return Region.list.map(region => `https://${Region.getRegionDomain(region)}`)
 }
 
 // 組 https://{API_DOMAIN}/r/?... BigGo 自家導購連結；purl 只做編碼、逐字保留，不竄改既有參數
@@ -161,16 +154,6 @@ export async function loginHandle() {
   installContextMenu()
 }
 
-export const SOCIAL_METHOD_GOOGLE = "google",
-  SOCIAL_METHOD_FB = "facebook"
-
-export async function loginSocialAccount(method) {
-  return new Promise(resolve => {
-    const url = `https://${process.env.API_DOMAIN}/api/login.php?method=${method}`
-    chrome.tabs.create({url}, resolve)
-  })
-}
-
 const INSTALL_COOKIE_NAME = "extension_installed"
 
 // 只在 biggo 各區域自家網域寫「擴充已安裝」旗標 cookie，非商家 affiliate cookie
@@ -185,17 +168,6 @@ export function updateInstallCookie() {
       name: INSTALL_COOKIE_NAME,
       value: nowTimestamp+"",
       url: domain
-    })
-  })
-}
-
-export function removeInstallCookie() {
-  Region.list.forEach(region => {
-    const domain = `https://${Region.getRegionDomain(region)}/`
-
-    chrome.cookies.remove({
-      url: domain,
-      name: INSTALL_COOKIE_NAME
     })
   })
 }
@@ -322,15 +294,3 @@ export function bindInstallCookieUpdater() {
   }, {url: getDomainsFilter()})
 }
 
-export default {
-  r, redirectActiveTab,
-  loginSocialAccount,
-  SOCIAL_METHOD_GOOGLE,
-  SOCIAL_METHOD_FB,
-  updateInstallCookie,
-  removeInstallCookie,
-  bindAccountStatusListener,
-  getDomainList,
-  getRUrl,
-  logoutHandle
-}

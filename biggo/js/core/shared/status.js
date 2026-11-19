@@ -35,16 +35,6 @@ export async function setPopped(nindex) {
   storage.setItem("popuped", list)
 }
 
-export async function clearPopped(nindex) {
-  const list = await getPoppedList()
-
-  if(list[nindex]) {
-    delete list[nindex]
-  }
-
-  storage.setItem("popuped", list)
-}
-
 /* ----------------------------------------------------------------- */
 
 export const MLT_FOLD_OPEN = "open"
@@ -65,28 +55,6 @@ export function openMLTFold() {
 
 export async function getMLTFold() {
   return await storage.getItem(MLT_FOLD_STORAGE_KEY, MLT_FOLD_CLOSE)
-}
-
-/* ----------------------------------------------------------------- */
-
-export const HISTORY_FOLD_OPEN = "open"
-export const HISTORY_FOLD_CLOSE = "close"
-export const HISTORY_FOLD_STORAGE_KEY = "history_iframe_fold"
-
-export function setHistoryFold(status) {
-  storage.setItem(HISTORY_FOLD_STORAGE_KEY, status)
-}
-
-export function closeHistoryFold() {
-  setHistoryFold(HISTORY_FOLD_CLOSE)
-}
-
-export function openHistoryFold() {
-  setHistoryFold(HISTORY_FOLD_OPEN)
-}
-
-export async function getHistoryFold() {
-  return await storage.getItem(HISTORY_FOLD_STORAGE_KEY, HISTORY_FOLD_OPEN)
 }
 
 /* ----------------------------------------------------------------- */

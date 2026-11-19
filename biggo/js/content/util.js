@@ -26,26 +26,8 @@ export async function getNindex(url) {
   return result.nindex
 }
 
-export async function getNindexLocal(url) {
-  return await getNindexFromURL(url)
-}
-
-export async function getProductIdFromUrl(url) {
-  const nindex = await getNindexFromURL(url)
-  const eclist = await getECList()
-  return await Eclist.getProductId(eclist, nindex, url)
-}
-
 export async function getCoupon(nindex) {
   return await send("util", "get_coupon", nindex)
-}
-
-export function openOptionPage() {
-  send("pop", "open_option_page")
-}
-
-export async function getMltData(nindex, id) {
-  return await send("api", "get_mlt", {nindex, id})
 }
 
 export async function markCashbackActivity(nindex) {
@@ -60,16 +42,8 @@ export function ga(label, action, desc) {
   }catch(e) {}
 }
 
-export function updateUrl(url) {
-  send("util", "update_url", url)
-}
-
 export function updateSameNindexUrl(nindex, lb="") {
   send("util", "update_same_nindex_url", {nindex, lb})
-}
-
-export function createTab(url) {
-  send("util", "create_tab", url)
 }
 
 export function updateSelectText(text) {
@@ -118,15 +92,6 @@ export async function setupCoupon(code, title, content) {
   document.body.appendChild(script)
 }
 
-// 組 BigGo 自家 /r/ 導購連結（通用建構器，中性命名）；purl 逐字保留
-export async function getBigGoRUrl(nindex, pid="biggo", url=window.location.href, lb="") {
-  if(!pid) {
-    pid = "biggo"
-  }
-
-  return await send("cashback", "get_r_url", {nindex, pid, url, domain: "extension.biggo.com", lb})
-}
-
 export function isCheckoutPage(urlList, url=window.location.href) {
   for (const checkoutUrl of urlList) {
     if((url+"").indexOf(checkoutUrl) > -1) {
@@ -153,10 +118,6 @@ export async function updateIcon(nindex, id, options) {
   send("pop", "update_icon", {nindex, id, options})
 }
 
-export async function isProduct(nindex, pid) {
-  return await send("util", "is_product", {nindex, pid})
-}
-
 export async function getProduct(nindex, pid) {
   return await send("util", "get_product", {nindex, pid})
 }
@@ -167,11 +128,6 @@ export async function getUnionMap() {
 
 export async function getTemplateDom(path) {
   const html = await share.getTemplate(path)
-  return document.createRange().createContextualFragment(html)
-}
-
-export async function getFormatTemplateDom(path, format={}) {
-  const html = await share.getFormatTemplate(path, format)
   return document.createRange().createContextualFragment(html)
 }
 

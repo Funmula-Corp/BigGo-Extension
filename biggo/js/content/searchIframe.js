@@ -255,8 +255,3 @@ export async function build(query) {
     bindTooltip(dom, query)
   })
 }
-
-export default {
-  build,
-  remove
-}

@@ -11,17 +11,6 @@ import { getRegion } from "@shared/region"
 import { getSiteList } from "@core/shared/sites"
 import { isCashbackRegion } from "@shared/cashback"
 
-function getStarCouponCount(obj) {
-  let count = 0
-  for(let nindex in obj) {
-    if (obj[nindex]['isStart']) {
-      count++
-    }
-  }
-
-  return count
-}
-
 function getCurrentTab() {
   return new Promise(resolve => {
     chrome.tabs.query({ currentWindow: true, active: true }, async tabs => {
@@ -127,9 +116,4 @@ export async function setPopupMenu(tabId, tabUrl, nindex, itemId, {animation=tru
 
   // 傳給popup最新的返現狀態
   sendPopup("cashback_changed", {tabId, nindex})
-}
-
-export default {
-  setPopupMenu,
-  updateAllPopMenu
 }

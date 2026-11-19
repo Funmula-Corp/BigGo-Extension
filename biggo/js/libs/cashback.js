@@ -1,19 +1,9 @@
-import { syncSites } from "./sync"
 import { getSiteList } from "@shared/sites"
 import storage from "@shared/storage"
 import { getItemKey, isActivity } from "@shared/cashback"
 
 const ITEM_KEY_LIST_STORAGE_KEY = "cb-keylist"
 let activeList = []
-
-export async function isCashbackNindex(nindex) {
-  const sites = await syncSites()
-  if(!sites[nindex]) {
-    return false
-  }
-
-  return sites[nindex].detail && sites[nindex].detail.rate_desc
-}
 
 export async function updateCashbackActivity(nindex, tabid) {
   if(nindex === "tw_bid_shopee") {
@@ -57,7 +47,6 @@ export async function clear() {
 export default {
   isActivity,
   updateCashbackActivity,
-  isCashbackNindex,
   cancelCashback,
   getCashbackDetail,
   clear,

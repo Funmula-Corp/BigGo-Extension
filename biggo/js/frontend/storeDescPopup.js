@@ -70,7 +70,7 @@ export async function build({nindex, isCashbackActive, cashback, isCheckoutDoneP
     })
   })
 
-  const realDom = injectPop(ELEMENT_ID, dom, {
+  injectPop(ELEMENT_ID, dom, {
     minWidth: `320px`,
     padding: 0,
     paddingBottom: "12px"
@@ -85,8 +85,4 @@ export function remove() {
   if(dom) {
     dom.style.display = "none"
   }
-}
-
-export default {
-  build, remove
 }

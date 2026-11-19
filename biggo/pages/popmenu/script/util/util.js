@@ -1,21 +1,4 @@
-import * as util from "@/content/util.js"
 import { i18nTemplate } from "@/util.shared"
-
-export function isIframe () {
-  try {
-    return window.self !== window.top
-  } catch (e) {
-    return true
-  }
-}
-
-export function isPopup(){
-  try {
-    return "chrome-extension:" === window.location.protocol || "moz-extension:" === window.location.protocol
-  } catch(e) {
-    return false
-  }
-}
 
 export function send(key, msg="") {
   let root = window
@@ -36,11 +19,6 @@ export function getParameter(hash=window.location.hash){
       last[item[0]] = item[1]
       return last
   }, {})
-}
-
-export function toggleDom(dom) {
-  const isHide = dom.style.display === "none"
-  dom.style.display = isHide ? "" : "none"
 }
 
 export function hideDom(dom) {
@@ -87,18 +65,4 @@ export function sendTabMsg(type, data) {
     const activeTab = tabs[0]
     chrome.tabs.sendMessage(activeTab.id, {type, data})
   })
-}
-
-export function getTab(){
-  return new Promise((resolve, reject)=>{
-      chrome.tabs.getCurrent(resolve);
-  });
-}
-
-export function execScript(tabid, code) {
-  if(tabId) {
-    chrome.tabs.executeScript(Number(tabId), {
-      code: code
-    }, () => {})
-  }
 }
