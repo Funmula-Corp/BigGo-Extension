@@ -32,7 +32,6 @@ content.bundle.js IIFE
   │    └─ chrome.runtime.onMessage.addListener()
   │         處理 background → content 訊息：
   │         ├─ store_detail → FrontendSender.send("open_store_detail")
-  │         ├─ share_coupon_popup → 開啟回報 popup
   │         └─ login_success → onLoginSuccess()
   │
   └─ onceTrigger(buildPageFeature)
@@ -154,10 +153,8 @@ chrome.runtime.sendMessage({ name, type, msg }, callback)
 | `util` | `create_tab` | 開新分頁 |
 | `api` | `get_mlt` | 取得 MLT 推薦 |
 | `api` | `get_store_desc` | 取得商店描述 |
-| `api` | `search_store` | 搜尋商店 |
 | `cashback` | `mark_activity` | 更新返現活動 timestamp |
 | `cashback` | `cancel_cashback` | 取消返現 |
-| `config` | `close_page_feature` | 關閉頁面功能 |
 | `config` | `set_drag_config` | 儲存拖拽位置 |
 | `pop` | `update_icon` | 更新 icon |
 
@@ -185,7 +182,6 @@ chrome.runtime.sendMessage({ name, type, msg }, callback)
 | `get_mlt_fold` | 取得 MLT 摺疊狀態 |
 | `set_mlt_close` / `set_mlt_open` | 設定 MLT 摺疊 |
 | `ga` | GA 事件 |
-| `share_coupon` | 分享優惠券 |
 | `mlt_ready` | MLT 元件就緒 |
 
 ---

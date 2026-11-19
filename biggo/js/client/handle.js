@@ -3,11 +3,10 @@ import msg from "../content/messenger"
 import { getSiteList } from "@shared/sites"
 import { getRegion, getRegionDomain } from "@shared/region"
 import { isLogin, getUserProfile } from "@shared/user"
-import { isOverShowPopupDoc, increasePopupDocShow, isReviewed, setReviewed, getMLTFold, openMLTFold, closeMLTFold } from "@shared/status"
+import { isOverShowPopupDoc, increasePopupDocShow, isReviewed, setReviewed } from "@shared/status"
 import { isActivity } from "@shared/cashback"
 import { getConfig } from "@shared/config"
 import { arrayBufferToBase64, getNindexRegion } from "@/util.shared"
-import * as storage from "@shared/storage"
 
 async function getHistoryClick() {
   return msg.post("pop", "get_history_click")
@@ -27,7 +26,6 @@ function newTab(url, ...param) {
  */
 export default function(){
   return {
-    async auth_login({status}, postMessage) {},
     async close_page() {
       msg.send("util", "close_tab")
     },
@@ -42,9 +40,6 @@ export default function(){
     },
     async email_login({method, ...param}) {
       util.emailLogin(method, param)
-    },
-    async open_option_page() {
-      msg.send("pop", "open_option_page")
     },
     async get_extension_config(_, postMessage) {
       postMessage(await getConfig())
@@ -72,9 +67,6 @@ export default function(){
     },
     async new_tab(url) {
       newTab(url)
-    },
-    async new_tab_with_param({ url, ...param }) {
-      newTab(url, ...param)
     },
     async get_sites(_, postMessage) {
       postMessage(await getSiteList())
@@ -114,33 +106,17 @@ export default function(){
     async is_login(_, postMessage) {
       postMessage(await isLogin())
     },
-    async get_mlt_fold(_, postMessage) {
-      postMessage(await getMLTFold())
-    },
-    async set_mlt_fold(status) {
-      if(status === "open") {
-        openMLTFold()
-      }else{
-        closeMLTFold()
-      }
-    },
     async is_over_show_doc(_, postMessage) {
       postMessage(isOverShowPopupDoc())
     },
     async show_doc() {
       increasePopupDocShow()
     },
-    set_config(config) {
-      msg.send("config", "set_config_from_server", config)
-    },
     async get_hotlist_store(region, postMessage) {
       postMessage(await msg.post("api", "get_hotlist_store", region))
     },
     async get_store_desc({nindex}, postMessage) {
       postMessage(await msg.post("api", "get_store_desc", {nindex}))
-    },
-    async search_store({q}, postMessage) {
-      postMessage(await msg.post("api", "search_store", {q}))
     },
     async get_region(_, postMessage) {
       postMessage(await getRegion())
@@ -150,9 +126,6 @@ export default function(){
     },
     open_store_detail_popup({name, descHTML, image}) {
       msg.send("pop", "open_store_detail_popup", {name, descHTML, image})
-    },
-    async get_cashback_detail(nindex, postMessage) {
-      postMessage(await msg.post("cashback", "get_cashback_detail", nindex))
     },
     open_biggo_cashback_detail(nindex) {
       newTab(`https://${getRegionDomain(getNindexRegion(nindex))}/store/?i=${nindex}`)
@@ -167,12 +140,8 @@ export default function(){
     force_update_member() {
       msg.send("util", "force_update_member")
     },
-    uninstall() {
-      msg.send("util", "uninstall")
-    },
     has_feature(f, postMessage) {
       postMessage([
-        "share_coupon",
         "login_and_active",
         "review",
         "block_setting",
@@ -181,9 +150,6 @@ export default function(){
         "image_search_page",
         "image_search_popup_v2",
       ].includes(f))
-    },
-    open_share_coupon(nindex) {
-      msg.send("pop", "show_share_coupon", {nindex})
     },
     r_with_login(nindex) {
       msg.send("util", "update_nindex_url_with_login_and_tab", nindex)
@@ -196,12 +162,6 @@ export default function(){
     },
     ga(obj=[]) {
       util.ga(...obj)
-    },
-    async get_price_history(item, postMessage) {
-      const key = `price-history:${item}`
-      const res = await storage.getItem(`price-history:${item}`, false)
-      postMessage(res)
-      res && storage.removeItem(key)
     },
     async upload_image(buffer, postMessage) {
       postMessage(await msg.post("pop", "upload_image", typeof buffer != "string" ? arrayBufferToBase64(buffer) : buffer))

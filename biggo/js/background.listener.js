@@ -2,7 +2,6 @@ import * as Sync from "./libs/sync"
 import * as util from "./libs/util"
 import * as Cashback from "./libs/cashback"
 import * as Sites from "@shared/sites"
-import { syncToServer } from "./libs/config"
 import * as Config from "@shared/config"
 import * as Popup from "./libs/popup"
 import * as BigGo from "./libs/biggo"
@@ -14,7 +13,6 @@ import { base64ToArrayBuffer, i18n, isImageSearchSupportFormat } from "./util.sh
 import { getUserProfile } from "@shared/user"
 import { isActivity } from "@shared/cashback"
 import { getId } from "@background/domain"
-import { installContextMenu } from "@background/contextMenu"
 import { getUnionMapFromList } from "@core/union"
 import installationTracker from './libs/installationTracker'
 
@@ -169,11 +167,6 @@ receiver.util = (() => {
     force_update_member() {
       Sync.syncLogin(true)
     },
-    uninstall() {
-      chrome.runtime.setUninstallURL("", () => {
-        browser.management.uninstallSelf()
-      })
-    },
     get_current_tab() {
       return new Promise(resolve => {
         chrome.tabs.query({active: true, currentWindow: true}, tabs => {
@@ -222,9 +215,6 @@ receiver.pop = (() => {
     },
     open_store_detail_popup({name, descHTML, image}) {
       util.sendMsgToCurrentPage("store_detail", {name, descHTML, image})
-    },
-    show_share_coupon({nindex}) {
-      util.sendMsgToCurrentPage("share_coupon_popup", {nindex})
     },
     async upload_image(src) {
       if(!src) {
@@ -289,27 +279,14 @@ receiver.cashback = (() => {
     },
     enable({nindex}) {
       BigGo.redirectActiveTab(nindex)
-    },
-    get_cashback_detail(nindex) {
-      return Cashback.getCashbackDetail(nindex)
     }
   }
 })()
 
 receiver.config = (() => {
   return {
-    async close_page_feature(feature) {
-      await Config.setPageFeature({
-        [feature]: false
-      })
-      syncToServer()
-    },
     set_drag_config(config) {
       Config.setDragConfig(config)
-    },
-    async set_config_from_server(config) {
-      await Config.setConfigFromServer(config)
-      installContextMenu()
     }
   }
 })()
@@ -324,10 +301,6 @@ receiver.api = (() => {
       const url = `https://${process.env.API_DOMAIN}/api/store.php?method=store_detail&id=${nindex}`
       return util.getJson(url)
     },
-    search_store({q}) {
-      const url = `https://${process.env.API_DOMAIN}/api/store.php?method=suggest_store_name&q=${q}`
-      return util.getJson(url)
-    },
     get_product_model_list({nindex, id}) {
       const url = `https://${process.env.API_DOMAIN}/api/product.php?method=get_model_id&nindex=${nindex}&oid=${id}`
       return util.getJson(url)
@@ -335,10 +308,6 @@ receiver.api = (() => {
     get_mlt({nindex, id}) {
       const url = `https://${process.env.API_DOMAIN}/api/mlt.php?online&i=${nindex}&id=${id}`
       return util.getJson(url)
-    },
-    share_coupon({nindex, code, desc}) {
-      const url = `https://${process.env.API_DOMAIN}/api/shared_coupon.php?method=insert_coupon&store_id=${nindex}&coupon_code=${code}&coupon_text=${desc}`
-      return util.getJson(url).catch(e => false)
     },
     async subscribe({nindex, id, type}) {
       const url = `https://${process.env.API_DOMAIN}/api/subscribe.php?method=${type?"add":"remove"}&nindex=${nindex}&oid=${id}`

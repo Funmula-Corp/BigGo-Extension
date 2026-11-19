@@ -1,8 +1,7 @@
-import { getTemplateDom, injectStyle, getPriceHistory, emailLogin, closePageFeature } from "./util"
+import { getTemplateDom, injectStyle, getPriceHistory, emailLogin } from "./util"
 import { getPageImage, i18n, getNindexISO, getSitesLang } from "../util.shared"
 import addInternalListener from "../iframe/biggo.internal.bundle"
 import msg from "./messenger"
-import buildAlert from "./dragIframeAlert"
 import EventBus from "./EventBus"
 import { getConfig } from "@shared/config"
 import { isLogin } from "@core/shared/user"
@@ -505,11 +504,6 @@ function onHover(iframeObj, dragObj) {
   clearTimeout(timeoutBlur)
 }
 
-function destroyDrag() {
-  remove()
-  closePageFeature("priceHistory")
-}
-
 /**
  * on blur handle
  * @param {Iframe} iframeObj
@@ -560,40 +554,6 @@ function bindInternalEvent(iframeObj) {
   addInternalListener("close", () => {
     iframeObj.hide()
     anime.clear()
-  })
-
-  // 監聽關閉整個功能
-  addInternalListener("destory-drag", async () => {
-    const _isLogin = await isLogin()
-    if(!_isLogin) {
-      return buildAlert({onSubmit: destroyDrag})
-    }
-
-    destroyDrag()
-  })
-
-  // 監聽強制關閉功能
-  addInternalListener("destory-force", destroyDrag)
-
-  // 監聽設定預設放大
-  addInternalListener("def-full", () => {
-    msg.send("config", "set_drag_config", {
-      default: "def-full"
-    })
-  })
-
-  // 監聽設定預設縮小
-  addInternalListener("def-min", () => {
-    msg.send("config", "set_drag_config", {
-      default: "def-min"
-    })
-  })
-
-  // 監聽設定顯示15秒後關閉
-  addInternalListener("15sec", () => {
-    msg.send("config", "set_drag_config", {
-      default: "15sec"
-    })
   })
 
   // 監聽使前端可以拿到快取的price history資料

@@ -1,4 +1,3 @@
-import { getSiteList } from "@shared/sites"
 import storage from "@shared/storage"
 import { getItemKey, isActivity } from "@shared/cashback"
 
@@ -24,15 +23,6 @@ export async function cancelCashback(nindex, tabid) {
   storage.removeItem(getItemKey(nindex, tabid))
 }
 
-export async function getCashbackDetail(nindex) {
-  const sites = await getSiteList()
-  if(!sites[nindex] || !sites[nindex].detail) {
-    return {}
-  }
-
-  return sites[nindex].detail
-}
-
 export async function clear() {
   if(!activeList.length) {
     activeList = await storage.getItem(ITEM_KEY_LIST_STORAGE_KEY) || []
@@ -48,6 +38,5 @@ export default {
   isActivity,
   updateCashbackActivity,
   cancelCashback,
-  getCashbackDetail,
   clear,
 }

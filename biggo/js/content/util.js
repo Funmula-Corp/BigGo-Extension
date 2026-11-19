@@ -89,14 +89,6 @@ export async function getPriceHistory(item, days) {
   })
 }
 
-export async function closePageFeature(feature="def") {
-  send("config", "close_page_feature", feature)
-}
-
-export async function shareCoupon({nindex, code, desc}) {
-  return await send("api", "share_coupon", {nindex, code, desc})
-}
-
 export function openLoginWindow(url) {
   const height = 650
   const width = 600

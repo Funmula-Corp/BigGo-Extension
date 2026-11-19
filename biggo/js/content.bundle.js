@@ -217,11 +217,6 @@ async function bindRuntimeListener() {
       FrontendSender.send("open_store_detail", {name, image, descHTML})
     }
 
-    if(request.type === "share_coupon_popup") {
-      const {nindex} = request.data
-      FrontendSender.send("open_report_popup", {nindex})
-    }
-
     if(request.type === "login_success") {
       onLoginSuccess(location.host.includes("biggo"))
     }

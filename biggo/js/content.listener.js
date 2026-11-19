@@ -1,6 +1,5 @@
 import Receiver from "./prototype/Receiver/content"
 import { i18n, getSitesLang } from "./util.shared"
-import { shareCoupon, getNindex } from "./content/util"
 import { send } from "./content/messenger"
 import ga from "@shared/ga"
 import { getMLTFold, closeMLTFold, openMLTFold, isReviewed, setReviewed } from "@shared/status"
@@ -59,11 +58,6 @@ import { getSiteList } from "@shared/sites"
 
   rev.onMessage("mlt_ready", () => {
     document.querySelector("biggo-mlt").style.display = ""
-  })
-
-  rev.onMessage("share_coupon", async ({code, desc, nindex}, reply) => {
-    const _nindex = nindex || await getNindex(window.location.href)
-    reply(await shareCoupon({nindex: _nindex, code, desc}))
   })
 
   rev.onMessage("hide_review", () => {
