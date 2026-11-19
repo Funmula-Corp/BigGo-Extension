@@ -26,12 +26,6 @@ function markImage(img, nindex) {
     case "tw_ec_carrefour":
       mark = overMinSize(MIN_SIZE) && overLayoutSize(MIN_LAYOUT_SIZE) && img.role != "presentation"
       break
-    // case "tw_pec_ybuy":
-    //   mark = overMinSize(220) && overLayoutSize(190)
-    //   break
-    // case "tw_pec_ybuy":
-    //   mark = overMinSize(250) && overLayoutSize(MIN_LAYOUT_SIZE)
-    //   break
     case "tw_mall_shopeemall":
     case "tw_bid_shopee":
       mark = overMinSize(MIN_SIZE) && overLayoutSize(MIN_LAYOUT_SIZE)

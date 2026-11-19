@@ -27,6 +27,5 @@ wrapQueue(key, fn)
 | `"sync:eclist"` | `syncECList()` | ECList 同步，3hr TTL |
 | `"sync:region"` | `syncRegion()` | Region 同步，3hr TTL |
 | `"sync:login"` | `syncLogin()` | Login 同步，30min TTL |
-| `"sync:cp:{nindex}"` | `syncCoupon()` | 單一商店優惠券，30min TTL |
 
 注意：`wrapQueue` 的 catch 會吞掉錯誤並回傳 `undefined`。這代表如果 `syncSitesProcess` 內部拋出未捕獲的例外，`syncSites()` 的呼叫端會收到 `undefined` 而非 error，可能導致靜默失敗。

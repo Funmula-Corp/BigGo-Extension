@@ -7,18 +7,6 @@
 		"message": "Compras inteligentes com BigGo",
 		"description": "manifest description"
 	},
-	"Copy": {
-		"message": "Copiar",
-		"description": "Copy"
-	},
-	"discount_code_full": {
-		"message": "Código de desconto",
-		"description": "Discount code"
-	},
-	"Copied": {
-		"message": "Copiado",
-		"description": "Copied"
-	},
 	"coupon": {
 		"message": "Promoções",
 		"description": "Promotions"
@@ -26,10 +14,6 @@
 	"PRICE_HISTORY": {
 		"message": "Histórico de Preço",
 		"description": "price history"
-	},
-	"COPIED_CHECKOUT": {
-		"message": "Copiado! Use-o na página de checkout",
-		"description": "Copied. Please use it at checkout page"
 	},
 	"SEARCH_WITH_BIGGO": {
 		"message": "Pesquisar 「$word$」 com BigGo",
@@ -115,18 +99,6 @@
 		"message": "Se o seu reembolso não for rastreado, pode estar acontecendo pelos seguintes motivos: Feche e abra o navegador novamente; Abra uma guia que não esteja vinculada com BigGo; Anúncio ou link vinculado a outros sites de compras ou de comparação; Outra extensão de compras instalado; Tempo inatividade da sessão é superior a 30 minutos.",
 		"description": ""
 	},
-	"close_price_history_desc": {
-		"message": "Você não está logado no Assistante de Compras BigGo ainda!",
-		"description": ""
-	},
-	"close_price_history_tip": {
-		"message": "Você tem certeza em desativar o pop-up do histórico de preços?",
-		"description": ""
-	},
-	"confirm": {
-		"message": "Confirmar",
-		"description": ""
-	},
 	"cancel": {
 		"message": "Cancelar",
 		"description": ""
@@ -148,10 +120,6 @@
 				"example": "10"
 			}
 		}
-	},
-	"coupon_popup_alert_desc": {
-		"message": "Você tem certeza em desligar o pop-up de lembrete de cupom?",
-		"description": ""
 	},
 	"no_mlt_result": {
 		"message": "Sem resultado",
@@ -248,42 +216,6 @@
 				"example": ""
 			}
 		}
-	},
-	"share_coupon_submit": {
-		"message": "Envie um cupom",
-		"description": ""
-	},
-	"share_coupon_title": {
-		"message": "Ajude a tornar o BigGo melhor adicionando cupons, e também ajudando outros usuários a economizar mais.",
-		"description": ""
-	},
-	"share_coupon_desc": {
-		"message": "Descrição",
-		"description": ""
-	},
-	"share_coupon_cancel": {
-		"message": "Cancelar",
-		"description": ""
-	},
-	"share_coupon_send": {
-		"message": "Enviar",
-		"description": ""
-	},
-	"share_coupon_tks": {
-		"message": "Obrigado!",
-		"description": ""
-	},
-	"share_coupon_code": {
-		"message": "Nós compartilharemos seu código com a BigGo uma vez que nosso sistema tenha revisado.",
-		"description": ""
-	},
-	"share_coupon_done": {
-		"message": "Finalizado",
-		"description": ""
-	},
-	"share_coupon_submit_other": {
-		"message": "Envie outro cupom",
-		"description": ""
 	},
 	"privacy_learn_about_link": {
 		"message": "Política de privacidad de BigGo.",

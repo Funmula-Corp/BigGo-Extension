@@ -4,7 +4,7 @@
 
 # BigGo 購物幫手
 
-**自動比價、歷史價格、回饋金與優惠券 — 就在你購物的頁面上。**
+**自動比價、歷史價格與回饋金 — 就在你購物的頁面上。**
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](./LICENSE)
 [![Chrome Web Store](https://img.shields.io/badge/Chrome-Web%20Store-4285F4?logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/biggo-shopping-assistant/enlbnppjlpkmjponagpelanookhiejao)
@@ -19,7 +19,7 @@
 
 > **BigGo 購物幫手**是購物搜尋引擎 [BigGo](https://biggo.com) 的瀏覽器擴充功能，
 > 服務範圍涵蓋台灣、日本、東南亞與美洲。它直接在你已經在用的電商網站與搜尋結果上，
-> 為你補上自動比價、歷史價格、回饋金與優惠券功能。
+> 為你補上自動比價、歷史價格與回饋金功能。
 >
 > 本 repository 是這個擴充功能的**開源上游（upstream）**。
 
@@ -31,7 +31,6 @@
 
 - **📉 歷史價格** — 看清商品價格的變化趨勢，判斷「特價」是不是真的划算，並可訂閱降價通知。
 - **💰 回饋金追蹤** — 在支援的店家購物時啟用並追蹤回饋金。
-- **🎟️ 優惠券推薦** — 在店家頁面自動帶出可用的優惠券與折扣碼。
 - **🛍️ 看相似** — 瀏覽時推薦相似商品（與更低的價格）。
 - **🌏 多地區支援** — 支援多個市場，各地區有在地化的店家覆蓋。
 - **🏆 商店精選** — Chrome 線上應用程式商店與 Microsoft Edge 外掛程式商店雙雙列為「精選」擴充功能。

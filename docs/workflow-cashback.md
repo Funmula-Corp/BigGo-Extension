@@ -169,7 +169,7 @@ content.bundle.js 初始化
   │
   ├─ mousemove / keypress / mousedown（每分鐘節流）
   │    └─ updateTimer()
-  │         └─ send("cashback", "update_cookie", nindex)
+  │         └─ send("cashback", "mark_activity", nindex)
   │              └─ background: Cashback.updateCashbackActivity()
   │                   └─ storage[cashback:tabId:nindex] → Date.now()  ← 重設計時器
   │
@@ -179,7 +179,7 @@ content.bundle.js 初始化
   └─ tick() 觸發
        ├─ setIdleHint()                      ← 顯示「返現即將到期」提示
        └─ callback()
-            ├─ cancelCashbackAndClearPopup(nindex)
+            ├─ cancelCashback(nindex)
             └─ ga("cashback:expire", "popup", ...)
 ```
 
@@ -194,7 +194,7 @@ content.bundle.js handleNormalEC()
   │    └─ isCheckoutPage(checkout_done_url, location.href) ?
   │         │
   │         ├─ YES 且 isCashbackNindex：
-  │         │    ├─ cancelCashbackAndClearPopup(nindex)
+  │         │    ├─ cancelCashback(nindex)
   │         │    ├─ updateIcon(nindex, "biggo")
   │         │    └─ ga("popup-checkoutpage", ...)
   │         │

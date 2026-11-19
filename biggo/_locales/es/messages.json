@@ -7,18 +7,6 @@
 		"message": "Compras inteligentes con BigGo",
 		"description": "manifest description"
 	},
-	"Copy": {
-		"message": "Copiar",
-		"description": "Copy"
-	},
-	"discount_code_full": {
-		"message": "Código de descuento",
-		"description": "Discount code"
-	},
-	"Copied": {
-		"message": "Copiado",
-		"description": "Copied"
-	},
 	"coupon": {
 		"message": "Promociones",
 		"description": "Promotions"
@@ -26,10 +14,6 @@
 	"PRICE_HISTORY": {
 		"message": "Historial de precios",
 		"description": "price history"
-	},
-	"COPIED_CHECKOUT": {
-		"message": "Copiado. Por favor, utilícelo en la página de proceso de pago.",
-		"description": "Copied. Please use it at checkout page"
 	},
 	"SEARCH_WITH_BIGGO": {
 		"message": "Buscar「$word$」con Biggo",
@@ -115,18 +99,6 @@
 		"message": "Si su Cashback no es rastreado, puede ser por las siguientes razones entre otras: cierre del navegador, abrir una pestaña que no esté enlazada desde BigGo, hacer clic en un banner o enlace publicitario, enlazar con otros sitios web de compras o de comparación, instalar otra extensión de compras, o que el tiempo de inactividad de la sesión sea superior a 30 minutos.",
 		"description": ""
 	},
-	"close_price_history_desc": {
-		"message": "Todavía no has iniciado sesión en el Asistente de Compras de BigGo.",
-		"description": ""
-	},
-	"close_price_history_tip": {
-		"message": "¿Estás seguro de desactivar la ventana emergente del historial de precios?",
-		"description": ""
-	},
-	"confirm": {
-		"message": "Confirmar",
-		"description": ""
-	},
 	"cancel": {
 		"message": "Cancelar",
 		"description": ""
@@ -148,10 +120,6 @@
 				"example": "10"
 			}
 		}
-	},
-	"coupon_popup_alert_desc": {
-		"message": "¿Estás seguro de que quieres desactivar el recordatorio de cupón?",
-		"description": ""
 	},
 	"no_mlt_result": {
 		"message": "Ningún resultado",
@@ -248,42 +216,6 @@
 				"example": ""
 			}
 		}
-	},
-	"share_coupon_submit": {
-		"message": "Enviar un cupón",
-		"description": ""
-	},
-	"share_coupon_title": {
-		"message": "Ayuda a mejorar BigGo añadiendo un cupón, y haz que otros usuarios ahorren más.",
-		"description": ""
-	},
-	"share_coupon_desc": {
-		"message": "Descripción",
-		"description": ""
-	},
-	"share_coupon_cancel": {
-		"message": "Cancelar",
-		"description": ""
-	},
-	"share_coupon_send": {
-		"message": "Enviar",
-		"description": ""
-	},
-	"share_coupon_tks": {
-		"message": "¡Gracias!",
-		"description": ""
-	},
-	"share_coupon_code": {
-		"message": "Compartiremos tu código con BigGo una vez que nuestro sistema lo revise.",
-		"description": ""
-	},
-	"share_coupon_done": {
-		"message": "Finalizado",
-		"description": ""
-	},
-	"share_coupon_submit_other": {
-		"message": "Enviar otro cupón",
-		"description": ""
 	},
 	"privacy_learn_about_link": {
 		"message": "Política de privacidad de BigGo",

@@ -1,8 +1,5 @@
 import * as util from "./content/util"
 import { getScriptDom } from "@/util.shared"
-import constant from "./content/constant"
-import couponIframe from "./content/couponIframe"
-import storeIframe from "./content/storeIframe"
 import * as googleSearchPage from "./content/searchIframe"
 import mltIframe from "./content/mltIframe"
 import dragIframe, { DRAG_MAX_HEIGHT } from "./content/dragIframe"
@@ -12,7 +9,6 @@ import * as SPA from "./content/historySPA"
 import * as FrontendSender from "./prototype/Sender/frontend"
 import ContentReceiver from "./prototype/Receiver/content"
 import Receiver from "./prototype/Receiver/index"
-import * as CouponIframeAlert from "./content/couponIframeAlert"
 import EventBus from "./content/EventBus"
 import { isSupportSearchRegion, isSupportImageSearch, getRegion } from "@shared/region"
 import { getConfig } from "@shared/config"
@@ -27,16 +23,6 @@ function isGooglePage() {
     const url = new URL(window.location.href)
     return url.hostname.includes("google")
   } catch (e) { }
-
-  return false
-}
-
-function isGoogleFirstPage() {
-  try {
-    const url = new URL(window.location.href)
-    const start = url.searchParams.get("start")
-    return !start || start == "0"
-  } catch(e) {}
 
   return false
 }
@@ -79,28 +65,17 @@ async function handleNormalEC(nindex) {
   const site = (await getSiteList())[nindex] || {}
   // popup已經開過?
   const isStoreIframePopped = await isPopped(nindex)
-  // 這頁是結帳頁面?
-  const isCheckoutPage = site.item && site.item.checkout_url
-    && util.isCheckoutPage(site.item.checkout_url, window.location.href)
   // 這頁是結帳完成頁面?
   const isCheckoutDonePage = site.item && site.item.checkout_done_url
     && util.isCheckoutPage(site.item.checkout_done_url, window.location.href)
-  // 取得這電商coupon列表
-  const couponList = await util.getCoupon(nindex)
   // 這電商有返現?
   const isCashbackNindex = await _isCashbackNindex(nindex)
 
   // 結帳完成後將返現給清掉
   if(isCheckoutDonePage && isCashbackNindex) {
-    await util.cancelCashbackAndClearPopup(nindex)
+    await util.cancelCashback(nindex)
     util.updateIcon(nindex, "biggo")
     util.ga("popup-checkoutpage", "popup", nindex)
-  }
-
-  // 結帳頁面的話 可以顯示coupon
-  if(isCheckoutPage && couponList.length > 0 && featureConfig.couponPopup) {
-    util.ga("popup-checkpage", "popup", nindex)
-    return couponIframe.init(nindex)
   }
 
   // 非商品頁 而且有返現要出電商資訊iframe
@@ -201,7 +176,7 @@ async function buildPageFeature(isUpdateIconAnimation=true) {
       idleCashback.listen()
       idleCashback.tick()
       idleCashback.onPop(async () => {
-        await util.cancelCashbackAndClearPopup(nindex)
+        await util.cancelCashback(nindex)
         util.updateIcon(nindex, productId)
       })
     }
@@ -215,7 +190,7 @@ async function buildPageFeature(isUpdateIconAnimation=true) {
 
     // 不支援的網站一律清掉返現狀態
     if(!isCashbackNindex) {
-      await util.cancelCashbackAndClearPopup(nindex)
+      await util.cancelCashback(nindex)
     }
   }
 }
@@ -224,36 +199,10 @@ async function buildPageFeature(isUpdateIconAnimation=true) {
  * 清除頁面上的功能
  */
 async function rollbackPageFeature() {
-  [couponIframe, dragIframe, mltIframe, storeIframe].forEach(obj => obj.remove())
+  [dragIframe, mltIframe].forEach(obj => obj.remove())
   imageMarker.remove()
   // 重置 price history drag iframe高度
   EventBus.dispatch("drag_ph_set_max_height", DRAG_MAX_HEIGHT)
-}
-
-function listenSimpleIframeEvent() {
-  window.addEventListener("message", e => {
-    if(e.data && (!e.data.type || !e.data.data)) {
-      return
-    }
-
-    if(!e.data.data || (e.data.data && !e.data.data.id)) {
-      return
-    }
-
-    const {type} = e.data
-    const {id} = e.data.data
-    const target = document.getElementById(id)
-    switch (type) {
-      case constant.IFRAME_FIT_CONTENT:
-        const {height} = e.data.data
-        target.height = height
-        return
-
-      case constant.IFRAME_DESTROY:
-        target.remove()
-        return
-    }
-  })
 }
 
 async function bindRuntimeListener() {
@@ -263,31 +212,9 @@ async function bindRuntimeListener() {
       return false
     }
 
-    if(request.type === "coupon_code") {
-      const {code, title, content} = request.data
-      util.setupCoupon(code, title, content)
-    }
-
     if(request.type === "store_detail") {
       const {name, image, descHTML} = request.data
       FrontendSender.send("open_store_detail", {name, image, descHTML})
-    }
-
-    if(request.type === "coupon_iframe_alert") {
-      CouponIframeAlert.build({
-        onSubmit() {
-          const ifm = document.getElementById(constant.COUPON_IFRAME_ID)
-          if(ifm) {
-            ifm.remove()
-          }
-          util.closePageFeature("couponPopup")
-        }
-      })
-    }
-
-    if(request.type === "share_coupon_popup") {
-      const {nindex} = request.data
-      FrontendSender.send("open_report_popup", {nindex})
     }
 
     if(request.type === "login_success") {
@@ -371,7 +298,6 @@ function setInstalledCookie() {
 ;(async () => {
   await injectFrontendScript()
   bindRuntimeListener()
-  listenSimpleIframeEvent()
   // 避免開一堆分頁 狂request
   onceTrigger(async () => {
     buildPageFeature()

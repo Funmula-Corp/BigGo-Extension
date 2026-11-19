@@ -63,12 +63,3 @@ export function getDataType(type) {
 
   return type
 }
-
-function getAdapterWrapper(name) {
-  return (data, reply=false) => wrapData({name, data}, reply)
-}
-
-export const adapter = {
-  content: getAdapterWrapper("content"),
-  frontend: getAdapterWrapper("frontend")
-}

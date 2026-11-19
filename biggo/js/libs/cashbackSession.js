@@ -10,10 +10,6 @@ export class Session {
     this.isLanded = false
   }
 
-  land() {
-    this.isLanded = true
-  }
-
   isSameHost(host) {
     return this.host === host
   }
@@ -87,14 +83,6 @@ export async function isLanded(id) {
   return false
 }
 
-export async function start(id, sitename) {
-  if(await isInSession(id)) {
-    return
-  }
-  const session = new Session(sitename)
-  await SessionMap.set(id, session)
-}
-
 export async function stop(id) {
   const session = await SessionMap.get(id)
   if(session && session.isLanded) {
@@ -141,7 +129,7 @@ export async function listenBigGoR(info) {
   Cashback.updateCashbackActivity(nindex, tabId)
 }
 
-// onBeforeRequest <all_urls> 只比對 host 來「過期」返現 session（離站放棄歸屬），不記錄/不外傳 URL
+// webNavigation.onCommitted（主框架）只比對 host 來「過期」返現 session（離站放棄歸屬），不記錄/不外傳 URL
 export async function listenOtherSite(info) {
   if(isNotMainFrame(info)) {
     return
@@ -194,10 +182,4 @@ export async function onTabClosed(tabId) {
     await stop(tabId)
     Cashback.cancelCashback(session.nindex, tabId)
   }
-}
-
-export default {
-  Session,
-  start, stop, isInSession,
-  listenBigGoR, listenOtherSite, landingSite, onTabClosed
 }

@@ -31,16 +31,8 @@ content.bundle.js IIFE
   ├─ bindRuntimeListener()
   │    └─ chrome.runtime.onMessage.addListener()
   │         處理 background → content 訊息：
-  │         ├─ coupon_code → setupCoupon()
   │         ├─ store_detail → FrontendSender.send("open_store_detail")
-  │         ├─ coupon_iframe_alert → 建立優惠券 modal
-  │         ├─ share_coupon_popup → 開啟回報 popup
   │         └─ login_success → onLoginSuccess()
-  │
-  ├─ listenSimpleIframeEvent()
-  │    └─ window.message listener
-  │         ├─ IFRAME_FIT_CONTENT → 調整 iframe 高度
-  │         └─ IFRAME_DESTROY → 移除 iframe DOM
   │
   └─ onceTrigger(buildPageFeature)
        └─ 頁面可見後執行一次
@@ -53,12 +45,12 @@ content.bundle.js IIFE
 ### 2.1 Google 搜尋頁面
 
 ```
-isGooglePage() && isGoogleFirstPage() && isGoogleTextSearchPage()
+getSearchEngineQuery("google", url) → 提取搜尋關鍵字
   │
-  ├─ getSearchEngineQuery("google", url) → 提取搜尋關鍵字
-  ├─ googleSearchPage.build(query, count) → 建置搜尋結果
-  ├─ miniBar.inject(path) → 注入迷你搜尋列
-  └─ googleSearchPage.pushSearchResult({query, region, ...})
+  └─ 有關鍵字 && isGooglePage()
+       ├─ isSupportSearchRegion(region) && pageFeature.searchEngineSuggest && isGoogleTextSearchPage()
+       │    └─ googleSearchPage.build(query) → 在搜尋頁加上 BigGo 搜尋入口
+       └─ return（Google 頁面不再跑電商流程）
 ```
 
 ### 2.2 電商頁面
@@ -70,10 +62,9 @@ getNindex(currentUrl)
   │
   └─ 有 nindex → handleNormalEC(nindex)
        │
-       ├─ 結帳頁面偵測
-       │    ├─ isCheckoutPage(checkout_url) → couponIframe.init(nindex)
+       ├─ 結帳完成頁面偵測
        │    └─ isCheckoutPage(checkout_done_url) + isCashback
-       │         → cancelCashbackAndClearPopup()
+       │         → cancelCashback()
        │
        ├─ 返現商店資訊
        │    └─ isCashbackNindex → FrontendSender.send("open_store_desc")
@@ -151,13 +142,10 @@ chrome.runtime.sendMessage({ name, type, msg }, callback)
 | name | type | 用途 |
 |------|------|------|
 | `get` | `domainId` | 查詢 URL 對應的 nindex |
-| `get` | `shopee` | 解析 Shopee URL |
 | `get` | `tabId` | 取得目前 tab ID |
 | `sync` | `sites` | 同步 sites 資料 |
 | `sync` | `eclist` | 同步 ECList |
 | `sync` | `region` | 同步地區 |
-| `sync` | `login` | 同步登入狀態 |
-| `util` | `get_coupon` | 取得優惠券列表 |
 | `util` | `get_product` | 驗證商品頁面 |
 | `util` | `get_price_history` | 取得價格歷史 |
 | `util` | `resolve_true_nindex` | 解析真實 nindex |
@@ -165,11 +153,8 @@ chrome.runtime.sendMessage({ name, type, msg }, callback)
 | `util` | `create_tab` | 開新分頁 |
 | `api` | `get_mlt` | 取得 MLT 推薦 |
 | `api` | `get_store_desc` | 取得商店描述 |
-| `api` | `search_store` | 搜尋商店 |
-| `cashback` | `update_cookie` | 更新返現活動 timestamp |
+| `cashback` | `mark_activity` | 更新返現活動 timestamp |
 | `cashback` | `cancel_cashback` | 取消返現 |
-| `cashback` | `get_r_url` | 取得導流 URL |
-| `config` | `close_page_feature` | 關閉頁面功能 |
 | `config` | `set_drag_config` | 儲存拖拽位置 |
 | `pop` | `update_icon` | 更新 icon |
 
@@ -190,7 +175,6 @@ chrome.runtime.sendMessage({ name, type, msg }, callback)
 | type | 用途 |
 |------|------|
 | `get_sites_list` | 取得 sites 資料 |
-| `get_region` | 取得地區 |
 | `get_extension_url` | 取得 extension 資源 URL |
 | `i18n` | 取得翻譯字串 |
 | `biggo_r` | 導流到 BigGo |
@@ -198,7 +182,6 @@ chrome.runtime.sendMessage({ name, type, msg }, callback)
 | `get_mlt_fold` | 取得 MLT 摺疊狀態 |
 | `set_mlt_close` / `set_mlt_open` | 設定 MLT 摺疊 |
 | `ga` | GA 事件 |
-| `share_coupon` | 分享優惠券 |
 | `mlt_ready` | MLT 元件就緒 |
 
 ---
@@ -231,20 +214,6 @@ dragIframe.build(nindex, pid)
 mltIframe.build(nindex, id)
   └─ FrontendSender.send("open_mlt", {nindex, id})
        └─ Svelte 元件建立 <biggo-mlt> custom element
-```
-
-### 優惠券（couponIframe）
-
-```
-couponIframe.init(nindex)
-  └─ iframe.src = chrome.runtime.getURL(pages/popmenu/couponIframe.html#nindex=...)
-```
-
-### 商店資訊（storeIframe）
-
-```
-storeIframe.init(nindex, purl, isBuied)
-  └─ iframe.src = chrome.runtime.getURL(pages/popmenu/storeIframe.html#nindex=...&purl=...&buied=...)
 ```
 
 ---

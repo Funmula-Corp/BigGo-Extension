@@ -7,18 +7,6 @@
 		"message": "स्मार्ट  शॉपिंग BigGo के साथ",
 		"description": "manifest description"
 	},
-	"Copy": {
-		"message": "कापी",
-		"description": "Copy"
-	},
-	"discount_code_full": {
-		"message": "डिस्काउंट कोड",
-		"description": "Discount code"
-	},
-	"Copied": {
-		"message": "कॉपी किया गया",
-		"description": "Copied"
-	},
 	"coupon": {
 		"message": "प्रमोशन",
 		"description": "Promotions"
@@ -26,10 +14,6 @@
 	"PRICE_HISTORY": {
 		"message": "मूल्य इतिहास",
 		"description": "price history"
-	},
-	"COPIED_CHECKOUT": {
-		"message": "कॉपी किया गया। कृपया इसे चेकआउट पेज पर उपयोग करें",
-		"description": "Copied. Please use it at checkout page"
 	},
 	"SEARCH_WITH_BIGGO": {
 		"message": "सर्च「$word$」बिगगो के साथ",
@@ -115,18 +99,6 @@
 		"message": "यदि आपका कैशबैक ट्रैक नहीं किया गया है, तो यह निम्नलिखित कारणों से गायब हो सकता है लेकिन इन तक सीमित नहीं है: ब्राउज़र बंद करें, एक टैब खोलें जो BigGo से लिंक नहीं है, एक विज्ञापन बैनर या लिंक पर क्लिक करें, अन्य खरीदारी या तुलना वेबसाइटों से लिंक करें। , अन्य शॉपिंग एक्सटेंशन इंस्टॉल करें, या सत्र निष्क्रियता समयबाह्य 30 मिनट से अधिक है।",
 		"description": ""
 	},
-	"close_price_history_desc": {
-		"message": "आपने अभी तक BigGo शॉपिंग असिस्टेंट  में साइन इन नहीं किया है!",
-		"description": ""
-	},
-	"close_price_history_tip": {
-		"message": "क्या आप निश्चित रूप से मूल्य इतिहास पॉपअप बंद करना चाहते हैं?",
-		"description": ""
-	},
-	"confirm": {
-		"message": "पुष्टि",
-		"description": ""
-	},
 	"cancel": {
 		"message": "रद्द करें",
 		"description": ""
@@ -148,10 +120,6 @@
 				"example": "10"
 			}
 		}
-	},
-	"coupon_popup_alert_desc": {
-		"message": "क्या आप वाकई कूपन रिमाइंडर पॉपअप बंद करना चाहते हैं",
-		"description": ""
 	},
 	"no_mlt_result": {
 		"message": "कोई परिणाम नही",
@@ -248,42 +216,6 @@
 				"example": ""
 			}
 		}
-	},
-	"share_coupon_submit": {
-		"message": "एक कूपन जमा करें",
-		"description": ""
-	},
-	"share_coupon_title": {
-		"message": "कूपन जोड़कर BigGo को बेहतर बनाने में मदद करें, और अन्य उपयोगकर्ताओं को भी अधिक बचत करने में मदद करें।",
-		"description": ""
-	},
-	"share_coupon_desc": {
-		"message": "विवरण",
-		"description": ""
-	},
-	"share_coupon_cancel": {
-		"message": "रद्द करें",
-		"description": ""
-	},
-	"share_coupon_send": {
-		"message": "भेजना",
-		"description": ""
-	},
-	"share_coupon_tks": {
-		"message": "धन्यवाद।",
-		"description": ""
-	},
-	"share_coupon_code": {
-		"message": "हमारे सिस्टम द्वारा इसकी समीक्षा करने के बाद हम आपके कोड को BigGo के साथ साझा करेंगे।",
-		"description": ""
-	},
-	"share_coupon_done": {
-		"message": "पूर्ण",
-		"description": ""
-	},
-	"share_coupon_submit_other": {
-		"message": "एक और कूपन जमा करें",
-		"description": ""
 	},
 	"privacy_learn_about_link": {
 		"message": "BigGo Privacy Policy",

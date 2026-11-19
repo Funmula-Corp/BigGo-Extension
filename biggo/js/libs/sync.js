@@ -161,53 +161,6 @@ export async function syncSites(force=false) {
   return wrapQueue("sync:sites", () => syncSitesProcess(force))
 }
 
-export async function getCPData(nindex) {
-  // const url = `https://${process.env.API_DOMAIN}/api/store.php?method=get_store_coupon&id=${nindex}`
-  // return getJson(url)
-  return []
-}
-
-export async function syncCouponProcess(nindex) {
-  if(!nindex) {
-    return []
-  }
-
-  try {
-    const CACHE_EXPIRE_TIME = 1000 * 60 * 30
-    // get last time from store
-    const lastTime = await storage.getItem(`coupon_last_time:${nindex}`, 0)
-    const list = await storage.getItem("coupon_list", {})
-    const isOverTime = Date.now() - +lastTime > CACHE_EXPIRE_TIME
-    // 第一次或超過時間都要抓
-    if(!lastTime || isOverTime) {
-      const data = await getCPData(nindex)
-      // 如果有正常抓到資料
-      if(data && Array.isArray(data)) {
-        const item = {
-          ...list,
-          [nindex]: data
-        }
-        storage.setItem("coupon_list", item)
-        storage.setItem(`coupon_last_time:${nindex}`, Date.now())
-        return data
-      }
-    }
-
-    const couponList = await storage.getItem("coupon_list")
-    if(couponList) {
-      return couponList
-    }
-  } catch (error) {
-    console.error("get coupon list error: ", error)
-  }
-
-  return []
-}
-
-export async function syncCoupon(nindex) {
-  return wrapQueue(`sync:cp:${nindex}`, () => syncCouponProcess(nindex))
-}
-
 export async function getMemberData(force=false) {
   if (force || await getIsLogin()) {
     const url = `https://${process.env.API_DOMAIN}/api/member.php`
@@ -219,9 +172,6 @@ export async function getMemberData(force=false) {
 
 export async function syncLoginProcess(force=false) {
   try {
-    // get region
-    // const region = await getRegion()
-    // constant
     const TIMEOUT = 1000 * 60 * 30
     // flag
     const loginStatus = await storage.getItem(STORAGE_KEY_LOGIN)
@@ -237,13 +187,9 @@ export async function syncLoginProcess(force=false) {
       }
 
       const isLogin = !!data.is_login
-      const username = data.name || ""
 
       User.setLogin(isLogin, data)
       storage.setItem(STORAGE_KEY_LOGIN_LAST_TIME, Date.now())
-      if(username) {
-        storage.setItem("username", username)
-      }
 
       // 如果有設定值
       if(data.extension_config) {
@@ -263,10 +209,6 @@ export async function syncLoginProcess(force=false) {
 
 export async function syncLogin(force=false) {
   return wrapQueue("sync:login", () => syncLoginProcess(force))
-}
-
-export async function getUserName() {
-  return storage.getItem("username", "")
 }
 
 /**
@@ -391,11 +333,9 @@ export default {
   syncRegion,
   syncSites,
   updateSites,
-  syncCoupon,
   syncLogin,
   syncECList,
   updateECList,
-  getUserName,
   getMemberData,
   getPriceHistory,
   getLastLoginList,

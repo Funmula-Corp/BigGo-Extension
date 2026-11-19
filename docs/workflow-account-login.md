@@ -78,7 +78,6 @@ syncLogin(force?)
               │    │            └─ NO：
               │    │                 ├─ User.setLogin(isLogin, data)
               │    │                 ├─ 存 STORAGE_KEY_LOGIN_LAST_TIME
-              │    │                 ├─ 存 username（如有）
               │    │                 ├─ setConfigFromServer（如有 extension_config）
               │    │                 └─ return isLogin
               │    │

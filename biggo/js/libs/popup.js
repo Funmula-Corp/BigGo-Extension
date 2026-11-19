@@ -11,17 +11,6 @@ import { getRegion } from "@shared/region"
 import { getSiteList } from "@core/shared/sites"
 import { isCashbackRegion } from "@shared/cashback"
 
-function getStarCouponCount(obj) {
-  let count = 0
-  for(let nindex in obj) {
-    if (obj[nindex]['isStart']) {
-      count++
-    }
-  }
-
-  return count
-}
-
 function getCurrentTab() {
   return new Promise(resolve => {
     chrome.tabs.query({ currentWindow: true, active: true }, async tabs => {
@@ -54,37 +43,13 @@ export async function setPopupMenu(tabId, tabUrl, nindex, itemId, {animation=tru
   const sites = await getSiteList()
   const site = nindex && sites[nindex]
   const isEC = site && site.item
-  const isCashback = isEC && site.detail.desc
+  const isCashback = isEC && site.detail && site.detail.desc
 
   const isLogin = await Sync.syncLogin()
   const isAct = isLogin && isCashback && await Cashback.isActivity(nindex, tabId)
 
   const region = await getRegion()
   const isCbRegion = isCashbackRegion(region)
-
-  // 確認付款的頁面要做的處理
-  try {
-    if(site && site[nindex] && site[nindex].item && site[nindex].item.checkout_done_url) {
-      const checkoutUrls = site[nindex].item.checkout_done_url
-      for (const url of checkoutUrls) {
-        if(tabUrl.toLowerCase().indexOf(url.toLowerCase()) > -1) {
-          let matchKey = /https:\/\//i
-          if(tabUrl.toUpperCase().indexOf('%3A%2F%2F') > -1) {
-            matchKey = /(http\S+%3A%2F%2F)/i
-          }
-          if(tabUrl.indexOf('://') > -1) {
-            matchKey = /(http\S+\:\/\/)/i
-          }
-
-          if(tabUrl.toUpperCase().indexOf('%3A%2F%2F') > -1 || tabUrl.indexOf('://') > -1 && site[nindex].domain && site[nindex].domain[0]) {
-            tabUrl = tabUrl.match(matchKey)[1] + site[nindex].domain[0]
-          }
-        }
-      }
-    }
-  } catch (error) {
-    console.error("decoded urls error: ", error)
-  }
 
   // 處理蝦皮的狀態
   try {
@@ -127,9 +92,4 @@ export async function setPopupMenu(tabId, tabUrl, nindex, itemId, {animation=tru
 
   // 傳給popup最新的返現狀態
   sendPopup("cashback_changed", {tabId, nindex})
-}
-
-export default {
-  setPopupMenu,
-  updateAllPopMenu
 }

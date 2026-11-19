@@ -1,4 +1,3 @@
-import {wrapData, getDataType} from "../Bridge"
 import Receiver from "../Receiver/index"
 
 export function send(data) {

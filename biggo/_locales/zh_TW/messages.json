@@ -7,18 +7,6 @@
 		"message": "自動比價、歷史價格與店家優惠，聰明買到最低價！",
 		"description": "manifest description"
 	},
-	"Copy": {
-		"message": "複製",
-		"description": "Copy"
-	},
-	"discount_code_full": {
-		"message": "折扣碼",
-		"description": "Discount code"
-	},
-	"Copied": {
-		"message": "已複製",
-		"description": "Copied"
-	},
 	"coupon": {
 		"message": "優惠活動",
 		"description": "Promotions"
@@ -26,10 +14,6 @@
 	"PRICE_HISTORY": {
 		"message": "歷史價格",
 		"description": "price history"
-	},
-	"COPIED_CHECKOUT": {
-		"message": "已完成複製，請於結帳時使用!",
-		"description": "Copied. Please use it at checkout page"
 	},
 	"SEARCH_WITH_BIGGO": {
 		"message": "用 BigGo 查詢 「$word$」",
@@ -115,18 +99,6 @@
 		"message": "您的現金回饋無法被追蹤，可能的原因是：關閉瀏覽器、開啟非從BigGo連結的分頁、點擊廣告、進入其他購物或比價網站、安裝其他購物小幫手，或是閒置時間超過30分鐘。",
 		"description": ""
 	},
-	"close_price_history_desc": {
-		"message": "您目前尚未登入 BigGo 小幫手！未來若要再次開啟此功能，請先登入之後，到個人設定中的功能設定頁，點擊重新開啟設定。",
-		"description": ""
-	},
-	"close_price_history_tip": {
-		"message": "確定要關閉歷史價格提醒？",
-		"description": ""
-	},
-	"confirm": {
-		"message": "確定",
-		"description": ""
-	},
 	"cancel": {
 		"message": "取消",
 		"description": ""
@@ -148,10 +120,6 @@
 				"example": "10"
 			}
 		}
-	},
-	"coupon_popup_alert_desc": {
-		"message": "確定要關閉優惠碼提醒？",
-		"description": ""
 	},
 	"no_mlt_result": {
 		"message": "無相關商品",
@@ -248,42 +216,6 @@
 				"example": ""
 			}
 		}
-	},
-	"share_coupon_submit": {
-		"message": "提供優惠碼",
-		"description": ""
-	},
-	"share_coupon_title": {
-		"message": "感謝您讓這個服務更加優秀，透過您提供的優惠碼，讓其他使用者在購物時省下更多。",
-		"description": ""
-	},
-	"share_coupon_desc": {
-		"message": "優惠碼詳情",
-		"description": ""
-	},
-	"share_coupon_cancel": {
-		"message": "取消",
-		"description": ""
-	},
-	"share_coupon_send": {
-		"message": "送出",
-		"description": ""
-	},
-	"share_coupon_tks": {
-		"message": "感謝您的分享",
-		"description": ""
-	},
-	"share_coupon_code": {
-		"message": "我們將審核過後分享此優惠碼在BigGo上面，感謝您的提供。",
-		"description": ""
-	},
-	"share_coupon_done": {
-		"message": "完成",
-		"description": ""
-	},
-	"share_coupon_submit_other": {
-		"message": "提供其他優惠碼",
-		"description": ""
 	},
 	"privacy_learn_about_link": {
 		"message": "BigGo 隱私權政策",

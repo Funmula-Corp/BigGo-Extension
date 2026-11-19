@@ -63,8 +63,6 @@ getNindexFromURL(url)                          ← content script 呼叫
   └─► resolveGlobalSiteNindex(nindex)          ← 處理多國站台映射（如 nike.tw → nike.th）
 ```
 
-另一條路徑 `getNindexFromSitelist(url)` 則會同時查 ECList 的 regex pattern (`ptn`) 和 sites 的 domain 陣列，提供更廣泛的比對。這條路徑需要完整的 sites 和 ECList 資料，如果 `STORAGE_KEY_SITES` 為空就會失效。
-
 ### getSiteList / getECList — Content 端取得資料
 
 `getSiteList()` 和 `getECList()` 是 content script 取得完整資料的介面。它們先嘗試從 storage 讀取，如果為空則透過 `envCall` 觸發同步：

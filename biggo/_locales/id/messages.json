@@ -7,18 +7,6 @@
 		"message": "Perbandingan harga, riwayat harga produk dan promosi toko. Belanja cerdas dengan Asisten Belanja BigGo.",
 		"description": "manifest description"
 	},
-	"Copy": {
-		"message": "Menyalin",
-		"description": "Copy"
-	},
-	"discount_code_full": {
-		"message": "Kode diskon",
-		"description": "Discount code"
-	},
-	"Copied": {
-		"message": "Disalin",
-		"description": "Copied"
-	},
 	"coupon": {
 		"message": "Promosi",
 		"description": "Promotions"
@@ -26,10 +14,6 @@
 	"PRICE_HISTORY": {
 		"message": "Sejarah harga",
 		"description": "price history"
-	},
-	"COPIED_CHECKOUT": {
-		"message": "Copied. Disalin Sila gunakan di halaman pembayaran",
-		"description": "Copied. Please use it at checkout page"
 	},
 	"SEARCH_WITH_BIGGO": {
 		"message": "Cari 「$word$」 dengan Biggo",
@@ -115,18 +99,6 @@
 		"message": "Jika Cashback Anda tidak dilacak, itu mungkin hilang karena alasan berikut tetapi tidak terbatas pada: tutup browser, buka tab yang tidak ditautkan dari BigGo, klik pada spanduk atau tautan iklan, tautan ke situs belanja atau perbandingan lainnya , pasang ekstensi belanja lainnya, atau waktu tunggu ketidakaktifan sesi lebih dari 30 menit.",
 		"description": ""
 	},
-	"close_price_history_desc": {
-		"message": "Anda belum masuk ke Asisten Belanja BigGo",
-		"description": ""
-	},
-	"close_price_history_tip": {
-		"message": "Apakah Anda yakin untuk mematikan pop-up riwayat harga?",
-		"description": ""
-	},
-	"confirm": {
-		"message": "Konfirmasi",
-		"description": ""
-	},
 	"cancel": {
 		"message": "Batal",
 		"description": ""
@@ -148,10 +120,6 @@
 				"example": "10"
 			}
 		}
-	},
-	"coupon_popup_alert_desc": {
-		"message": "Apakah Anda yakin untuk mematikan notifikasi pop-up pengingat kupon?",
-		"description": ""
 	},
 	"no_mlt_result": {
 		"message": "Tidak ada hasil",
@@ -248,42 +216,6 @@
 				"exmaple": ""
 			}
 		}
-	},
-	"share_coupon_submit": {
-		"message": "Kirim kupon",
-		"description": ""
-	},
-	"share_coupon_title": {
-		"message": "Bantu membuat BigGo lebih baik dengan menambahkan kupon, dan juga membuat pengguna lain lebih hemat.",
-		"description": ""
-	},
-	"share_coupon_desc": {
-		"message": "Deskripsi",
-		"description": ""
-	},
-	"share_coupon_cancel": {
-		"message": "Batalkan",
-		"description": ""
-	},
-	"share_coupon_send": {
-		"message": "Kirim",
-		"description": ""
-	},
-	"share_coupon_tks": {
-		"message": "Terimakasih",
-		"description": ""
-	},
-	"share_coupon_code": {
-		"message": "Kami akan membagikan kode Anda dengan BigGo setelah sistem kami meninjaunya.",
-		"description": ""
-	},
-	"share_coupon_done": {
-		"message": "Selesai",
-		"description": ""
-	},
-	"share_coupon_submit_other": {
-		"message": "Kirim kupon lain",
-		"description": ""
 	},
 	"privacy_learn_about_link": {
 		"message": "Kebijakan Privasi BigGo",
