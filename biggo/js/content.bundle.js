@@ -172,12 +172,14 @@ async function buildPageFeature(isUpdateIconAnimation=true) {
     // 已經開啟返現 要偵測返現session過期
     if(isActCashback && isCashbackNindex) {
       // set idle listener
-      idleCashback.init(nindex)
-      idleCashback.listen()
-      idleCashback.tick()
       idleCashback.onPop(async () => {
         await util.cancelCashback(nindex)
         util.updateIcon(nindex, productId)
+      })
+      // tick() 要等 init() 載入站點與地區後再跑，否則 isExcept() 為 true，計時不會開始
+      idleCashback.init(nindex).then(() => {
+        idleCashback.listen()
+        idleCashback.tick()
       })
     }
 

@@ -159,10 +159,10 @@ content.bundle.js 初始化
   ├─ isActCashback && isCashbackNindex ?
   │    │
   │    └─ YES：
-  │         ├─ idleCashback.init(nindex)
-  │         ├─ idleCashback.listen()         ← 綁定 mousemove / keypress / mousedown
-  │         ├─ idleCashback.tick()           ← 開始 30 分鐘倒數
-  │         └─ idleCashback.onPop(callback)  ← 逾時回呼
+  │         ├─ idleCashback.onPop(callback)  ← 逾時回呼
+  │         └─ idleCashback.init(nindex).then(...)  ← 等站點與地區載入後才：
+  │              ├─ idleCashback.listen()    ← 綁定 mousemove / keypress / mousedown
+  │              └─ idleCashback.tick()      ← 開始 30 分鐘倒數
   │
   │
   使用者活動：
