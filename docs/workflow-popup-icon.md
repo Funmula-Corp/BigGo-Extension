@@ -45,15 +45,12 @@ chrome.webNavigation.onCommitted (main frame only)
         ├─ region = await getRegion()
         ├─ isCbRegion = isCashbackRegion(region)
         │
-        ├─ couponList = await syncCoupon(nindex)
-        ├─ hasCoupon = couponList && couponList.length > 0
-        │
         │  ┌─ Icon 決策 ──────────────────────────────────┐
         │  │                                               │
         ├─ !isEC                                           │
         │    └─ ICON_GRAY                                  │
         │                                                  │
-        ├─ (isEC || hasCoupon) && !isCashback               │
+        ├─ isEC && !isCashback                              │
         │    └─ ICON_GREEN                                 │
         │                                                  │
         ├─ isCashback && isCbRegion && (!isLogin || !isAct) │

@@ -1,3 +1,3 @@
-sdk.modify.js 主要是控制iframe本身
+biggo.internal.listener.js：注入 BigGo 自家網域（manifest 第二組 content_scripts，all_frames、document_start）的 content script，接收頁面 `postMessage` 的 `{source: "_biggo_", type, msg}`，交給 `client/handle.js` 對應的 handler 處理，回覆 `${type}_reply`。
 
-biggo.internal.js 主要是biggo內部服務跟extensino的通訊, 有更多業務上的邏輯
+biggo.internal.bundle.js：同一套訊息格式的註冊器 `listen(name, handle, target)`，由 popup（`pages/popmenu/script/popmenu.js`）用來回應內嵌的遠端 popmenu iframe，並可指定回覆目標視窗。

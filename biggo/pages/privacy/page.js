@@ -41,16 +41,8 @@ function getAllCheckboxList() {
   return Array.from(document.querySelectorAll(`input[type="checkbox"]`))
 }
 
-function isCheck() {
-  return getCheckboxList().some(dom => dom.checked)
-}
-
 function isAllCheck() {
   return getCheckboxList().every(dom => dom.checked)
-}
-
-function isAllNoCheck() {
-  return getCheckboxList().every(dom => !dom.checked)
 }
 
 function getPermission() {
@@ -88,7 +80,6 @@ const domSubmit = document.getElementById("submit")
 const domPopup = document.getElementById("popup")
 const domUninstall = document.getElementById("uninstall")
 const domAllCheck = document.getElementById("allcheck")
-const domCheck3 = document.getElementById("check3")
 
 domSubmit.addEventListener("mouseenter", onHoverSubmit)
 domSubmit.addEventListener("click", onSubmit)

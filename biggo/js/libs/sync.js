@@ -172,9 +172,6 @@ export async function getMemberData(force=false) {
 
 export async function syncLoginProcess(force=false) {
   try {
-    // get region
-    // const region = await getRegion()
-    // constant
     const TIMEOUT = 1000 * 60 * 30
     // flag
     const loginStatus = await storage.getItem(STORAGE_KEY_LOGIN)
