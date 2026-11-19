@@ -43,7 +43,7 @@ export async function setPopupMenu(tabId, tabUrl, nindex, itemId, {animation=tru
   const sites = await getSiteList()
   const site = nindex && sites[nindex]
   const isEC = site && site.item
-  const isCashback = isEC && site.detail.desc
+  const isCashback = isEC && site.detail && site.detail.desc
 
   const isLogin = await Sync.syncLogin()
   const isAct = isLogin && isCashback && await Cashback.isActivity(nindex, tabId)
