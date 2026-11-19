@@ -20,7 +20,6 @@ const fileList = [
   "js/frontend/loader/idleCashback",
   "js/injection/SPA",
   "pages/popmenu/script/popmenu",
-  "pages/popmenu/script/storeIframe",
   "pages/popmenu/script/couponIframe",
   "pages/privacy/page",
 ]

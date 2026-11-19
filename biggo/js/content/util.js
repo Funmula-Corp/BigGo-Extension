@@ -1,15 +1,9 @@
-import { getCashbackDetail } from "@background/cashback"
 import * as share from "../util.shared"
 import { send } from "./messenger"
 import { getECList, getNindexFromURL } from "@shared/sites"
 import Eclist from "@shared/eclist"
 import { getCurrentRegionDomain, getRegionDomain } from "@shared/region"
 import { UNION_MAP } from "@core/union"
-
-export async function isNindexCashback(nindex) {
-  const list = await getCashbackDetail()
-  return !!list[nindex]
-}
 
 export async function getDomain(region="") {
   return !region ? await getCurrentRegionDomain() : await getRegionDomain(region)
@@ -40,10 +34,6 @@ export function ga(label, action, desc) {
       label, action, desc
     })
   }catch(e) {}
-}
-
-export function updateSameNindexUrl(nindex, lb="") {
-  send("util", "update_same_nindex_url", {nindex, lb})
 }
 
 export function updateSelectText(text) {

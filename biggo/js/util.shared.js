@@ -1,14 +1,3 @@
-export function addExtensionInfo2Url(url) {
-  try {
-    const urlObj = new URL(url)
-    urlObj.searchParams.set("v", chrome.runtime.getManifest().version)
-    urlObj.searchParams.set("lang", getSitesLang())
-    return urlObj.href
-  }catch(e){}
-
-  return url
-}
-
 export function getSitesLang() {
   const langList = ["zh_TW", "zh_HK", "en_SG", "th_TH", "ja_JP", "id_ID", "ms_MY", "en_US", "hi_IN", "vi", "vi_VN", "es", "es_419", "pt_BR"]
   const uiLang = chrome.i18n.getUILanguage().replace("-", "_")

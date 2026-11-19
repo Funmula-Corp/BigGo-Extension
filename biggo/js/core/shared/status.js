@@ -59,32 +59,6 @@ export async function getMLTFold() {
 
 /* ----------------------------------------------------------------- */
 
-const POPUP_CB_FOLD_OPEN = "open"
-const POPUP_CB_FOLD_CLOSE = "close"
-const POPUP_CB_FOLD_STORAGE_KEY = "popup_cb_iframe_fold"
-
-export async function getPopupCashbackFold() {
-  return await storage.getItem(POPUP_CB_FOLD_STORAGE_KEY, POPUP_CB_FOLD_OPEN)
-}
-
-export function isPopupCashbackFold() {
-  return getPopupCashbackFold() === POPUP_CB_FOLD_CLOSE
-}
-
-export function setPopupCashbackFold(status) {
-  storage.setItem(POPUP_CB_FOLD_STORAGE_KEY, status)
-}
-
-export function openPopupCashbackFold() {
-  setPopupCashbackFold(POPUP_CB_FOLD_CLOSE)
-}
-
-export function closePopupCashbackFold() {
-  setPopupCashbackFold(POPUP_CB_FOLD_OPEN)
-}
-
-/* ----------------------------------------------------------------- */
-
 const POPUP_DOC_SHOW_STORAGE_KEY = "popup_doc_show"
 const POPUP_DOC_SHOW_LIMIT = 5
 
