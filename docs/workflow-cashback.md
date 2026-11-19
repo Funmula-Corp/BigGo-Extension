@@ -129,7 +129,7 @@ chrome.tabs.onRemoved
   └─► onTabClosed(tabId)                    [cashbackSession.js]
         │
         ├─ 在 session 中？
-        │    ├─ YES → stop(tabId) + Cashback.cancelCashback(nindex, tabId)
+        │    ├─ YES → 刪除 session（不論是否已 landed）+ Cashback.cancelCashback(nindex, tabId)
         │    └─ NO  → return
 ```
 

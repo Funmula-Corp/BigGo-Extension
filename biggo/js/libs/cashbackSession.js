@@ -83,13 +83,6 @@ export async function isLanded(id) {
   return false
 }
 
-export async function stop(id) {
-  const session = await SessionMap.get(id)
-  if(session && session.isLanded) {
-    await SessionMap.delete(id)
-  }
-}
-
 function getHost(url) {
   try {
     const temp = new URL(url)
@@ -179,7 +172,7 @@ export async function landingSite({url, tabId}) {
 export async function onTabClosed(tabId) {
   if(await isInSession(tabId)) {
     const session = await SessionMap.get(tabId)
-    await stop(tabId)
+    await SessionMap.delete(tabId)
     Cashback.cancelCashback(session.nindex, tabId)
   }
 }
